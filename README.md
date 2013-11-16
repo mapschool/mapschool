@@ -23,8 +23,25 @@ Raster data is how you'd store pictures of the earth, like the kinds taken from 
 
 Vector data is how you'd store roads, buildings, points of interest, or other things that have some place in the world.
 
-Collection
-Storage
+### Geocoding
+
+A great deal of geographic data is none of the above - instead of being composed of the numbers that computers fancy, we have spreadsheets with text data or tweets with references to places, streets, addresses, and so on.
+
+Unfortunately, you can't just put this data on a map - the words "United States' mean many different things, like a centroid of the continental US, or polygon boundaries of all states plus Alaska, DC, and Hawaii, or even a box containing all of the above. Thus it's a rough translation we call 'geocoding' that turns rough text descriptions into data we can directly use - usually vector data.
+
+### Data Collection
+
+Map data has been collected in countless ways through the years - everything from sailors logs to twitter creates data. Currently, there are a few major sources that merit discussion:
+
+**GPS**, the satellite constellation that gives your cell phone a blue dot on the map, is the foundation of collecting accurate vector data. Surveyors will drive with highly accurate GPS units and combine their results into something trustworthy.
+
+A number of observational **satellites and airplanes** collect the majority of the raster data we have today, constantly taking photos from different altitudes and combining them into something that looks a little like a picture of the world. The same sensors also capture what we call 'non-visible spectrums', like infrared light, that's useful for mapping agriculture. Some tricked-out rigs include LiDAR, a kind of laser sensor that measures altitude and yields us raster altitude data.
+
+**Corporations, governments, and communities** maintain different world maps of varying detail. For instance, both Google and OpenStreetMap focus on mapping all roads and details about them, and sources like the CIA World Factbook and Natural Earth keep track of political borders.
+
+#### Storage
+
+
 
 ## Information
 
@@ -46,13 +63,33 @@ Symbolization is a fancy word for the particular ways that data is transformed i
 
 Fundamentally, data doesn't look like anything: a list of pixel values or road lines is just as well represented in a spreadsheet or a chart as it is on a map. Thus to 'convert' isn't the right word for what we do with data: at the most basic level, everything is a decision.
 
+Symbolic techniques include anything representable in graphics or even 3D, so let's only look at a few:
+
+#### Choropleth
+
+Choropleth maps preserve the existing boundaries and shapes of places and represent data by changing their colors, patterns or textures. A familiar example of this kind of map is in election results or demographic makeup, in which data is percentage values for some fixed piece of land - a value per voting precinct or census area.
+
+Choropleth maps are a natural fit for data like rates, densities, or percentages. They aren't recommended for absolute values: since they keep the area of shapes the same, they tend to over-emphasize large features.
+
+#### Point
+
+Point maps are a better alternative for absolute values - the only geometry that they preserve is a single point per feature.
+
+The specific point or marker used in this style varies tremendously - some maps scale text itself, or circles or squares.
+
 ### Publishing
 
 ### Analysis
 
 Raster & vector analysis as aggregation & transformation
 
-Transforming raster to vector, vector to raster
+#### From Raster to Vector and Back
+
+It's possible to move between the two types of map data, as disparate as they might seem, and it's actually quite common: it's just not direct.
+
+Typically vector data always becomes raster when it is displayed: computer screens and printers operate on the level of pixels, not lines or shapes. This conversion is imperfect: remember that vector data is not pixel-based, so you can never zoom in and see fuzzy features. Thus, generally, when vector data is converted into a raster format, you can't transform that raster representation back into exactly the source.
+
+Sometimes we convert vector data to raster ahead of time - in order to run some kinds of analysis, it's easier to do the math on a pixel basis.
 
 The statistical and informative properties of analysis
 
