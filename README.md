@@ -58,6 +58,8 @@ Practicing cartographers don't need to know much about the internal operations o
 
 The most common way to store places on earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like `38° 32'`, but the new standard is to represent them as simple numbers, like `38.2`, that are easy for computers to understand.
 
+![](img/latlon.png)
+
 **Latitude** values range from -90 at the South Pole to 90 at the North Pole. All along the equator the latitude value is 0.
 
 **Longitude** start at 0 at the Prime Meridian which cuts through Africa and Greenwich, and extend to -180 and 180 at the antemeridian.
