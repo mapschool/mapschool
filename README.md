@@ -10,6 +10,8 @@ Raster data is how you'd store pictures of the earth, like the kinds taken from 
 
 ## Vector
 
+![](img/vector_types.png)
+
 **Vector** data is more like a PDF or a math equation: instead of pixels, vector data has points and lines defined in math. So zooming in on vector data makes the features larger, but at no point do they become pixellated, since there are no pixels in play here.
 
 Vector data is how you'd store roads, buildings, points of interest, or other things that have some place in the world.
