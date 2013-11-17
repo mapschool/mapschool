@@ -48,6 +48,16 @@ A geographic datum is a specific way of measuring places on earth. Back in the d
 
 Practicing cartographers don't need to know much about the internal operations of datums anymore, since it's handled in software and most special formats can be automatically translated. A global standard called WGS84 caught on for general-purpose mapping and is the recommended way to store data.
 
+### Latitude and Longitude
+
+The most common way to store places on earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like `38° 32'`, but the new standard is to represent them as simple numbers, like `38.2`, that are easy for computers to understand.
+
+**Latitude** values range from -90 at the South Pole to 90 at the North Pole. All along the equator the latitude value is 0.
+
+**Longitude** start at 0 at the Prime Meridian which cuts through Africa and Greenwich, and extend to -180 and 180 at the antemeridian.
+
+The combination of latitude and longitude is usually called a coordinate, and can be represented as 'latitude, longitude', or 'longitude, latitude': historically, the former was standard, but 'longitude, latitude' has recently gained popularity because it mirrors the 'X, Y' ordering of coordinates in math's euclidean space.
+
 ### Projection
 
 Projections are what we call the mathematical equations that do the trick of turning the world, which is a sphere, into some flat shape that fits on a printout or a computer screen. It's a messy task to do, this transformation - there's no way to smoosh the world onto a screen without distorting it in some way. You either lose direction, or relative size, or come out with something very weird looking.
@@ -117,3 +127,9 @@ Interpolation can happen on a vector data level as well, through the Voronoi alg
 The unity of data
 
 Edges blending into math and art
+
+#### Further Reading
+
+#### License
+
+Creative Commons Attribution 3.0 Unported
