@@ -1,12 +1,5 @@
 # Map School
 
-## Maps
-
-Data
-Information
-Transformation
-Analysis
-
 ## Data
 
 Fundamentally, geographical data is one of two kinds: **raster**, or **vector**.
@@ -41,7 +34,9 @@ A number of observational **satellites and airplanes** collect the majority of t
 
 #### Storage
 
+There are many ways to store geographic data. Data can be stored as printouts, but recently it's more popular to store it in a way easily accessed and shared, digitally.
 
+There are many different filetypes and conventions for storing geographical data, and thus a variety of tools to translate between different representations. Data is stored in databases or in individual files, but the practical difference between the two is not necessarily important.
 
 ## Information
 
@@ -69,7 +64,7 @@ Symbolic techniques include anything representable in graphics or even 3D, so le
 
 Choropleth maps preserve the existing boundaries and shapes of places and represent data by changing their colors, patterns or textures. A familiar example of this kind of map is in election results or demographic makeup, in which data is percentage values for some fixed piece of land - a value per voting precinct or census area.
 
-Choropleth maps are a natural fit for data like rates, densities, or percentages. They aren't recommended for absolute values: since they keep the area of shapes the same, they tend to over-emphasize large features.
+Choropleth maps are a natural fit for data like rates, densities, or percentages. They aren't recommended for absolute values: since they keep the area of shapes the same, they tend to over-emphasize large features. Also, since choropleth maps rely on color differences to represent information, it's very important that the colors are well-chosen to be colorblind-safe, understandable, and consistent.
 
 #### Point
 
@@ -83,15 +78,27 @@ The specific point or marker used in this style varies tremendously - some maps 
 
 Raster & vector analysis as aggregation & transformation
 
-#### From Raster to Vector and Back
+#### Vector to Raster
 
 It's possible to move between the two types of map data, as disparate as they might seem, and it's actually quite common: it's just not direct.
 
-Typically vector data always becomes raster when it is displayed: computer screens and printers operate on the level of pixels, not lines or shapes. This conversion is imperfect: remember that vector data is not pixel-based, so you can never zoom in and see fuzzy features. Thus, generally, when vector data is converted into a raster format, you can't transform that raster representation back into exactly the source.
+Typically vector data always becomes raster - what we call 'rasterized' or 'rendered' when it is displayed: computer screens and printers operate on the level of pixels, not lines or shapes. This conversion is imperfect: remember that vector data is not pixel-based, so you can never zoom in and see fuzzy features. Thus, generally, when vector data is converted into a raster format, you can't transform that raster representation back into exactly the source.
 
 Sometimes we convert vector data to raster ahead of time - in order to run some kinds of analysis, it's easier to do the math on a pixel basis.
 
-The statistical and informative properties of analysis
+#### Raster to Vector
+
+Likewise, raster data can be vectorized in a number of ways. On raster satellite images of the earth, people draw, or 'trace', lines for streets, points for houses, or polygons for buildings. This lets us have a version of the data upon which we can do more things - you can figure out driving routes from vector data of streets, but can't do that with a satellite image of streets.
+
+#### Simulation
+
+With geographic data, it's possible to simulate certain natural processes, and this simulation is a big part of what working mappers do. Given elevation data for a mountain range, it's possible to simulate highlights and shadows for those mountains in light, in a process called hillshading.
+
+More complex processes are also possible, like determining where water will collect after rainfall, in a process called a watershed, or determining everywhere on the map that will be viewable if you're standing at a mountaintop, called a 'viewshed'.
+
+#### Aggregation
+
+
 
 How analysis works and breaks
 
