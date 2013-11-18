@@ -165,3 +165,5 @@ Edges blending into math and art
 ### License
 
 [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US)
+
+#### [Report Errata](https://tmcw.wufoo.com/forms/mapschool-feedback/).
