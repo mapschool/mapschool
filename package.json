@@ -1,0 +1,28 @@
+{
+  "name": "mapschool",
+  "version": "0.0.0",
+  "description": "not a textbook",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tmcw/mapschool.git"
+  },
+  "keywords": [
+    "map",
+    "geospatial",
+    "school",
+    "education"
+  ],
+  "author": "Tom MacWright",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/tmcw/mapschool/issues"
+  },
+  "dependencies": {
+    "underscore": "~1.5.2",
+    "marked": "~0.2.10"
+  }
+}
