@@ -1,15 +1,36 @@
 body {
     font:normal 15px/25px 'Georgia', serif;
+    margin:0;
+}
+
+.header {
     background:#eee;
+    padding:20px;
+    text-align:center;
+}
+
+.header p {
+    color:#555;
+}
+
+a {
+    color:darkblue;
 }
 
 img {
     max-width:100%;
 }
 
-.content {
-    margin:0 auto;
+.wrap {
+    margin:20px auto;
     max-width:700px;
-    padding:10px 20px;
     background:#fff;
+}
+
+.content {
+    padding:10px 50px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family:sans-serif;
 }

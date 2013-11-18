@@ -164,4 +164,4 @@ Edges blending into math and art
 
 ### License
 
-[Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/us/)
+[Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US)
