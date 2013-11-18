@@ -8,6 +8,10 @@ Fundamentally, geographical data is one of two kinds: **raster**, or **vector**.
 
 Raster data is how you'd store pictures of the earth, like the kinds taken from satellites, but that's not all that you would use it for. Pixels don't need to have colors - instead, each pixel can have a number that represents height and the raster data as a whole stores elevation data. Or pixels can store temperature or reflection data and be useful for environmental work.
 
+##### Raster Formats
+
+There are a variety of raster formats that aim to compact data and make it accessible fast for analysis and display. Some of them have parts in common with image formats, like [GeoTIFF](http://trac.osgeo.org/geotiff/) and JPEG2000. Raster data formats are essentially smart ways to pack pixels into a small amount of space, as well as data that specifies the relationship between pixels and places on earth.
+
 ## Vector
 
 ![](img/vector_types.png)
@@ -15,6 +19,12 @@ Raster data is how you'd store pictures of the earth, like the kinds taken from 
 **Vector** data is more like a PDF or a math equation: instead of pixels, vector data has points and lines defined in math. So zooming in on vector data makes the features larger, but at no point do they become pixellated, since there are no pixels in play here.
 
 Vector data is how you'd store roads, buildings, points of interest, or other things that have some place in the world.
+
+##### Vector Formats
+
+The most established vector format is the [Shapefile](http://en.wikipedia.org/wiki/Shapefile) - a simple, file-based format that awkwardly spreads the necessary data between four separate file - `.shp`, `.prj`, `.shx`, and `.dbf`. Shapefiles are binary data, so opening them in a text editor won't show anything accessible. They're efficient and common, but have limitations - for instance, attribute data in shapefiles can't have field names longer than ten letters.
+
+[GeoJSON](http://geojson.org/) and [TopoJSON](https://github.com/mbostock/topojson) are two newer formats based on [JSON](http://www.json.org/) text encoding. Being text-based, they're simpler to implement in software than Shapefiles - so they've caught on with new web software.
 
 ### Topology
 
@@ -80,11 +90,19 @@ Fundamentally, data doesn't look like anything: a list of pixel values or road l
 
 Symbolic techniques include anything representable in graphics or even 3D, so let's only look at a few:
 
+## Sequential & Categorical
+
+Symbolization tends to highlight two different characteristics of data: the sequential and categorical.
+
 ### Choropleth
 
 Choropleth maps preserve the existing boundaries and shapes of places and represent data by changing their colors, patterns or textures. A familiar example of this kind of map is in election results or demographic makeup, in which data is percentage values for some fixed piece of land - a value per voting precinct or census area.
 
 Choropleth maps are a natural fit for data like rates, densities, or percentages. They aren't recommended for absolute values: since they keep the area of shapes the same, they tend to over-emphasize large features. Also, since choropleth maps rely on color differences to represent information, it's very important that the colors are well-chosen to be colorblind-safe, understandable, and consistent.
+
+##### Choropleths in Depth
+
+The selection of colors in a choropleth map is generally called the 'palette' or the 'color ramp', especially when the colors are sequential. [ColorBrewer](http://colorbrewer2.org/) is a well-researched set of colors that are understandable and clear.
 
 ### Point
 
