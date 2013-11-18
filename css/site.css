@@ -34,3 +34,22 @@ img {
 h1, h2, h3, h4, h5 {
     font-family:sans-serif;
 }
+
+.feedback {
+    display:block;
+    text-decoration:none;
+    position:absolute;
+    width:100px;
+    height:100px;
+    right:20px;
+    top:20px;
+    border-radius:100px;
+    text-align:center;
+    vertical-align:center;
+    line-height:100px;
+    background:#fff;
+}
+
+.feedback:hover {
+    background:#ffe;
+}
