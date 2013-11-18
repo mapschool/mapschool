@@ -30,6 +30,8 @@
 <h2 id="geocoding">Geocoding</h2>
 <p>A great deal of geographic data is none of the above - instead of being composed of the numbers that computers fancy, we have spreadsheets with text data or tweets with references to places, streets, addresses, and so on.</p>
 <p>Unfortunately, you can&#39;t just put this data on a map - the words &quot;United States&#39; mean many different things, like a centroid of the continental US, or polygon boundaries of all states plus Alaska, DC, and Hawaii, or even a box containing all of the above. Thus it&#39;s a rough translation we call &#39;geocoding&#39; that turns rough text descriptions into data we can directly use - usually vector data.</p>
+<p>Reverse geocoding works just as you might guess. Have you ever wondered how mobile applications turn your current location into into an address for a driver or delivery-person? That&#39;s reverse geocoding: your phone knows its exact coordinate position (vector data) via the GPS, and that location is reverse geocoded to an address.</p>
+<p>Both geocoding and reverse geocoding can be very tricky problems to solve. Coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings all contribute to the difficulty in turning addresses into vectors, or vice versa.</p>
 <h2 id="data-collection">Data Collection</h2>
 <p>Map data has been collected in countless ways through the years - everything from sailors logs to twitter creates data. Currently, there are a few major sources that merit discussion:</p>
 <p><strong>GPS</strong>, the satellite constellation that gives your cell phone a blue dot on the map, is the foundation of collecting accurate vector data. Surveyors will drive with highly accurate GPS units and combine their results into something trustworthy.</p>
@@ -43,6 +45,7 @@
 <h2 id="datum">Datum</h2>
 <p>A geographic datum is a specific way of measuring places on earth. Back in the day, this was a hard problem, since surveyors would require a very high level of accuracy for specific areas: measurements down to the inch for a town. And so, instead of just saying latitude, longitude, we&#39;d say &quot;meters from this spot measured North/South.&quot;</p>
 <p>Practicing cartographers don&#39;t need to know much about the internal operations of datums anymore, since it&#39;s handled in software and most special formats can be automatically translated. A global standard called WGS84 caught on for general-purpose mapping and is the recommended way to store data.</p>
+<p>Though you don&#39;t often need to know the details of transforming between datums, when working with geo data from different sources it is <em>very</em> important that you confirm that the datums match. Working with data in different map datums can result in non-trivial errors, particularly at small scales on the order of 0-200m.</p>
 <h2 id="latitude-longitude">Latitude &amp; Longitude</h2>
 <p>The most common way to store places on earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like <code>38° 32&#39;</code>, but the new standard is to represent them as simple numbers, like <code>38.2</code>, that are easy for computers to understand.</p>
 <p><img src="img/latlon.png" alt=""></p>
