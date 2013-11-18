@@ -36,7 +36,7 @@ This gets tricky when you want to do something like ask 'which states touch?' or
 
 A great deal of geographic data is none of the above - instead of being composed of the numbers that computers fancy, we have spreadsheets with text data or tweets with references to places, streets, addresses, and so on.
 
-Unfortunately, you can't just put this data on a map - the words "United States' mean many different things, like a centroid of the continental US, or polygon boundaries of all states plus Alaska, DC, and Hawaii, or even a box containing all of the above. Thus it's a rough translation we call 'geocoding' that turns rough text descriptions into data we can directly use - usually vector data.
+Unfortunately, you can't just put this data on a map - the words "United States' mean many different things, like a centroid of the continental US, or polygon boundaries of all states plus DC and Puerto Rico, or even a box containing all of the above. Thus it's a rough translation we call 'geocoding' that turns rough text descriptions into data we can directly use - usually vector data.
 
 Reverse geocoding works just as you might guess. Have you ever wondered how mobile applications turn your current location into into an address for a driver or delivery-person? That's reverse geocoding: your phone knows its exact coordinate position (vector data) via the GPS, and that location is reverse geocoded to an address.
 
