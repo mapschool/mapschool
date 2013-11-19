@@ -1,6 +1,6 @@
 # Data
 
-Fundamentally, geographical data is one of two kinds: **raster**, or **vector**.
+Fundamentally, geographical data is either **raster** or **vector** - composed of pixels, or of geometry. The two formats are commonly used together, like in the case of satellite images as raster data with vector data roads overlaid.
 
 ## Raster
 
@@ -12,19 +12,21 @@ Raster data is how you'd store pictures of the earth, like the kinds taken from 
 
 ##### Raster Formats
 
-There are a variety of raster formats that aim to compact data and make it accessible fast for analysis and display. Some of them have parts in common with image formats, like [GeoTIFF](http://trac.osgeo.org/geotiff/) and JPEG2000. Raster data formats are essentially smart ways to pack pixels into a small amount of space, as well as data that specifies the relationship between pixels and places on earth.
+Raster formats that aim to compact data and make it accessible fast for analysis and display. Some of them are geospatially-enabled versions of common image formats, [GeoTIFF](http://trac.osgeo.org/geotiff/) and JPEG2000.
+
+Internally, raster data formats manage two tasks - packing data into pixels, and then storing the relationship between those pixels and actual places on the globe - the 'extent' of the data.
 
 ## Vector
 
 ![](img/vector_types.png)
 
-**Vector** data is more like a PDF or a math equation: instead of pixels, vector data has points and lines defined in math. So zooming in on vector data makes the features larger, but at no point do they become pixellated, since there are no pixels in play here.
+**Vector** data stores basic geometries rather than pixel data. No matter how much you 'zoom in' on vector data, there's no point at which it becomes pixellated, since the data stored is composed of geometrical points and lines, and only converted into an image when necessary.
 
-Vector data is how you'd store roads, buildings, points of interest, or other things that have some place in the world.
+Vector data is used to store roads, buildings, points of interest, and other things that have some place in the world.
 
 ##### Vector Formats
 
-The most established vector format is the [Shapefile](http://en.wikipedia.org/wiki/Shapefile) - a simple, file-based format that awkwardly spreads the necessary data between four separate file - `.shp`, `.prj`, `.shx`, and `.dbf`. Shapefiles are binary data, so opening them in a text editor won't show anything accessible. They're efficient and common, but have limitations - for instance, attribute data in shapefiles can't have field names longer than ten letters.
+The most established vector format is the [Shapefile](http://en.wikipedia.org/wiki/Shapefile) - a simple, file-based format that awkwardly spreads the necessary data between four separate file - `.shp`, `.prj`, `.shx`, and `.dbf`. Shapefiles are binary data, so opening them in a text editor won't show anything accessible.
 
 [GeoJSON](http://geojson.org/) and [TopoJSON](https://github.com/mbostock/topojson) are two newer formats based on [JSON](http://www.json.org/) text encoding. Being text-based, they're simpler to implement in software than Shapefiles - so they've caught on with new web software.
 
@@ -36,13 +38,13 @@ This gets tricky when you want to do something like ask 'which states touch?' or
 
 ## Geocoding
 
-A great deal of geographic data is none of the above - instead of being composed of the numbers that computers fancy, we have spreadsheets with text data or tweets with references to places, streets, addresses, and so on.
+A great deal of geographic data is none of the above - instead of being composed of the numbers that computers understand, it is stored as text data - references to placenames, streets, addresses, and so on.
 
-Unfortunately, you can't just put this data on a map - the words "United States' mean many different things, like a centroid of the continental US, or polygon boundaries of all states plus DC and Puerto Rico, or even a box containing all of the above. Thus it's a rough translation we call 'geocoding' that turns rough text descriptions into data we can directly use - usually vector data.
+Unfortunately, this isn't directly mappable. Due to variance in naming and the many definitions of place, there's an indirect and often inaccurate process involved in transforming the words 'United States' into the point `-120, 40`. This process is what we call **geocoding**.
 
-Reverse geocoding works just as you might guess. Have you ever wondered how mobile applications turn your current location into into an address for a driver or delivery-person? That's reverse geocoding: your phone knows its exact coordinate position (vector data) via the GPS, and that location is reverse geocoded to an address.
+The opposite process is **reverse geocoding**, where the readily available data is precise geographic positions, and the objective is a human description, like `United States` or `1714 14th Street`. Likewise, this isn't always accurate - one place one earth can be inside of overlapping and conflicting boundaries or between address points.
 
-Both geocoding and reverse geocoding can be very tricky problems to solve. Coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings all contribute to the difficulty in turning addresses into vectors, or vice versa.
+Geocoding and reverse geocoding can be very tricky: coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings contribute to the difficulty in turning addresses into coordinates, or vice versa.
 
 ## Data Collection
 

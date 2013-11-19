@@ -18,28 +18,29 @@
         <div class='wrap'>
             <div class='content'>
                 <h1 id="data">Data</h1>
-<p>Fundamentally, geographical data is one of two kinds: <strong>raster</strong>, or <strong>vector</strong>.</p>
+<p>Fundamentally, geographical data is either <strong>raster</strong> or <strong>vector</strong> - composed of pixels, or of geometry. The two formats are commonly used together, like in the case of satellite images as raster data with vector data roads overlaid.</p>
 <h2 id="raster">Raster</h2>
 <p><img src="img/raster.png" alt=""></p>
 <p><strong>Raster</strong> data is like a picture that you&#39;d take with a digital camera: at the lowest level of abstraction, it&#39;s a big list of pixels that have values. When you &#39;zoom in&#39; and look closer at raster data, at some point you&#39;ll see these individual pixels, and it will look pixelated.</p>
 <p>Raster data is how you&#39;d store pictures of the earth, like the kinds taken from satellites, but that&#39;s not all that you would use it for. Pixels don&#39;t need to have colors - instead, each pixel can have a number that represents height and the raster data as a whole stores elevation data. Or pixels can store temperature or reflection data and be useful for environmental work.</p>
 <h5 id="raster-formats">Raster Formats</h5>
-<p>There are a variety of raster formats that aim to compact data and make it accessible fast for analysis and display. Some of them have parts in common with image formats, like <a href="http://trac.osgeo.org/geotiff/">GeoTIFF</a> and JPEG2000. Raster data formats are essentially smart ways to pack pixels into a small amount of space, as well as data that specifies the relationship between pixels and places on earth.</p>
+<p>Raster formats that aim to compact data and make it accessible fast for analysis and display. Some of them are geospatially-enabled versions of common image formats, <a href="http://trac.osgeo.org/geotiff/">GeoTIFF</a> and JPEG2000.</p>
+<p>Internally, raster data formats manage two tasks - packing data into pixels, and then storing the relationship between those pixels and actual places on the globe - the &#39;extent&#39; of the data.</p>
 <h2 id="vector">Vector</h2>
 <p><img src="img/vector_types.png" alt=""></p>
-<p><strong>Vector</strong> data is more like a PDF or a math equation: instead of pixels, vector data has points and lines defined in math. So zooming in on vector data makes the features larger, but at no point do they become pixellated, since there are no pixels in play here.</p>
-<p>Vector data is how you&#39;d store roads, buildings, points of interest, or other things that have some place in the world.</p>
+<p><strong>Vector</strong> data stores basic geometries rather than pixel data. No matter how much you &#39;zoom in&#39; on vector data, there&#39;s no point at which it becomes pixellated, since the data stored is composed of geometrical points and lines, and only converted into an image when necessary.</p>
+<p>Vector data is used to store roads, buildings, points of interest, and other things that have some place in the world.</p>
 <h5 id="vector-formats">Vector Formats</h5>
-<p>The most established vector format is the <a href="http://en.wikipedia.org/wiki/Shapefile">Shapefile</a> - a simple, file-based format that awkwardly spreads the necessary data between four separate file - <code>.shp</code>, <code>.prj</code>, <code>.shx</code>, and <code>.dbf</code>. Shapefiles are binary data, so opening them in a text editor won&#39;t show anything accessible. They&#39;re efficient and common, but have limitations - for instance, attribute data in shapefiles can&#39;t have field names longer than ten letters.</p>
+<p>The most established vector format is the <a href="http://en.wikipedia.org/wiki/Shapefile">Shapefile</a> - a simple, file-based format that awkwardly spreads the necessary data between four separate file - <code>.shp</code>, <code>.prj</code>, <code>.shx</code>, and <code>.dbf</code>. Shapefiles are binary data, so opening them in a text editor won&#39;t show anything accessible.</p>
 <p><a href="http://geojson.org/">GeoJSON</a> and <a href="https://github.com/mbostock/topojson">TopoJSON</a> are two newer formats based on <a href="http://www.json.org/">JSON</a> text encoding. Being text-based, they&#39;re simpler to implement in software than Shapefiles - so they&#39;ve caught on with new web software.</p>
 <h3 id="topology">Topology</h3>
 <p>Some vector data also keeps track of topology, the relationships between different shapes that touch. For instance, it&#39;s common for political borders to precisely touch - you can stand with one foot in Arizona and another in New Mexico. A lot of geospatial data, though, will have one shape that represents Arizona and another that represents New Mexico, with two borders that precisely overlap, but have no other association.</p>
 <p>This gets tricky when you want to do something like ask &#39;which states touch?&#39; or simplify the shapes of objects while preserving borders lined up. Thus topology is introduced: some vector data, instead of storing a shape of Arizona and another of New Mexico, saves a bunch of lines and keeps track of which ones form the boundary of which object. So, the border between Arizona and New Mexico is a single line that&#39;s used to draw the border of both states, and if you have the line, it changes the shape of both states.</p>
 <h2 id="geocoding">Geocoding</h2>
-<p>A great deal of geographic data is none of the above - instead of being composed of the numbers that computers fancy, we have spreadsheets with text data or tweets with references to places, streets, addresses, and so on.</p>
-<p>Unfortunately, you can&#39;t just put this data on a map - the words &quot;United States&#39; mean many different things, like a centroid of the continental US, or polygon boundaries of all states plus Alaska, DC, and Hawaii, or even a box containing all of the above. Thus it&#39;s a rough translation we call &#39;geocoding&#39; that turns rough text descriptions into data we can directly use - usually vector data.</p>
-<p>Reverse geocoding works just as you might guess. Have you ever wondered how mobile applications turn your current location into into an address for a driver or delivery-person? That&#39;s reverse geocoding: your phone knows its exact coordinate position (vector data) via the GPS, and that location is reverse geocoded to an address.</p>
-<p>Both geocoding and reverse geocoding can be very tricky problems to solve. Coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings all contribute to the difficulty in turning addresses into vectors, or vice versa.</p>
+<p>A great deal of geographic data is none of the above - instead of being composed of the numbers that computers understand, it is stored as text data - references to placenames, streets, addresses, and so on.</p>
+<p>Unfortunately, this isn&#39;t directly mappable. Due to variance in naming and the many definitions of place, there&#39;s an indirect and often inaccurate process involved in transforming the words &#39;United States&#39; into the point <code>-120, 40</code>. This process is what we call <strong>geocoding</strong>.</p>
+<p>The opposite process is <strong>reverse geocoding</strong>, where the readily available data is precise geographic positions, and the objective is a human description, like <code>United States</code> or <code>1714 14th Street</code>. Likewise, this isn&#39;t always accurate - one place one earth can be inside of overlapping and conflicting boundaries or between address points.</p>
+<p>Geocoding and reverse geocoding can be very tricky: coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings contribute to the difficulty in turning addresses into coordinates, or vice versa.</p>
 <h2 id="data-collection">Data Collection</h2>
 <p>Map data has been collected in countless ways through the years - everything from sailors logs to twitter creates data. Currently, there are a few major sources that merit discussion:</p>
 <p><strong>GPS</strong>, the satellite constellation that gives your cell phone a blue dot on the map, is the foundation of collecting accurate vector data. Surveyors will drive with highly accurate GPS units and combine their results into something trustworthy.</p>
@@ -102,6 +103,7 @@
 <p>Edges blending into math and art</p>
 <h3 id="license">License</h3>
 <p><a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported</a></p>
+<h4 id="-report-errata-https-tmcw-wufoo-com-forms-mapschool-feedback-"><a href="https://tmcw.wufoo.com/forms/mapschool-feedback/">Report Errata</a>.</h4>
 
             </div>
         </div>
