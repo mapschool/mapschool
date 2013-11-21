@@ -10,6 +10,10 @@ Fundamentally, geographical data is either **raster** or **vector** - composed o
 
 Raster data is how you'd store pictures of the earth, like the kinds taken from satellites, but that's not all that you would use it for. Pixels don't need to have colors - instead, each pixel can have a number that represents height and the raster data as a whole stores elevation data. Or pixels can store temperature or reflection data and be useful for environmental work.
 
+##### Raster Bands
+
+Since raster data can represent a lot of different things, what a pixel contains is pretty freeform: we call its contents 'bands'. A normal image has three familiar bands: Red, Green, and Blue. Combined, they make a picture we're familiar with. Some raster data can have fewer bands, like just one for Elevation, or some can have a lot more - not just visible colors, but wavelengths we can't see, like infrared and ultraviolet. When raster data is analyzed and displayed, you can combine and pick bands to use to suit what you're looking for.
+
 ##### Raster Formats
 
 Raster formats that aim to compact data and make it accessible fast for analysis and display. Some of them are geospatially-enabled versions of common image formats, [GeoTIFF](http://trac.osgeo.org/geotiff/) and JPEG2000.
@@ -102,7 +106,9 @@ Symbolic techniques include anything representable in graphics or even 3D, so le
 
 ## Sequential & Categorical
 
-Symbolization tends to highlight two different characteristics of data: the sequential and categorical.
+Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential, or continuous data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100. Categorical, or discrete data is, instead, one of a set number of values - like 'true', 'false', 'democrat' or 'republican'.
+
+This division between data is one of the main concerns for symbolization - a sequential datasource would fit with a scaled point map whereas categorical data would work with multiple symbols for markers, and so on.
 
 ### Choropleth
 
