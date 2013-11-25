@@ -38,7 +38,7 @@ Vector data is used to store roads, buildings, points of interest, and other thi
 
 The most established vector format is the [Shapefile](http://en.wikipedia.org/wiki/Shapefile) - a simple, file-based format that awkwardly spreads the necessary data between four separate file - `.shp`, `.prj`, `.shx`, and `.dbf`. Shapefiles are binary data, so opening them in a text editor won't show anything accessible.
 
-[GeoJSON](http://geojson.org/) and [TopoJSON](https://github.com/mbostock/topojson) are two newer formats based on [JSON](http://www.json.org/) text encoding. Being text-based, they are simpler to implement in software than Shapefiles, and have become the standard in new web software.
+[GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson), and [KML](http://developers.google.com/kml) are newer formats based on [JSON](http://www.json.org/) and [XML](http://en.wikipedia.org/wiki/XML) text encoding, respectively. Being text-based, they tend to be simpler to implement in software than Shapefiles, and combined with additional flexibility and features, they have become the standard in new web software.
 
 ### Topology
 
