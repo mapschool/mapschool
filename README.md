@@ -1,3 +1,9 @@
+What is a map? Examples of maps are common, interspersed in driving directions, visualizations, and political boundary disputes. Let's look deeper and think about the fundamental elements of maps from the eye of the creator.
+
+Maps are fundamentally composed of data. Data is in the abstract, composed of billions of points or just a few polygons, or a photo-like recording of colors and temperature. It is important that data is not specific to a certain usage.
+
+From data, we make numbers, pictures, and decisions. Most commonly we make pictures, in a process called 'symbolization' - deciding what visual elements will represent what different parts of a dataset. We analyze data, which means we transform, aggregate, and summarize it to give different answers and represent different aspects of knowledge. The two tasks of symbolization and analysis are often combined, with symbolization forming the limits of what we can represent and analysis defining the aspects of data we focus on.
+
 # Data
 
 Fundamentally, geographical data is either **raster** or **vector** - composed of pixels, or of geometry. The two formats are commonly used together, like in the case of satellite images as raster data with vector data roads overlaid.
