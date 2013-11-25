@@ -58,11 +58,11 @@ Geocoding and reverse geocoding can be very tricky: coordinate position errors, 
 
 ## Data Collection
 
-Map data has been collected in countless ways through the years - everything from sailors logs to twitter creates data. Currently, there are a few major sources that merit discussion:
+Map data has been collected in countless ways through the years - everything from sailors' logs to geocoded Tweets. Currently, there are a few major sources that merit discussion:
 
 **GPS**, the satellite constellation that gives your cell phone a blue dot on the map, is the foundation of collecting accurate vector data. Surveyors will drive with highly accurate GPS units and combine their results into something trustworthy.
 
-Observational **satellites and airplanes** collect most raster data we have today, constantly taking photos from different altitudes and combining them into something that looks a little like a picture of the world. The same sensors also capture what we call 'non-visible spectrums', like infrared light, that's useful for mapping agriculture. Some tricked-out rigs include [LiDAR](http://en.wikipedia.org/wiki/Lidar), a kind of laser sensor that measures altitude and yields us raster altitude data.
+Observational **satellites and airplanes** collect most raster data we have today, constantly taking photos from different altitudes and combining them into something that looks a little like a picture of the world. The same sensors also capture what we call 'non-visible spectrums', like infrared light that's useful for mapping agriculture. Some tricked-out rigs include [LiDAR](http://en.wikipedia.org/wiki/Lidar), a kind of laser sensor that measures altitude and yields us raster altitude data.
 
 **Corporations, governments, and communities** maintain different world maps of varying detail. For instance, Google and [OpenStreetMap](http://www.openstreetmap.org/) focus on mapping all roads and details about them, and sources like the [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) and [Natural Earth](http://www.naturalearthdata.com/) keep track of political borders.
 
@@ -92,7 +92,7 @@ The most common way to store places on earth is with latitude and longitude valu
 
 **Latitude** values range from -90 at the South Pole to 90 at the North Pole. All along the equator the latitude value is 0.
 
-**Longitude** start at 0 at the Prime Meridian which cuts through Africa and Greenwich, and extend to -180 and 180 at the antemeridian.
+**Longitude** start at 0 at the Prime Meridian which cuts through Africa and Greenwich, and extends to -180 and 180 at the antemeridian.
 
 The combination of latitude and longitude is usually called a coordinate, and can be represented as 'latitude, longitude', or 'longitude, latitude': historically, the former was standard, but 'longitude, latitude' has recently gained popularity because it mirrors the 'X, Y' ordering of coordinates in math's euclidean space.
 
@@ -156,7 +156,7 @@ Likewise, raster data can be vectorized in a number of ways. On raster satellite
 
 With geographic data, it's possible to simulate certain natural processes, and this simulation is a big part of what working mappers do. Given elevation data for a mountain range, it's possible to simulate highlights and shadows for those mountains in light, in a process called hillshading.
 
-More complex processes are also possible, like determining where water will collect after rainfall, in a process called a watershed, or determining everywhere on the map that will be viewable if you're standing at a mountaintop, called a 'viewshed'.
+More complex processes are also possible, like determining where water will collect after rainfall, called a 'watershed', or determining everywhere on the map that will be visible if you're standing at a mountaintop, called a 'viewshed'.
 
 ### Aggregation
 
