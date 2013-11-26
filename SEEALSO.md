@@ -13,6 +13,7 @@ People have tried this before.
 * http://courses.ncsu.edu/mea582/common/GIS_anal_lecture/GIS_Anal_Lectall.html
 * http://skagit.meas.ncsu.edu/~helena/
 * http://www.qgis.org/en/docs/gentle_gis_introduction/index.html
+* https://github.com/maboa/shape-journalism
 
 #### Books
 
