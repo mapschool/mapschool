@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title><%= title %></title>
+        <title>map school: Geocoding</title>
         <link rel='stylesheet' type='text/css' href='css/site.css' />
         <meta http-equiv='content-type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
@@ -10,14 +10,18 @@
     </head>
     <body>
         <div class='header'>
-            <h1><a href='./'><%= title %></a></h1>
+            <h1><a href='./'>map school: Geocoding</a></h1>
             <p>a free <a href='https://github.com/tmcw/mapschool'>open</a> introduction
             to geo.</p>
         </div>
         <a class='feedback' href='https://tmcw.wufoo.com/forms/mapschool-feedback/' target='_blank'>feedback</a>
         <div class='wrap'>
             <div class='content'>
-                <%= content %>
+                <p>A great deal of geographic data is none of the above - instead of being composed of the numbers that computers understand, it is stored as text data - references to placenames, streets, addresses, and so on.</p>
+<p>Unfortunately, this isn&#39;t directly mappable. Due to variance in naming and the many definitions of place, there&#39;s an indirect and often inaccurate process involved in transforming the words &#39;United States&#39; into the point <code>-120, 40</code>. This process is what we call <strong>geocoding</strong>.</p>
+<p>The opposite process is <strong>reverse geocoding</strong>, where the readily available data is precise geographic positions, and the objective is a human description, like <code>United States</code> or <code>1714 14th Street</code>. Likewise, this isn&#39;t always accurate - one place one earth can be inside of overlapping and conflicting boundaries or between address points.</p>
+<p>Geocoding and reverse geocoding can be very tricky: coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings contribute to the difficulty in turning addresses into coordinates, or vice versa.</p>
+
             </div>
         </div>
         <script type="text/javascript">

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title><%= title %></title>
+        <title>map school: Interpolation</title>
         <link rel='stylesheet' type='text/css' href='css/site.css' />
         <meta http-equiv='content-type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
@@ -10,14 +10,17 @@
     </head>
     <body>
         <div class='header'>
-            <h1><a href='./'><%= title %></a></h1>
+            <h1><a href='./'>map school: Interpolation</a></h1>
             <p>a free <a href='https://github.com/tmcw/mapschool'>open</a> introduction
             to geo.</p>
         </div>
         <a class='feedback' href='https://tmcw.wufoo.com/forms/mapschool-feedback/' target='_blank'>feedback</a>
         <div class='wrap'>
             <div class='content'>
-                <%= content %>
+                <p>Whereas aggregation takes lots of data and distills it into something simpler to analyze and visualize, interpolation &#39;fills in the blanks&#39; between values. Interpolation is often used for datasets like elevation, where you have raster data values that records the height of every inch of a mountain, but there are a few places missing from the data - what programmers call <code>null</code> values.</p>
+<p>Interpolation looks at the values around the &#39;blanks&#39; and assumes that the missing values are basically similar to what&#39;s around them - a missing pixel at the top of a mountain will be assumed to be pretty high, while one in a valley is assumed to be low.</p>
+<p>Interpolation can happen on a vector data level as well, through the Voronoi algorithm, that takes a set of points and turns them into polygons of all of the area around them.</p>
+
             </div>
         </div>
         <script type="text/javascript">

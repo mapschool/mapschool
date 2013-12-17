@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title><%= title %></title>
+        <title>map school: Point</title>
         <link rel='stylesheet' type='text/css' href='css/site.css' />
         <meta http-equiv='content-type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
@@ -10,14 +10,17 @@
     </head>
     <body>
         <div class='header'>
-            <h1><a href='./'><%= title %></a></h1>
+            <h1><a href='./'>map school: Point</a></h1>
             <p>a free <a href='https://github.com/tmcw/mapschool'>open</a> introduction
             to geo.</p>
         </div>
         <a class='feedback' href='https://tmcw.wufoo.com/forms/mapschool-feedback/' target='_blank'>feedback</a>
         <div class='wrap'>
             <div class='content'>
-                <%= content %>
+                <p>Point maps are a better alternative for absolute values - the only geometry that they preserve is a single point for each feature.</p>
+<p>The specific point or marker used in this style varies tremendously - Coloring points based on their sequential or categorical value can be useful, but points can also be scaled to different sizes to show their relative value. These scaled symbols can be any shape or image, such as circles, squares, or pictures of what they represent. In cases where there are multiple values that total up, scaled pie charts can be a terrific way to visualize what would otherwise be a complex dataset. </p>
+<p>Care must be taken to not show too many points at once, as this will make a map difficult to read. In cases where there are too many points, a choropleth with aggregated values from the points may be a good alternative. Another alternative is to use clustering, where crowded points are grouped together until the map is zoomed in closer.</p>
+
             </div>
         </div>
         <script type="text/javascript">
