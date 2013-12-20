@@ -1,3 +1,6 @@
+% map school
+% Tom MacWright
+
 # map school
 
 What is a map? Examples of maps are common, interspersed in driving directions, visualizations, and political boundary disputes. Let's look deeper and think about the fundamental elements of maps from the eye of the creator.

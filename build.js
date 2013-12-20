@@ -3,7 +3,13 @@ var _ = require('underscore'),
     s = require('underscore.string'),
     fs = require('fs');
 
-var lexed = marked.lexer(fs.readFileSync('README.md', 'utf8'));
+function rmcomments(_) {
+    return _.split('\n').filter(function(l) {
+        return (l.indexOf('%') !== 0);
+    }).join('\n');
+}
+
+var lexed = marked.lexer(rmcomments(fs.readFileSync('README.md', 'utf8')));
 
 var chunks = [];
 
@@ -35,7 +41,7 @@ chunks.forEach(function(c) {
     }
 });
 
-var lexed = marked.lexer(fs.readFileSync('README.md', 'utf8'));
+var lexed = marked.lexer(rmcomments(fs.readFileSync('README.md', 'utf8')));
 lexed.forEach(function(l) {
     if (l.type == 'heading') {
         l.text = '[' + l.text + '](section-' + s.slugify(l.text) + '.html)';
