@@ -14,7 +14,7 @@
             <p>a free <a href='https://github.com/tmcw/mapschool'>open</a> introduction
             to geo.</p>
         </div>
-        <a class='feedback' href='https://tmcw.wufoo.com/forms/mapschool-feedback/' target='_blank'>feedback</a>
+        <a class='feedback' href='https://tmcw.wufoo.com/forms/mapschool-feedback/'>feedback</a>
         <div class='wrap'>
             <div class='content'>
                 <h1 id="-map-school-section-map-school-html-"><a href="section-map-school.html">map school</a></h1>
@@ -57,10 +57,6 @@
 <p>There are many different filetypes and conventions for storing geographical data, and thus a variety of tools to translate amongst different representations. Data is stored in databases or in individual files, but the practical difference between the two is not necessarily important.</p>
 <h1 id="-information-section-information-html-"><a href="section-information.html">Information</a></h1>
 <p>What is a map, graphically</p>
-<h2 id="-datum-section-datum-html-"><a href="section-datum.html">Datum</a></h2>
-<p>A geographic datum is a specific way of measuring places on earth. Back in the day, this was a hard problem, since surveyors would require a high level of accuracy for specific areas: measurements down to the inch for a town. And so, instead of just saying latitude, longitude, we&#39;d say &quot;meters from this spot measured North/South.&quot;</p>
-<p>Practicing cartographers don&#39;t need to know much about the internal operations of datums anymore, since it&#39;s handled in software and most special formats can be automatically translated. A global standard called WGS84 caught on for general-purpose mapping and is the recommended way to store data.</p>
-<p>Though you don&#39;t often need to know the details of transforming between datums, when working with geo data from different sources it is <em>very</em> important that you confirm that the datums match. Working with data in different map datums can result in non-trivial errors, particularly at small scales on the order of 0-200m.</p>
 <h2 id="-latitude-longitude-section-latitude-longitude-html-"><a href="section-latitude-longitude.html">Latitude &amp; Longitude</a></h2>
 <p>The most common way to store places on earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like <code>38° 32&#39;</code>, but the new standard is to represent them as simple numbers, like <code>38.2</code>, that are easy for computers to understand.</p>
 <p><img src="img/latlon.png" alt=""></p>
