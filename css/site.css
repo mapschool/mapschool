@@ -1,6 +1,7 @@
 body {
     margin:0;
-    line-height:150%;
+    font:normal 16px/30px 'Georgia', serif;
+    color:#222;
 }
 
 .header {
@@ -11,6 +12,11 @@ body {
 
 .header p {
     color:#555;
+}
+
+nav a {
+    display:inline-block;
+    padding:0 10px;
 }
 
 a {
@@ -42,23 +48,4 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
     text-decoration:underline;
-}
-
-.feedback {
-    display:block;
-    text-decoration:none;
-    position:absolute;
-    width:100px;
-    height:100px;
-    right:20px;
-    top:20px;
-    border-radius:100px;
-    text-align:center;
-    vertical-align:center;
-    line-height:100px;
-    background:#fff;
-}
-
-.feedback:hover {
-    background:#ffe;
 }
