@@ -81,7 +81,7 @@ There are many different filetypes and conventions for storing geographical data
 
 # Information
 
-What is a map, graphically
+Maps are visualized information: at one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on earth. Between data and visualization is a transformation we call 'projection' - in which places on the massive sphere of earth become places on usually flat surfaces like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and intepret.
 
 ## Latitude & Longitude
 
@@ -131,7 +131,7 @@ The selection of colors in a choropleth map is generally called the 'palette' or
 
 Point maps are a better alternative for absolute values - the only geometry that they preserve is a single point for each feature.
 
-The specific point or marker used in this style varies tremendously - Coloring points based on their sequential or categorical value can be useful, but points can also be scaled to different sizes to show their relative value. These scaled symbols can be any shape or image, such as circles, squares, or pictures of what they represent. In cases where there are multiple values that total up, scaled pie charts can be a terrific way to visualize what would otherwise be a complex dataset. 
+The specific point or marker used in this style varies tremendously - Coloring points based on their sequential or categorical value can be useful, but points can also be scaled to different sizes to show their relative value. These scaled symbols can be any shape or image, such as circles, squares, or pictures of what they represent. In cases where there are multiple values that total up, scaled pie charts can be a terrific way to visualize what would otherwise be a complex dataset.
 
 Care must be taken to not show too many points at once, as this will make a map difficult to read. In cases where there are too many points, a choropleth with aggregated values from the points may be a good alternative. Another alternative is to use clustering, where crowded points are grouped together until the map is zoomed in closer.
 
@@ -175,14 +175,12 @@ Interpolation looks at the values around the 'blanks' and assumes that the missi
 
 Interpolation can happen on a vector data level as well, through the Voronoi algorithm, that takes a set of points and turns them into polygons of all of the area around them.
 
-## Conceptual review
+## Afterword
 
-The unity of data
+We hope this has been an enlightening and inspiring read: there is so much potential in this field and so many unanswered questions. Maps are a connected topic, stretching into art, mathematics, physics, ecology, and so much more.
 
-Edges blending into math and art
+We'd love if you can [report any issues or file any suggestions](https://tmcw.wufoo.com/forms/mapschool-feedback/) that came to mind in your read.
 
 ### License
 
 [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US)
-
-#### [Report Errata](https://tmcw.wufoo.com/forms/mapschool-feedback/).

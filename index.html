@@ -61,7 +61,7 @@
 <p>There are many ways to store geographic data. Data can be stored as printouts, but recently it is more popular to store it in a way easily accessed and shared, digitally.</p>
 <p>There are many different filetypes and conventions for storing geographical data, and thus a variety of tools to translate amongst different representations. Data is stored in databases or in individual files, but the practical difference between the two is not necessarily important.</p>
 <h1 id="-information-section-information-html-"><a href="section-information.html">Information</a></h1>
-<p>What is a map, graphically</p>
+<p>Maps are visualized information: at one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on earth. Between data and visualization is a transformation we call &#39;projection&#39; - in which places on the massive sphere of earth become places on usually flat surfaces like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and intepret.</p>
 <h2 id="-latitude-longitude-section-latitude-longitude-html-"><a href="section-latitude-longitude.html">Latitude &amp; Longitude</a></h2>
 <p>The most common way to store places on earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like <code>38° 32&#39;</code>, but the new standard is to represent them as simple numbers, like <code>38.2</code>, that are easy for computers to understand.</p>
 <p><img src="img/latlon.png" alt=""></p>
@@ -86,7 +86,7 @@
 <p>The selection of colors in a choropleth map is generally called the &#39;palette&#39; or the &#39;color ramp&#39;, especially when the colors are sequential. <a href="http://colorbrewer2.org/">ColorBrewer</a> is a well-researched set of colors that are understandable and clear.</p>
 <h3 id="-point-section-point-html-"><a href="section-point.html">Point</a></h3>
 <p>Point maps are a better alternative for absolute values - the only geometry that they preserve is a single point for each feature.</p>
-<p>The specific point or marker used in this style varies tremendously - Coloring points based on their sequential or categorical value can be useful, but points can also be scaled to different sizes to show their relative value. These scaled symbols can be any shape or image, such as circles, squares, or pictures of what they represent. In cases where there are multiple values that total up, scaled pie charts can be a terrific way to visualize what would otherwise be a complex dataset. </p>
+<p>The specific point or marker used in this style varies tremendously - Coloring points based on their sequential or categorical value can be useful, but points can also be scaled to different sizes to show their relative value. These scaled symbols can be any shape or image, such as circles, squares, or pictures of what they represent. In cases where there are multiple values that total up, scaled pie charts can be a terrific way to visualize what would otherwise be a complex dataset.</p>
 <p>Care must be taken to not show too many points at once, as this will make a map difficult to read. In cases where there are too many points, a choropleth with aggregated values from the points may be a good alternative. Another alternative is to use clustering, where crowded points are grouped together until the map is zoomed in closer.</p>
 <h2 id="-publishing-section-publishing-html-"><a href="section-publishing.html">Publishing</a></h2>
 <h2 id="-analysis-section-analysis-html-"><a href="section-analysis.html">Analysis</a></h2>
@@ -108,12 +108,11 @@
 <p>Whereas aggregation takes lots of data and distills it into something simpler to analyze and visualize, interpolation &#39;fills in the blanks&#39; between values. Interpolation is often used for datasets like elevation, where you have raster data values that records the height of every inch of a mountain, but there are a few places missing from the data - what programmers call <code>null</code> values.</p>
 <p>Interpolation looks at the values around the &#39;blanks&#39; and assumes that the missing values are basically similar to what&#39;s around them - a missing pixel at the top of a mountain will be assumed to be pretty high, while one in a valley is assumed to be low.</p>
 <p>Interpolation can happen on a vector data level as well, through the Voronoi algorithm, that takes a set of points and turns them into polygons of all of the area around them.</p>
-<h2 id="-conceptual-review-section-conceptual-review-html-"><a href="section-conceptual-review.html">Conceptual review</a></h2>
-<p>The unity of data</p>
-<p>Edges blending into math and art</p>
+<h2 id="-afterword-section-afterword-html-"><a href="section-afterword.html">Afterword</a></h2>
+<p>We hope this has been an enlightening and inspiring read: there is so much potential in this field and so many unanswered questions. Maps are a connected topic, stretching into art, mathematics, physics, ecology, and so much more.</p>
+<p>We&#39;d love if you can <a href="https://tmcw.wufoo.com/forms/mapschool-feedback/">report any issues or file any suggestions</a> that came to mind in your read.</p>
 <h3 id="-license-section-license-html-"><a href="section-license.html">License</a></h3>
 <p><a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported</a></p>
-<h4 id="-report-errata-https-tmcw-wufoo-com-forms-mapschool-feedback-section-report-erratahttpstmcwwufoocomformsmapschool-feedback-html-"><a href="section-report-erratahttpstmcwwufoocomformsmapschool-feedback.html"><a href="https://tmcw.wufoo.com/forms/mapschool-feedback/">Report Errata</a>.</a></h4>
 
             </div>
         </div>
