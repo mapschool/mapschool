@@ -2,11 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>map school</title>
+        <title>map school: a free introduction to geo</title>
         <link rel='stylesheet' type='text/css' href='css/site.css' />
         <meta http-equiv='content-type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
-        <meta name="description" content="a brief introduction to map and geospatial concepts">
+        <meta name="description" content='a brief introduction to map and geospatial concepts'>
     </head>
     <body>
         <div class='header'>
@@ -44,7 +44,7 @@
 <p><a href="http://geojson.org/">GeoJSON</a>, <a href="https://github.com/mbostock/topojson">TopoJSON</a>, and <a href="http://developers.google.com/kml">KML</a> are newer formats based on <a href="http://www.json.org/">JSON</a> and <a href="http://en.wikipedia.org/wiki/XML">XML</a> text encoding, respectively. Being text-based, they tend to be simpler to implement in software than Shapefiles, and combined with additional flexibility and features, they have become the standard in new web software.</p>
 <h3 id="-topology-section-topology-html-"><a href="section-topology.html">Topology</a></h3>
 <p>In addition to storing places and shapes, some vector data keeps track of topology, the relationships between different shapes that touch. For instance, political borders often touch - you can stand with one foot in Arizona and another in New Mexico. A lot of geospatial data, though, will have one shape that represents Arizona and another that represents New Mexico, with two borders that precisely overlap, but have no other association.</p>
-<p>This gets tricky when you want to do something like ask &#39;which states touch?&#39; or simplify the shapes of objects while preserving borders lined up. We use the concept of topology: some vector data, instead of storing a shape of Arizona and another of New Mexico, saves a bunch of lines and keeps track of which ones form the boundary of which object. So, the border between Arizona and New Mexico is a single line that&#39;s used to draw the border of both states, and if you have the line, it changes the shape of both states.</p>
+<p>This gets tricky when you want to do something like ask &#39;which states touch?&#39; or simplify the shapes of objects while preserving borders lined up. We use the concept of topology: some vector data, instead of storing a shape of Arizona and another of New Mexico, saves a bunch of lines and keeps track of which ones form the boundary of which object. So, the border between Arizona and New Mexico is a single line that&#39;s used to draw the border of both states, and if you modify the line, it changes the shape of both states.</p>
 <h2 id="-geocoding-section-geocoding-html-"><a href="section-geocoding.html">Geocoding</a></h2>
 <p>A great deal of geographic data is none of the above - instead of being composed of the numbers that computers understand, it is stored as text data - references to placenames, streets, addresses, and so on.</p>
 <p>Unfortunately, this isn&#39;t directly mappable. Due to variance in naming and the many definitions of place, there&#39;s an indirect and often inaccurate process involved in transforming the words &#39;United States&#39; into the point <code>-120, 40</code>. This process is what we call <strong>geocoding</strong>.</p>
