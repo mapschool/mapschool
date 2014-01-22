@@ -22,7 +22,13 @@
             <div class='content'>
                 <p>Whereas aggregation takes lots of data and distills it into something simpler to analyze and visualize, interpolation &#39;fills in the blanks&#39; between values. Interpolation is often used for datasets like elevation, where you have raster data values that records the height of every inch of a mountain, but there are a few places missing from the data - what programmers call <code>null</code> values.</p>
 <p>Interpolation looks at the values around the &#39;blanks&#39; and assumes that the missing values are basically similar to what&#39;s around them - a missing pixel at the top of a mountain will be assumed to be pretty high, while one in a valley is assumed to be low.</p>
-<p>Interpolation can happen on a vector data level as well, through the Voronoi algorithm, that takes a set of points and turns them into polygons of all of the area around them.</p>
+<p>There are many ways to interpolate point data:</p>
+<ul>
+<li><strong>Heatmaps</strong> assign each point a weight and represent density of point values in &quot;hotter&quot; colors.</li>
+<li><strong>Contour lines</strong> take point sample data and draw lines around them that represent a continuous estimated value. Elevation maps often use this technique.</li>
+<li>A <strong>TIN</strong> (Triangulated Irregular Network) draws triangles between points that can be used to visualize terrains.</li>
+<li><strong>Voronoi diagrams</strong> take a set of points and turn them into polygons of all of the area around them.</li>
+</ul>
 
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
