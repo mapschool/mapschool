@@ -166,6 +166,8 @@ Whereas aggregation takes lots of data and distills it into something simpler to
 
 Interpolation looks at the values around the 'blanks' and assumes that the missing values are basically similar to what's around them - a missing pixel at the top of a mountain will be assumed to be pretty high, while one in a valley is assumed to be low.
 
+There are many methodologies for interpolating point data. A heatmap is one notable example, where each point is given a weight based on its value, which is then represented in terms of a "hotter" color. Another common example is contour lines. Contour lines take point sample data and draw lines around them that represent a continuous estimated value. This technique is often employed in the creation of elevation maps.
+
 Interpolation can happen on a vector data level as well, through the Voronoi algorithm, that takes a set of points and turns them into polygons of all of the area around them.
 
 ## Conceptual review
