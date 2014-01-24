@@ -6,3 +6,6 @@ mapstory is what it is thanks to the collective hard work of its authors:
 * [Ramiro Gómez](http://ramiro.org/)
 * [Rob Story](https://github.com/wrobstory)
 * [Tom MacWright](http://www.macwright.org/)
+
+the mapstory favicon is from the [Maki icon project](https://www.mapbox.com/maki/).
+Its source is licensed BSD.
