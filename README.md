@@ -11,7 +11,7 @@ From data, we make numbers, pictures, and decisions. Most commonly we make pictu
 
 # Data
 
-Fundamentally, geographical data is either **raster** or **vector** - composed of pixels, or of geometry. The two formats are commonly used together, like in the case of satellite images as raster data with vector data roads overlaid.
+Fundamentally, geographical data is either **raster** or **vector** - composed of pixels, or of geometry. The two types are often combined, like when vector road data is overlaid over raster satellite data.
 
 ## Raster
 
@@ -112,6 +112,8 @@ Fundamentally, data doesn't look like anything: a list of pixel values or road l
 Symbolic techniques include anything representable in graphics or even 3D, so let's only look at a few:
 
 ## Sequential & Categorical
+
+![](img/scales.jpg)
 
 Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential, or continuous data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100. Categorical, or discrete data is, instead, one of a set number of values - like 'true', 'false', 'democrat' or 'republican'.
 

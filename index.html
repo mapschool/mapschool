@@ -25,7 +25,7 @@
 <p>Maps are fundamentally composed of data. Data is in the abstract, composed of billions of points or just a few polygons, or a photo-like recording of colors and temperature. It is important that data is not specific to a certain usage.</p>
 <p>From data, we make numbers, pictures, and decisions. Most commonly we make pictures, in a process called &#39;symbolization&#39; - deciding what visual elements will represent what different parts of a dataset. We analyze data, which means we transform, aggregate, and summarize it to give different answers and represent different aspects of knowledge. The two tasks of symbolization and analysis are often combined, with symbolization forming the limits of what we can represent and analysis defining the aspects of data we focus on.</p>
 <h1 id="-data-section-data-html-"><a href="section-data.html">Data</a></h1>
-<p>Fundamentally, geographical data is either <strong>raster</strong> or <strong>vector</strong> - composed of pixels, or of geometry. The two formats are commonly used together, like in the case of satellite images as raster data with vector data roads overlaid.</p>
+<p>Fundamentally, geographical data is either <strong>raster</strong> or <strong>vector</strong> - composed of pixels, or of geometry. The two types are often combined, like when vector road data is overlaid over raster satellite data.</p>
 <h2 id="-raster-section-raster-html-"><a href="section-raster.html">Raster</a></h2>
 <p><img src="img/raster.png" alt=""></p>
 <p><strong>Raster</strong> data is like a picture that you would take with a digital camera: at the lowest level of abstraction, it is a list of pixels with values. When you &#39;zoom in&#39; and look closer at raster data, at some point you&#39;ll see these discrete pixels, and it will look pixelated.</p>
@@ -76,6 +76,7 @@
 <p>Fundamentally, data doesn&#39;t look like anything: a list of pixel values or road lines is just as well represented in a spreadsheet or a chart as it is on a map. Thus to &#39;convert&#39; is not the right word for what we do with data: at the most basic level, everything is a decision.</p>
 <p>Symbolic techniques include anything representable in graphics or even 3D, so let&#39;s only look at a few:</p>
 <h2 id="-sequential-categorical-section-sequential-categorical-html-"><a href="section-sequential-categorical.html">Sequential &amp; Categorical</a></h2>
+<p><img src="img/scales.jpg" alt=""></p>
 <p>Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential, or continuous data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100. Categorical, or discrete data is, instead, one of a set number of values - like &#39;true&#39;, &#39;false&#39;, &#39;democrat&#39; or &#39;republican&#39;.</p>
 <p>This division between data is one of the main concerns for symbolization - a sequential datasource would fit with a scaled point map whereas categorical data would work with multiple symbols for markers, and so on.</p>
 <h3 id="-choropleth-section-choropleth-html-"><a href="section-choropleth.html">Choropleth</a></h3>
