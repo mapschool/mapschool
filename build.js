@@ -42,12 +42,26 @@ chunks.forEach(function(c) {
 });
 
 var lexed = marked.lexer(rmcomments(fs.readFileSync('README.md', 'utf8')));
+
 lexed.forEach(function(l) {
     if (l.type == 'heading') {
         l.text = '[' + l.text + '](section-' + s.slugify(l.text) + '.html)';
     }
 });
-var content = marked.parser(lexed);
+
+var renderer = new marked.Renderer();
+
+renderer.heading = function(text, level) {
+    var escapedText;
+    escapedText = s.slugify(text);
+    return '<h' + level + ' class="h" id="' + escapedText + '">' +
+        text +
+        '<a class="permalink" href="#' + escapedText + '">#</a>' +
+        '<a class="permalink" href="section-' + escapedText + '.html">&rarr;</a>' +
+        '</h' + level + '>\n';
+};
+
+var content = marked(rmcomments(fs.readFileSync('README.md', 'utf8')), { renderer: renderer });
 
 fs.writeFileSync('index.html',
     _.template(fs.readFileSync('template._', 'utf8'))({

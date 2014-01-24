@@ -49,3 +49,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
     text-decoration:underline;
 }
+
+.permalink {
+    display:none;
+}
+
+.h {
+    position:relative;
+}
+
+.h:hover .permalink {
+    color:lightblue;
+    display:inline-block;
+}
