@@ -7,5 +7,5 @@ mapstory is what it is thanks to the collective hard work of its authors:
 * [Rob Story](https://github.com/wrobstory)
 * [Tom MacWright](http://www.macwright.org/)
 
-the mapstory favicon is from the [Maki icon project](https://www.mapbox.com/maki/).
+the mapschool favicon is from the [Maki icon project](https://www.mapbox.com/maki/).
 Its source is licensed BSD.
