@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>map school: Information: a free introduction to geo</title>
+        <title>map school: The Shape of the Earth: a free introduction to geo</title>
         <link rel='stylesheet' type='text/css' href='css/site.css' />
         <meta http-equiv='content-type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class='header'>
-            <h1><a href='./'>map school: Information</a></h1>
+            <h1><a href='./'>map school: The Shape of the Earth</a></h1>
             <p>a free introduction to geo.</p>
             <nav>
                 <a href='https://github.com/tmcw/mapschool'>code</a><a
@@ -21,7 +21,10 @@
         </div>
         <div class='wrap'>
             <div class='content'>
-                <p>Maps are visualized information: At one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on earth. Between data and visualization is a transformation we call &#39;projection&#39; - in which places on earth become places on usually flat surfaces, like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and intepret.</p>
+                <p>Storing and presenting the world brings us to the question of what shape it is - can latitude and longitude values be mapped to a perfect sphere and back, and retain their accuracy spatially?</p>
+<p>Since the earth is a spinning object and its components can change shape, it bulges at the middle - so instead of being a sphere, it&#39;s actually more similar in shape to a <a href="http://en.wikipedia.org/wiki/Oblate_spheroid">oblate spheroid</a>. If you look even closer, that isn&#39;t entirely true either - the earth is covered in <a href="http://en.wikipedia.org/wiki/Topography">elevation differences</a> like mountains and valleys, and even manmade changes like cities.</p>
+<p>For day-to-day work, we use different estimates of this shape: standards like <a href="http://en.wikipedia.org/wiki/WGS84">WGS84</a> define precise values for the length of both of the earth&#39;s axes, so we can estimate for a <a href="http://en.wikipedia.org/wiki/Reference_ellipsoid">reference ellipsoid</a> rather than a sphere. Local measurements and science that relies on precise surface values can also use <a href="https://en.wikipedia.org/wiki/Geoid">geoid models</a>, which are three-dimensional calculations of theoretical ocean heights.</p>
+<p>This branch of earth sciences, called <a href="https://en.wikipedia.org/wiki/Geodesy">geodesy</a>, is a continuing project since our ability to model and measure the earth moves quickly and the earth itself changes in shape.</p>
 
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
