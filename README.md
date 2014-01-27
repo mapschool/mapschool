@@ -3,9 +3,9 @@
 
 # map school
 
-What is a map? Examples of maps are common, interspersed in driving directions, visualizations, and political boundary disputes. Let's look deeper and think about the fundamental elements of maps from the eye of the creator.
+What is a map? Until the 1980s, maps were painstaking documents created by hand (video: [Caught Mapping (1940)](https://archive.org/details/CaughtMa1940). These days maps are almost always made with the help of a computer. Maps today are commonplace, interspersed in driving directions, visualizations, and political boundary disputes. Let's look deeper and think about the fundamental elements of maps from the eye of the creator.
 
-Maps are fundamentally composed of data. Data is in the abstract, composed of billions of points or just a few polygons, or a photo-like recording of colors and temperature. It is important that data is not specific to a certain usage.
+Computer maps are fundamentally composed of data. Data is in the abstract, composed of billions of points or just a few polygons, or a photo-like recording of colors and temperature. It is important that data is not specific to a certain usage.
 
 From data, we make numbers, pictures, and decisions. Most commonly we make pictures, in a process called 'symbolization' - deciding what visual elements will represent what different parts of a dataset. We analyze data, which means we transform, aggregate, and summarize it to give different answers and represent different aspects of knowledge. The two tasks of symbolization and analysis are often combined, with symbolization forming the limits of what we can represent and analysis defining the aspects of data we focus on.
 
@@ -23,7 +23,7 @@ Raster data is used in pictures of the earth, like those taken by satellites - b
 
 ##### Raster Bands
 
-The pixels in raster data are not necessarily just filled color: we call its contents 'bands'. A normal image has three familiar bands: Red, Green, and Blue. Combined, they make a picture we're familiar with. Some raster data can have fewer bands, like just one for Elevation, or some can have a lot more - not just visible colors, but wavelengths we can't see, like infrared and ultraviolet. When raster data is analyzed and displayed, you can combine and pick bands to use to suit what you're looking for.
+The pixels in raster data are not necessarily just filled color: we call its contents 'bands'. A normal image has three familiar bands: Red, Green, and Blue. Combined, they make a picture we're familiar with. Some raster data can have fewer bands, like just one for elevation, or some can have a lot more - not just visible colors, but wavelengths we can't see, like infrared and ultraviolet. When raster data is analyzed and displayed, you can combine and pick bands to use to suit what you're looking for.
 
 ##### Raster Formats
 
@@ -41,13 +41,13 @@ Vector data is used to store roads, buildings, points of interest, and other thi
 
 ##### Vector Formats
 
-The most established vector format is the [Shapefile](http://en.wikipedia.org/wiki/Shapefile) - a simple, file-based format that awkwardly spreads the necessary data between four separate file - `.shp` (where actual geometry data resides), `.prj` (a string describing the used projection), `.shx` (an index enabling faster searches), and `.dbf` (a database file containing all the data associated with a geometry of the .shp file). Shapefile's geometry are mostly binary data, so opening them in a text editor won't show anything accessible, apart from the .prj file: the database file can be read from LibreOffice Calc because its format is derived from an old database specification.
+The most established vector format is the [Shapefile](http://en.wikipedia.org/wiki/Shapefile) - a simple, file-based format that awkwardly spreads the necessary data between four separate file - `.shp` (where actual geometry data resides), `.prj` (a string describing the used projection), `.shx` (an index enabling faster searches), and `.dbf` (a database file containing all the data associated with a geometry of the .shp file). Shapefile's geometry are mostly binary data, so opening them in a text editor won't show anything accessible, apart from the .prj file, which defines the projection in plain text. The .dbf database file can be read from LibreOffice Calc because its format is derived from an old database specification. However, the old database specification limits the attribute data you can store in a shapefile. For example: the size of the .dbf can't exceed 2 GB, field names can't contain spaces and can't exceed 10 characters, NULL values are not supported, nor are many special characters, [etc.](http://en.wikipedia.org/wiki/Shapefile#Limitations)
 
-[GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson), and [KML](http://developers.google.com/kml) are newer formats based on [JSON](http://www.json.org/) and [XML](http://en.wikipedia.org/wiki/XML) text encoding, respectively. Being text-based, they tend to be simpler to implement in software than Shapefiles, and combined with additional flexibility and features, they have become the standard in new web software.
+[GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson), and [KML](http://developers.google.com/kml) are newer formats based on [JSON](http://www.json.org/) and [XML](http://en.wikipedia.org/wiki/XML) text encoding, respectively. Being text-based, they tend to be simpler to implement in software than Shapefiles, and combined with additional flexibility and features, they have become the standard in new web software. The drawback to GeoJSON is that there are fewer tools built for comparing properties across records easily, so data cleaning and analysis is challenging.
 
 ### Topology
 
-In addition to storing places and shapes, some vector data keeps track of topology, the relationships between different shapes that touch. For instance, political borders often touch - you can stand with one foot in Arizona and another in New Mexico. A lot of geospatial data, though, will have one shape that represents Arizona and another that represents New Mexico, with two borders that precisely overlap, but have no other association.
+In addition to storing places and shapes, some vector data keeps track of topology, the relationships between different shapes. For instance, political borders often touch - you can stand with one foot in Arizona and another in New Mexico. A lot of geospatial data, though, will have one shape that represents Arizona and another that represents New Mexico, with two borders that precisely overlap, but have no other association.
 
 This gets tricky when you want to do something like ask 'which states touch?' or simplify the shapes of objects while preserving borders lined up. We use the concept of topology: some vector data, instead of storing a shape of Arizona and another of New Mexico, saves a bunch of lines and keeps track of which ones form the boundary of which object. So, the border between Arizona and New Mexico is a single line that's used to draw the border of both states, and if you modify the line, it changes the shape of both states.
 
@@ -69,7 +69,7 @@ Map data has been collected in countless ways through the years - everything fro
 
 **GPS**, the satellite constellation that gives your cell phone a blue dot on the map, is the foundation of collecting accurate vector data. Surveyors will drive with highly accurate GPS units and combine their results into something trustworthy.
 
-Observational **satellites and airplanes** collect most raster data we have today, constantly taking photos from different altitudes and combining them into something that looks a little like a picture of the world. The same sensors also capture what we call 'non-visible spectrums', like infrared light that's useful for mapping agriculture. Some tricked-out rigs include [LiDAR](http://en.wikipedia.org/wiki/Lidar), a kind of laser sensor that measures altitude and yields us raster altitude data.
+Observational **satellites and airplanes** collect most raster data we have today, constantly taking photos from different altitudes and combining them into something that looks a little like a picture of the world. The same sensors also capture what we call 'non-visible spectrums', like infrared light that's useful for mapping agriculture and deforestation. Some tricked-out rigs include [LiDAR](http://en.wikipedia.org/wiki/Lidar), a kind of laser sensor that measures altitude and yields us raster altitude data.
 
 **Corporations, governments, and communities** maintain different world maps of varying detail. For instance, Google and [OpenStreetMap](http://www.openstreetmap.org/) focus on mapping all roads and details about them, and sources like the [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) and [Natural Earth](http://www.naturalearthdata.com/) keep track of political borders.
 
