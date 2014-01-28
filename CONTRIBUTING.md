@@ -22,7 +22,8 @@ Prior art is maintained in the `SEEALSO.md` document alongside `mapschool`. Cros
 
 # Practical
 
-`mapschool` is a single page document maintained as [Markdown](http://daringfireball.net/projects/markdown/).
+The content of `mapschool` is a single page document ([`README.md`](https://github.com/tmcw/mapschool/blob/gh-pages/README.md)) maintained in the [Markdown](http://daringfireball.net/projects/markdown/) format. The content in that file is used to generate the web version of this text that lives at at [MapSchool.io](http://mapschool.io/), and so all contributions should be made by editing [`README.md`](https://github.com/tmcw/mapschool/blob/gh-pages/README.md).
+
 It should be readily accessible as a web page, but should also be understandable
 in full as a printout or PDF; that is, it does not rely on dynamic examples or hyperlinks.
 
