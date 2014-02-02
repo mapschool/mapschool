@@ -1,4 +1,4 @@
-mapstory is what it is thanks to the collective hard work of its authors:
+mapschool is what it is thanks to the collective hard work of its authors:
 
 * [Bill Morris](https://github.com/wboykinm)
 * [Eric Fischer](http://www.flickr.com/photos/walkingsf/)
@@ -6,6 +6,8 @@ mapstory is what it is thanks to the collective hard work of its authors:
 * [Ramiro Gómez](http://ramiro.org/)
 * [Rob Story](https://github.com/wrobstory)
 * [Tom MacWright](http://www.macwright.org/)
+* [Stephanie May](https://github.com/mizmay)
+* [Dave Guarino](https://github.com/daguar)
 
 the mapschool favicon is from the [Maki icon project](https://www.mapbox.com/maki/).
 Its source is licensed BSD.
