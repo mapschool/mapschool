@@ -14,9 +14,11 @@
             <h1><a href='./'><%= title %></a></h1>
             <p>a free introduction to geo.</p>
             <nav>
-                <a href='https://github.com/tmcw/mapschool'>code</a><a
-                   href='https://tmcw.wufoo.com/forms/mapschool-feedback/'>feedback</a><a
-                   href='https://raw.github.com/tmcw/mapschool/gh-pages/mapschool.epub'>ebook</a>
+                <a href='./'>home</a>
+                <a href='https://github.com/tmcw/mapschool'>code</a>
+                <a href='https://tmcw.wufoo.com/forms/mapschool-feedback/'>feedback</a>
+                <a href='https://raw.github.com/tmcw/mapschool/gh-pages/mapschool.epub'>ebook</a>
+                <a href='./furtherreading.html'>further reading</a>
             </nav>
         </div>
         <div class='wrap'>
