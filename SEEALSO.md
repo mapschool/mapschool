@@ -9,6 +9,11 @@
   creating and understanding dynamic web maps.
 * [NCGIA Core Curriculum](http://www.geog.ubc.ca/courses/klink/gis.notes/ncgia/toc.html)
 
+## Video
+
+* [Caught Mapping](https://archive.org/details/CaughtMa1940): an educational film
+  from 1940 about hand-produced road maps.
+
 ## Software-Centered
 
 * [QGIS: Gentle GIS Introduction](http://www.qgis.org/en/docs/gentle_gis_introduction/index.html) - a guide to doing GIS with [QGIS](http://qgis.org/en/site/), a popular open source application.
