@@ -77,11 +77,11 @@ Observational **satellites and airplanes** collect most raster data we have toda
 
 There are many ways to store geographic data. Data can be stored as printouts, but recently it is more popular to store it in a way easily accessed and shared, digitally.
 
-There are many different filetypes and conventions for storing geographical data, and thus a variety of tools to translate amongst different representations. Data is stored in databases or in individual files, but the practical difference between the two is not necessarily important.
+There are many different filetypes and conventions for storing geographical data, and thus a variety of tools to translate among different representations. Data is stored in databases or in individual files, but the practical difference between the two is not necessarily important.
 
 # Information
 
-Maps are visualized information: At one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on earth. Between data and visualization is a transformation we call 'projection' - in which places on earth become places on usually flat surfaces, like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and intepret.
+Maps are visualized information: At one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on earth. Between data and visualization is a transformation we call 'projection' - in which places on earth become places on usually flat surfaces, like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and interpret.
 
 ## Latitude & Longitude
 
@@ -91,7 +91,7 @@ The most common way to store places on earth is with latitude and longitude valu
 
 **Latitude** values range from -90 at the South Pole to 90 at the North Pole. All along the equator the latitude value is 0.
 
-**Longitude** start at 0 at the Prime Meridian which cuts through Africa and Greenwich, and extends to -180 and 180 at the antemeridian.
+**Longitude** start at 0 at the Prime Meridian which cuts through Africa and Greenwich, and extends to -180 and 180 at the ante meridian.
 
 The combination of latitude and longitude is usually called a coordinate, and can be represented as 'latitude, longitude', or 'longitude, latitude': historically, the former was standard, but 'longitude, latitude' has recently gained popularity because it mirrors the 'X, Y' ordering of coordinates in math's euclidean space.
 
