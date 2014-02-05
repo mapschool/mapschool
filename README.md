@@ -3,7 +3,7 @@
 
 # map school
 
-What is a map? Until the 1980s, maps were painstaking documents created by hand (video: [Caught Mapping (1940)](https://archive.org/details/CaughtMa1940). These days maps are almost always made with the help of a computer. Maps today are commonplace, interspersed in driving directions, visualizations, and political boundary disputes. Let's look deeper and think about the fundamental elements of maps from the eye of the creator.
+What is a map? Until the 1980s, maps were painstaking documents created by hand (video: [Caught Mapping (1940)](https://archive.org/details/CaughtMa1940)). These days maps are almost always made with the help of a computer. Maps today are commonplace, interspersed in driving directions, visualizations, and political boundary disputes. Let's look deeper and think about the fundamental elements of maps from the eye of the creator.
 
 Computer maps are fundamentally composed of data. Data is in the abstract, composed of billions of points or just a few polygons, or a photo-like recording of colors and temperature. It is important that data is not specific to a certain usage.
 
