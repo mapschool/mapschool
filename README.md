@@ -85,7 +85,7 @@ Maps are visualized information: At one end lie the issues of datums, numbers, a
 
 ## Latitude & Longitude
 
-The most common way to store places on earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like `38° 32'`, but the new standard is to represent them as simple numbers, like `38.2`, that are easy for computers to understand.
+The most common way to store places on earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like `38° 12'`, but the new standard is to represent them as simple numbers, like `38.2`, that are easy for computers to understand.
 
 ![](img/latlon.png)
 
