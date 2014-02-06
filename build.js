@@ -36,7 +36,7 @@ chunks.forEach(function(c) {
         fs.writeFileSync('section-' + s.slugify(c.heading.text) + '.html',
             _.template(fs.readFileSync('template._', 'utf8'))({
                 content: marked.parser(c.sections),
-                title: 'map school: ' + c.heading.text
+                title: 'mapschool: ' + c.heading.text
             }));
     }
 });
@@ -66,5 +66,11 @@ var content = marked(rmcomments(fs.readFileSync('README.md', 'utf8')), { rendere
 fs.writeFileSync('index.html',
     _.template(fs.readFileSync('template._', 'utf8'))({
         content: content,
-        title: 'map school'
+        title: 'mapschool'
+    }));
+
+fs.writeFileSync('furtherreading.html',
+    _.template(fs.readFileSync('template._', 'utf8'))({
+        content: marked(fs.readFileSync('SEEALSO.md', 'utf8')),
+        title: 'mapschool: further reading'
     }));

@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>map school: a free introduction to geo</title>
+        <meta charset='utf-8'>
+        <title>mapschool: a free introduction to geo</title>
         <link rel='stylesheet' type='text/css' href='css/site.css' />
         <meta http-equiv='content-type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
-        <meta name="description" content='a brief introduction to map and geospatial concepts'>
-        <link rel="shortcut icon" href="img/library-24.png">
+        <meta name='description' content='a brief introduction to map and geospatial concepts'>
+        <link rel='shortcut icon' href='img/library-24.png'>
     </head>
     <body>
         <div class='header'>
-            <h1><a href='./'>map school</a></h1>
+            <h1><a href='./'>mapschool</a></h1>
             <p>a free introduction to geo.</p>
             <nav>
-                <a href='https://github.com/tmcw/mapschool'>code</a><a
-                   href='https://tmcw.wufoo.com/forms/mapschool-feedback/'>feedback</a><a
-                   href='https://raw.github.com/tmcw/mapschool/gh-pages/mapschool.epub'>ebook</a>
+                <a href='./'>home</a>
+                <a href='https://github.com/tmcw/mapschool'>code</a>
+                <a href='https://tmcw.wufoo.com/forms/mapschool-feedback/'>feedback</a>
+                <a href='https://raw.github.com/tmcw/mapschool/gh-pages/mapschool.epub'>ebook</a>
+                <a href='./furtherreading.html'>further reading</a>
             </nav>
         </div>
         <div class='wrap'>
             <div class='content'>
                 <h1 class="h" id="map-school">map school<a class="permalink" href="#map-school">#</a><a class="permalink" href="section-map-school.html">&rarr;</a></h1>
-<p>What is a map? Until the 1980s, maps were painstaking documents created by hand (video: <a href="https://archive.org/details/CaughtMa1940">Caught Mapping (1940)</a>). These days maps are almost always made with the help of a computer. Maps today are commonplace, interspersed in driving directions, visualizations, and political boundary disputes. Let&#39;s look deeper and think about the fundamental elements of maps from the eye of the creator.</p>
+<p>What is a map? Until the 1980s, maps were painstaking documents created by hand. These days maps are almost always made with the help of a computer. Maps today are commonplace, interspersed in driving directions, visualizations, and political boundary disputes. Let&#39;s look deeper and think about the fundamental elements of maps from the eye of the creator.</p>
 <p>Computer maps are fundamentally composed of data. Data is in the abstract, composed of billions of points or just a few polygons, or a photo-like recording of colors and temperature. It is important that data is not specific to a certain usage.</p>
 <p>From data, we make numbers, pictures, and decisions. Most commonly we make pictures, in a process called &#39;symbolization&#39; - deciding what visual elements will represent what different parts of a dataset. We analyze data, which means we transform, aggregate, and summarize it to give different answers and represent different aspects of knowledge. The two tasks of symbolization and analysis are often combined, with symbolization forming the limits of what we can represent and analysis defining the aspects of data we focus on.</p>
 <h1 class="h" id="data">Data<a class="permalink" href="#data">#</a><a class="permalink" href="section-data.html">&rarr;</a></h1>
@@ -41,7 +43,7 @@
 <p><strong>Vector</strong> data stores basic geometries rather than pixel data. No matter how much you &#39;zoom in&#39; on vector data, you won&#39;t see pixels: the data stored is composed of geometric points and lines, and only converted into an image when necessary.</p>
 <p>Vector data is used to store roads, buildings, points of interest, and other things that have some place in the world.</p>
 <h5 class="h" id="vector-formats">Vector Formats<a class="permalink" href="#vector-formats">#</a><a class="permalink" href="section-vector-formats.html">&rarr;</a></h5>
-<p>The most established vector format is the <a href="http://en.wikipedia.org/wiki/Shapefile">Shapefile</a> - a simple, file-based format that awkwardly spreads the necessary data between four separate files - <code>.shp</code> (where actual geometry data resides), <code>.prj</code> (a string describing the used projection), <code>.shx</code> (an index enabling faster searches), and <code>.dbf</code> (a database file containing all the data associated with a geometry of the .shp file). Shapefile&#39;s geometry are mostly binary data, so opening them in a text editor won&#39;t show anything accessible, apart from the .prj file, which defines the projection in plain text. The .dbf database file can be read from LibreOffice Calc because its format is derived from an old database specification. However, the old database specification limits the attribute data you can store in a shapefile. For example: the size of the .dbf can&#39;t exceed 2 GB, field names can&#39;t contain spaces and can&#39;t exceed 10 characters, NULL values are not supported, nor are many special characters, <a href="http://en.wikipedia.org/wiki/Shapefile#Limitations">etc.</a></p>
+<p>The most established vector format is the <a href="http://en.wikipedia.org/wiki/Shapefile">Shapefile</a> - a simple, file-based format that awkwardly spreads the necessary data between four separate files - <code>.shp</code> (where actual geometry data resides), <code>.prj</code> (a string describing the projection used), <code>.shx</code> (an index enabling faster searches), and <code>.dbf</code> (a database file containing all the data associated with a geometry of the .shp file). Most of these files are binary data, so opening them in a text editor won&#39;t show anything accessible, apart from the .prj file, which defines the projection in plain text. The .dbf database file can be read from LibreOffice Calc because its format is derived from an old database specification. However, the old database specification limits the attribute data you can store in a shapefile. For example: the size of the .dbf can&#39;t exceed 2 GB, field names can&#39;t contain spaces and can&#39;t exceed 10 characters, NULL values are not supported, nor are many special characters, <a href="http://en.wikipedia.org/wiki/Shapefile#Limitations">etc.</a></p>
 <p><a href="http://geojson.org/">GeoJSON</a>, <a href="https://github.com/mbostock/topojson">TopoJSON</a>, and <a href="http://developers.google.com/kml">KML</a> are newer formats based on <a href="http://www.json.org/">JSON</a> and <a href="http://en.wikipedia.org/wiki/XML">XML</a> text encoding, respectively. Being text-based, they tend to be simpler to implement in software than Shapefiles, and combined with additional flexibility and features, they have become the standard in new web software. The drawback to GeoJSON is that there are fewer tools built for comparing properties across records easily, so data cleaning and analysis is challenging.</p>
 <h3 class="h" id="topology">Topology<a class="permalink" href="#topology">#</a><a class="permalink" href="section-topology.html">&rarr;</a></h3>
 <p>In addition to storing places and shapes, some vector data keeps track of topology, the relationships between different shapes. For instance, political borders often touch - you can stand with one foot in Arizona and another in New Mexico. A lot of geospatial data, though, will have one shape that represents Arizona and another that represents New Mexico, with two borders that precisely overlap, but have no other association.</p>
@@ -59,9 +61,9 @@
 <p><strong>Corporations, governments, and communities</strong> maintain different world maps of varying detail. For instance, Google and <a href="http://www.openstreetmap.org/">OpenStreetMap</a> focus on mapping all roads and details about them, and sources like the <a href="https://www.cia.gov/library/publications/the-world-factbook/">CIA World Factbook</a> and <a href="http://www.naturalearthdata.com/">Natural Earth</a> keep track of political borders.</p>
 <h3 class="h" id="storage">Storage<a class="permalink" href="#storage">#</a><a class="permalink" href="section-storage.html">&rarr;</a></h3>
 <p>There are many ways to store geographic data. Data can be stored as printouts, but recently it is more popular to store it in a way easily accessed and shared, digitally.</p>
-<p>There are many different filetypes and conventions for storing geographical data, and thus a variety of tools to translate amongst different representations. Data is stored in databases or in individual files, but the practical difference between the two is not necessarily important.</p>
+<p>There are many different filetypes and conventions for storing geographical data, and thus a variety of tools to translate among different representations. Data is stored in databases or in individual files, but the practical difference between the two is not necessarily important.</p>
 <h1 class="h" id="information">Information<a class="permalink" href="#information">#</a><a class="permalink" href="section-information.html">&rarr;</a></h1>
-<p>Maps are visualized information: At one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on earth. Between data and visualization is a transformation we call &#39;projection&#39; - in which places on earth become places on usually flat surfaces, like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and intepret.</p>
+<p>Maps are visualized information: At one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on earth. Between data and visualization is a transformation we call &#39;projection&#39; - in which places on earth become places on usually flat surfaces, like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and interpret.</p>
 <h2 class="h" id="latitude-amp-longitude">Latitude &amp; Longitude<a class="permalink" href="#latitude-amp-longitude">#</a><a class="permalink" href="section-latitude-amp-longitude.html">&rarr;</a></h2>
 <p>The most common way to store places on earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like <code>38° 12&#39;</code>, but the new standard is to represent them as simple numbers, like <code>38.2</code>, that are easy for computers to understand.</p>
 <p><img src="img/latlon.png" alt=""></p>
@@ -127,8 +129,8 @@
 <h3 class="h" id="license">License<a class="permalink" href="#license">#</a><a class="permalink" href="section-license.html">&rarr;</a></h3>
 <p><a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported</a></p>
 
-                <div id="disqus_thread"></div>
-                <script type="text/javascript">
+                <div id='disqus_thread'></div>
+                <script type='text/javascript'>
                     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
                     var disqus_shortname = 'mapschool'; // required: replace example with your forum shortname
 
@@ -143,7 +145,7 @@
                 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             </div>
         </div>
-        <script type="text/javascript">
+        <script type='text/javascript'>
           var _gauges = _gauges || [];
           (function() {
             var t   = document.createElement('script');
