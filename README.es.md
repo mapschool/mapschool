@@ -4,6 +4,8 @@
 % map school
 % Tom MacWright
 
+/** Blocked by juanluisrp */
+
 # map school
 
 What is a map? Until the 1980s, maps were painstaking documents created by hand. These days maps are almost always made with the help of a computer. Maps today are commonplace, interspersed in driving directions, visualizations, and political boundary disputes. Let's look deeper and think about the fundamental elements of maps from the eye of the creator.
@@ -33,6 +35,8 @@ The pixels in raster data are not necessarily just filled color: we call its con
 Raster formats aim to compact data and make it accessible fast for analysis and display. Some of them are geospatially-enabled versions of common image formats, [GeoTIFF](http://trac.osgeo.org/geotiff/) and JPEG2000.
 
 Internally, raster data formats manage two tasks - packing data into pixels, and then storing the relationship between those pixels and actual places on the globe - the 'extent' of the data.
+
+/* End of blocked by juanluisrp*/
 
 ## Vector
 
