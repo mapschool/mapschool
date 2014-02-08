@@ -8,11 +8,12 @@
 
 # map school
 
-What is a map? Until the 1980s, maps were painstaking documents created by hand. These days maps are almost always made with the help of a computer. Maps today are commonplace, interspersed in driving directions, visualizations, and political boundary disputes. Let's look deeper and think about the fundamental elements of maps from the eye of the creator.
+¿Qué es un mapa? Hasta la década de 1980  los mapas eran minuciosos documentos creados a mano. Hoy en día, los mapas casi siempre se realizan con la ayuda de una computadora. Hoy los mapas son algo común, pudiéndose encontrar en indicaciones de ruta, visualizaciones o disputas de fronteras políticas. Profundicemos en los elementos fundamentales que componen los mapas desde el punto de vista del creador.
 
-Computer maps are fundamentally composed of data. Data is in the abstract, composed of billions of points or just a few polygons, or a photo-like recording of colors and temperature. It is important that data is not specific to a certain usage.
+Los mapas digitales estan compuestos fundamentalmente por datos. Abstrayéndonos, los datos pueden estar compuestos por miles de millones de puntos, por unos simples polígonos o un registro en forma de foto de colores o temperaturas. Es importante destacar que los datos no se restringen a una finalidad concreta.
 
-From data, we make numbers, pictures, and decisions. Most commonly we make pictures, in a process called 'symbolization' - deciding what visual elements will represent what different parts of a dataset. We analyze data, which means we transform, aggregate, and summarize it to give different answers and represent different aspects of knowledge. The two tasks of symbolization and analysis are often combined, with symbolization forming the limits of what we can represent and analysis defining the aspects of data we focus on.
+A partir de los datos podemos hacer cálculos, gráficos y tomar decisiones. El uso más comun es generar imágenes, mediante un proceso llamado "simbolización" (decidir que elementos visuales representarán las diferentes partes de un conjunto de datos). Podemos analizar los datos, lo que significa que podemos transformarlos, agregarlos y resumirlos para dar diferentes respuestas y representar distintos aspectos de conocimiento. Las dos tareas, simbolización y análisis, a menudo se combinan, con la simbolización limitando lo que podemos representar y el análisis definiendo los aspectos de los datos en los que nos enfocamos.
+
 
 # Data
 
