@@ -14,27 +14,27 @@ Computer maps are fundamentally composed of data. Data is in the abstract, compo
 
 From data, we make numbers, pictures, and decisions. Most commonly we make pictures, in a process called 'symbolization' - deciding what visual elements will represent what different parts of a dataset. We analyze data, which means we transform, aggregate, and summarize it to give different answers and represent different aspects of knowledge. The two tasks of symbolization and analysis are often combined, with symbolization forming the limits of what we can represent and analysis defining the aspects of data we focus on.
 
-# Data
+# Datos
 
-Fundamentally, geographical data is either **raster** or **vector** - composed of pixels, or of geometry. The two types are often combined, like when vector road data is overlaid over raster satellite data.
+Fundamentalmente, los datos geográficos pueden ser bien **mapas de bits** (en adelante **ráster**) compuestos por píxeles o bien **vectoriales** compuestos por figuras geométricas. Los dos tipos a menudo se combinan como cuando se superponen datos vectoriales de carreteras sobre datos satelitales ráster.
 
 ## Raster
 
 ![](img/raster.png)
 
-**Raster** data is like a picture that you would take with a digital camera: at the lowest level of abstraction, it is a list of pixels with values. When you 'zoom in' and look closer at raster data, at some point you'll see these discrete pixels, and it will look pixelated.
+Los datos **Ráster** son como una fotografía que podrías haber tomado con una cámara digital: al menor nivel de abstracción es una lista de píxeles con valores. Cuando haces zoom y miras más de cerca los datos ráster, en algún momento llegarás a ver estos píxeles individuales. Entonces decimos que la imagen se ve pixelada.
 
-Raster data is used in pictures of the earth, like those taken by satellites - but that is just the beginning. Pixels don't need to have colors - instead, each pixel can have a number that represents height and the raster data as a whole stores elevation data. Or pixels can store temperature or reflection data and be useful for environmental work.
+Los datos ráster son usados en fotografías de la tierra, como las tomadas por los satélites, pero esto es solo el principio. Los píxeles no necesitan tener colores; en su lugar, cada píxel podría tener un número que representara la altitud y los datos ráster en su conjunto almacenaría los datos sobre el relieve. O, por ejemplo, podrían almacenar la temperatura o la radiación reflejada y se útiles para trabajos medioambientales.
 
-##### Raster Bands
+##### Bandas Ráster
 
-The pixels in raster data are not necessarily just filled color: we call its contents 'bands'. A normal image has three familiar bands: Red, Green, and Blue. Combined, they make a picture we're familiar with. Some raster data can have fewer bands, like just one for elevation, or some can have a lot more - not just visible colors, but wavelengths we can't see, like infrared and ultraviolet. When raster data is analyzed and displayed, you can combine and pick bands to use to suit what you're looking for.
+Los píxeles de los datos ráster no necesariamente está rellenos con colores: a su contenido le damos el nombre de "bandas". Una imagen normal tiene tres bandas familiares: Roja, Verde y Azul. Combinadas, forman una imagen como las que estamos acostumbrados a ver. Algunos datos ráster pueden tener menos bandas, como por ejemplo una sola para datos de elevación; otras pueden tener muchas más, -o solo colores visibles, sino longitudes de onda que los humanos no podemos ver, como el infrarrojo y el ultravioleta. Cuando los datos ráster son analizados y mostrados puedes combinar y elegir qué bandas usar de forma que se ajuste a lo que estás buscando. 
 
-##### Raster Formats
+##### Formatos ráster
 
-Raster formats aim to compact data and make it accessible fast for analysis and display. Some of them are geospatially-enabled versions of common image formats, [GeoTIFF](http://trac.osgeo.org/geotiff/) and JPEG2000.
+Los formatos ráster tratan de compactar los datos y hacerlos rápidamente accesibles para que puedan ser analizados y mostrados. Algunos son versiones con datos geoespaciales de formatos de imagenes comunes, como [GeoTIFF](http://trac.osgeo.org/geotiff/) y JPEG2000. 
 
-Internally, raster data formats manage two tasks - packing data into pixels, and then storing the relationship between those pixels and actual places on the globe - the 'extent' of the data.
+Internamente, los formatos de datos ráster cumplen dos tareas: empaquetar los datos en píxeles y después, almacenar la relación entre estos píxeles y lugares reales del mundo a los que representan (la extensión de los datos).
 
 /* End of blocked by juanluisrp*/
 
