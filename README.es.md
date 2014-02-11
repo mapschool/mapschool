@@ -68,6 +68,8 @@ The opposite process is **reverse geocoding**, where the readily available data 
 
 Geocoding and reverse geocoding can be very tricky: coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings contribute to the difficulty in turning addresses into coordinates, or vice versa.
 
+/** Blocked by aitorfreire */
+
 ## Data Collection
 
 Map data has been collected in countless ways through the years - everything from sailors' logs to geocoded Tweets. Currently, there are a few major sources that merit discussion:
@@ -79,6 +81,8 @@ Map data has been collected in countless ways through the years - everything fro
 Observational **satellites and airplanes** collect most raster data we have today, constantly taking photos from different altitudes and combining them into something that looks a little like a picture of the world. The same sensors also capture what we call 'non-visible spectrums', like infrared light that's useful for mapping agriculture and deforestation. Some tricked-out rigs include [LiDAR](http://en.wikipedia.org/wiki/Lidar), a kind of laser sensor that measures altitude and yields us raster altitude data.
 
 **Corporations, governments, and communities** maintain different world maps of varying detail. For instance, Google and [OpenStreetMap](http://www.openstreetmap.org/) focus on mapping all roads and details about them, and sources like the [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) and [Natural Earth](http://www.naturalearthdata.com/) keep track of political borders.
+
+/* End of blocked by aitorfreire*/
 
 ### Storage
 
