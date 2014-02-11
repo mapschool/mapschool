@@ -80,15 +80,15 @@ Observational **satellites and airplanes** collect most raster data we have toda
 
 **Corporations, governments, and communities** maintain different world maps of varying detail. For instance, Google and [OpenStreetMap](http://www.openstreetmap.org/) focus on mapping all roads and details about them, and sources like the [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) and [Natural Earth](http://www.naturalearthdata.com/) keep track of political borders.
 
-### Storage
+### Almacenamiento
 
-There are many ways to store geographic data. Data can be stored as printouts, but recently it is more popular to store it in a way easily accessed and shared, digitally.
+Hay muchas formas de almacenar la información geográfica. Los datos pueden guardarse como copias impresas pero recientemente es más común hacerlo digitalmente, mucho más sencillo de acceder y compartir.
 
-There are many different filetypes and conventions for storing geographical data, and thus a variety of tools to translate among different representations. Data is stored in databases or in individual files, but the practical difference between the two is not necessarily important.
+Hay muchos tipos de archivos y estándares para almacenar datos geográficos, y en consecuencia también hay muchas herramientas para pasar de unos a otros. Los datos se almacenan en bases de datos o en archivos, aunque las diferencias entre las dos opciones no son necesariamente importantes.
 
-# Information
+# Información
 
-Maps are visualized information: At one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on earth. Between data and visualization is a transformation we call 'projection' - in which places on earth become places on usually flat surfaces, like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and interpret.
+Los mapas representan información: En un extremo se encuentran los temas de datums, números y almacenamiento - la maquinaria que empleamos para grabar y diferenciar los diferentes lugares de la tierra. Entre los datos y la visualización tenemos una transformación que denominamos 'proyección - con la que pasamos de zonas de la tierra a zonas generalmente en superficies planas, como mapas impresos o pantallas de ordenador. Y, finalmente, decidimos los detalles de color, tono y la simbología que tratan de trasladar los detalles de los datos a imágenes que la gente pueda entender e interpretar.
 
 ## Latitude & Longitude
 
