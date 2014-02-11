@@ -38,6 +38,8 @@ Internamente, los formatos de datos ráster cumplen dos tareas: empaquetar los d
 
 /* End of blocked by juanluisrp*/
 
+/* Blocked by rteijeiro */
+
 ## Vector
 
 ![](img/vector_types.png)
@@ -67,6 +69,8 @@ Unfortunately, this isn't directly mappable. Due to variance in naming and the m
 The opposite process is **reverse geocoding**, where the readily available data is precise geographic positions, and the objective is a human description, like `United States` or `1714 14th Street`. Likewise, this isn't always accurate - one place on earth can be inside of overlapping and conflicting boundaries or between address points.
 
 Geocoding and reverse geocoding can be very tricky: coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings contribute to the difficulty in turning addresses into coordinates, or vice versa.
+
+/* End of blocked by rteijeiro */
 
 ## Data Collection
 
