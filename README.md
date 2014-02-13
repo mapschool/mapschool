@@ -91,7 +91,7 @@ The most common way to store places on earth is with latitude and longitude valu
 
 **Latitude** values range from -90 at the South Pole to 90 at the North Pole. All along the equator the latitude value is 0.
 
-**Longitude** start at 0 at the Prime Meridian which cuts through Africa and Greenwich, and extends to -180 and 180 at the ante meridian.
+**Longitude** values range from -180 to 180, and where these meet (in a north/south line that cuts through the Pacific) is called the antemeridian.   The value of 0 is defined as the Prime Meridian, which cuts through Africa and Europe (specifically the Royal Observatory, in Greenwich, London).
 
 The combination of latitude and longitude is usually called a coordinate, and can be represented as 'latitude, longitude', or 'longitude, latitude': historically, the former was standard, but 'longitude, latitude' has recently gained popularity because it mirrors the 'X, Y' ordering of coordinates in math's euclidean space.
 
@@ -119,7 +119,7 @@ Projections are what we call the mathematical equations that do the trick of tur
 
 Symbolization is a fancy word for the particular ways that data is transformed into graphics in the world of maps.
 
-Fundamentally, data doesn't look like anything: a list of pixel values or road lines is just as well represented in a spreadsheet or a chart as it is on a map. Thus to 'convert' is not the right word for what we do with data: at the most basic level, everything is a decision.
+Fundamentally, data doesn't look like anything: a list of pixel values or road lines is just as well represented in a spreadsheet or a chart as it is on a map. Thus to 'convert' is not the right word for what we do with data: The decision is more about how to render it.
 
 Symbolic techniques include anything representable in graphics or even 3D, so let's only look at a few:
 
@@ -127,9 +127,9 @@ Symbolic techniques include anything representable in graphics or even 3D, so le
 
 ![](img/scales.jpg)
 
-Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential, or continuous data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100. Categorical, or discrete data is, instead, one of a set number of values - like 'true', 'false', 'democrat' or 'republican'.
+Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential, or continuous data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100, or elevation. Categorical, or discrete data is, instead, one of a set number of values - like 'true', 'false', 'democrat' or 'republican'.
 
-This division between data is one of the main concerns for symbolization - a sequential datasource would fit with a scaled point map whereas categorical data would work with multiple symbols for markers, and so on.
+This division between data is one of the main concerns for symbolization - a sequential datasource would fit with a scaled point map or a gradient color ramp on a raster, whereas categorical data generally is displayed using multiple symbols for markers, or discrete bucketing of colors.
 
 ### Choropleth
 
