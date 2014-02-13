@@ -135,6 +135,9 @@ Esta rama de las ciencias, llamada [geodesia](https://es.wikipedia.org/wiki/Geod
 
 Projections are what we call the mathematical equations that do the trick of turning the world into some flat shape that fits on a printout or a computer screen. It's a messy task to do, this transformation - there's no way to smoosh the world onto a screen without distorting it in some way. You either lose direction, or relative size, or come out with something very weird looking.
 /* End of blocked by jsanz */
+
+/* Blocked by aitorfreire */
+
 ## Symbolization
 
 Symbolization is a fancy word for the particular ways that data is transformed into graphics in the world of maps.
@@ -160,6 +163,8 @@ Choropleth maps are a natural fit for data like rates, densities, or percentages
 ##### Choropleths in Depth
 
 The selection of colors in a choropleth map is generally called the 'palette' or the 'color ramp', especially when the colors are sequential. [ColorBrewer](http://colorbrewer2.org/) is a well-researched set of colors that are understandable and clear.
+
+/* End of blocked by aitorfreire /
 
 ### Point
 
