@@ -99,22 +99,25 @@ Hay muchos tipos de archivos y estándares para almacenar datos geográficos, y 
 Los mapas representan información: En un extremo se encuentran los datums, números y el almacenamiento - la maquinaria que empleamos para grabar y diferenciar los diferentes lugares de la tierra. Entre los datos y la visualización tenemos una transformación que denominamos 'proyección - con la que pasamos de zonas de la tierra a zonas generalmente en superficies planas, como mapas impresos o pantallas de ordenador. Y, finalmente, decidimos los detalles de color, tono y la simbología que tratan de trasladar los detalles de los datos a imágenes que la gente pueda entender e interpretar.
 
 /* End of bocked by aitorfreire */
+/* Blocked by moiarcsan */
 
-## Latitude & Longitude
+## Latitud & Longitud
 
-The most common way to store places on earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like `38° 12'`, but the new standard is to represent them as simple numbers, like `38.2`, that are easy for computers to understand.
+La forma más común para almacenar lugares en la tierra es con valores de latitud y longitud. Históricamente la latitud y la longitud son algunas veces representadas en notación sexagesimal, tal que así `38° 12'`, pero el nuevo estándar es para representarlos como números simples, tal que así `38.2`, que son fáciles para que los ordenadores lo entiendan.
 
 ![](img/latlon.png)
 
-**Latitude** values range from -90 at the South Pole to 90 at the North Pole. All along the equator the latitude value is 0.
+**Latitude** rango de valores de -90 en el Polo Sur al 90 en el Polo Norte. A lo largo del ecuador el valor de la latitud es 0.
 
-**Longitude** start at 0 at the Prime Meridian which cuts through Africa and Greenwich, and extends to -180 and 180 at the ante meridian.
+**Longitude** comienza en el 0 en el Primer Meridiano que divide África y Greenwich, y se extiende hasta -180 y 180 en el Ante Meridiem.
 
-The combination of latitude and longitude is usually called a coordinate, and can be represented as 'latitude, longitude', or 'longitude, latitude': historically, the former was standard, but 'longitude, latitude' has recently gained popularity because it mirrors the 'X, Y' ordering of coordinates in math's euclidean space.
+La combinación de latitud y longitud es normalmente llamado coordenada, an puede ser representado como 'latitude, longitude', o 'longitude, latitude': históricamente, la primera era estándar, pero 'longitude, latitude' recientemente ha ganado popularidad porque refleja el orden 'X, Y' de coordenadas en el espacio euclídeo de matemáticas.
 
-Coordinate ordering can cause some confusion, as browser based mapping software often expects 'latitude, longitude', whereas many wire formats specify 'longitude, latitude'.
+La ordenación de las coordenadas puede causar alguna confusión, como los buscadores basados en software de mapas a menudo esperan 'latitude, longitude', mientras que muchos formatos de conexión especifican 'longitude, latitude'.
 
-Sometimes more than just the latitude, longitude position is recorded as data: altitude can also be included, as well as time of capture and other factors. In the case of including altitude, it's usually stored as a third coordinate, like 'longitude, latitude, altitude.'
+A veces además de la posición de la latitud, longitud es almacenada como dato: la altitud también puede ser incluida, así como el tiempo de captura y otros factores. En el caso de incluir la altitud, es normalmente almacenada como tercera coordenada, tal que así 'longitude, latitude, altitude.'
+
+/* End of blocked by moiarcsan */
 
 ## The Shape of the Earth
 
