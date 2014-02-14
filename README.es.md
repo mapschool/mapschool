@@ -4,8 +4,6 @@
 % map school
 % Tom MacWright
 
-/** Blocked by juanluisrp */
-
 # map school
 
 ¿Qué es un mapa? Hasta la década de 1980  los mapas eran minuciosos documentos creados a mano. Hoy en día, los mapas casi siempre se realizan con la ayuda de una computadora. Hoy los mapas son algo común, pudiéndose encontrar en indicaciones de ruta, visualizaciones o disputas de fronteras políticas. Profundicemos en los elementos fundamentales que componen los mapas desde el punto de vista del creador.
@@ -37,7 +35,6 @@ Los formatos ráster tratan de compactar los datos y hacerlos rápidamente acces
 
 Internamente, los formatos de datos ráster cumplen dos tareas: empaquetar los datos en píxeles y después, almacenar la relación entre estos píxeles y lugares reales del mundo a los que representan (la extensión de los datos).
 
-/* End of blocked by juanluisrp*/
 
 /* Blocked by rteijeiro */
 
