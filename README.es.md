@@ -42,32 +42,30 @@ Internamente, los formatos de datos ráster cumplen dos tareas: empaquetar los d
 
 ![](img/vector_types.png)
 
-**Vector** data stores basic geometries rather than pixel data. No matter how much you 'zoom in' on vector data, you won't see pixels: the data stored is composed of geometric points and lines, and only converted into an image when necessary.
+Los datos de tipo **Vector** almacenan información geométrica en lugar de píxeles. No importa cuánto aumentes el zoom en tu vector, nunca verás píxeles: la información almacenada está compuesta por puntos y líneas geométricas que solo se convierten a imagen cuando es necesario.
 
-Vector data is used to store roads, buildings, points of interest, and other things that have some place in the world.
+Los Vectores se suelen user para guardar información relativa a carreteras, edificios, puntos de interés y otros elementos que tienen un lugar determinado en el mundo.
 
-##### Vector Formats
+##### Formatos de Vectores
 
-The most established vector format is the [Shapefile](http://en.wikipedia.org/wiki/Shapefile) - a simple, file-based format that awkwardly spreads the necessary data between four separate files - `.shp` (where actual geometry data resides), `.prj` (a string describing the projection used), `.shx` (an index enabling faster searches), and `.dbf` (a database file containing all the data associated with a geometry of the .shp file). Most of these files are binary data, so opening them in a text editor won't show anything accessible, apart from the .prj file, which defines the projection in plain text. The .dbf database file can be read from LibreOffice Calc because its format is derived from an old database specification. However, the old database specification limits the attribute data you can store in a shapefile. For example: the size of the .dbf can't exceed 2 GB, field names can't contain spaces and can't exceed 10 characters, NULL values are not supported, nor are many special characters, [etc.](http://en.wikipedia.org/wiki/Shapefile#Limitations)
+El formato de vector más popular es [Shapefile](http://en.wikipedia.org/wiki/Shapefile) - un formato simple basado en ficheros que separa la información necesaria en cuatro ficheros distintos - `.shp` (almacena la información geométrica), `.prj` (describe la proyección usada), `.shx` (índice que permite búsquedas rápidas) y `.dbf` (fichero de base de datos que contiene toda la información asociada a la geometría del fichero .shp). La mayoría de estos ficheros son binarios por lo que no es posible abrirlos en un editor de texto. El fichero .prj es el único que almacena la proyección en texto plano. El fichero .dbf se puede abrir desde LibreOffice Calc ya que su formato está basado en una estructura de bases de datos antigua. Sin embargo esta estructura limita el número de atributos que se pueden almacenar en un fichero shapefile. Por ejemplo: el tamaño del fichero .dbf no puede superar los 2 GB, los nombres de los campos no pueden contener espacios y tampoco pueden superar los 10 caracteres, no soporta valores NULL y tampoco algunos caracteres especiales, [etc.](http://en.wikipedia.org/wiki/Shapefile#Limitations)
 
-[GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson), and [KML](http://developers.google.com/kml) are newer formats based on [JSON](http://www.json.org/) and [XML](http://en.wikipedia.org/wiki/XML) text encoding, respectively. Being text-based, they tend to be simpler to implement in software than Shapefiles, and combined with additional flexibility and features, they have become the standard in new web software. The drawback to GeoJSON is that there are fewer tools built for comparing properties across records easily, so data cleaning and analysis is challenging.
+[GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson), y [KML](http://developers.google.com/kml) son formatos más modernos basados en los formatos de texto [JSON](http://www.json.org/) y [XML](http://en.wikipedia.org/wiki/XML) respectivamente. Al ser formatos de texto tienden a ser más simples de implementar en software que el formato Shapefiles y, gracias a sus características y flexibilidad, se han convertido en un estándar en el software web actual. El único inconveniente con GeoJSON es que no hay muchas herramientas disponibles para comparar propiedades entre los registros de una forma sencilla lo que hace que la limpieza y análisis de datos sea un poco tediosa.
 
-### Topology
+### Topología
 
-In addition to storing places and shapes, some vector data keeps track of topology, the relationships between different shapes. For instance, political borders often touch - you can stand with one foot in Arizona and another in New Mexico. A lot of geospatial data, though, will have one shape that represents Arizona and another that represents New Mexico, with two borders that precisely overlap, but have no other association.
+Además de almacenar lugares y formas algunos vectores contienen información sobre la topología, es decir, las relaciones entre las diferentes formas. Por defecto los bordes políticos suelen estar pegados, puedes tener un pie en Arizona y otro en Nuevo Méjico. Aunque mucha información geoespacial tendría una forma que representa Arizona y otra que representa Nuevo Méjico con dos bordes que se superponen pero, no tendrían ninguna otra asociación.
 
-This gets tricky when you want to do something like ask 'which states touch?' or simplify the shapes of objects while preserving borders lined up. We use the concept of topology: some vector data, instead of storing a shape of Arizona and another of New Mexico, saves a bunch of lines and keeps track of which ones form the boundary of which object. So, the border between Arizona and New Mexico is a single line that's used to draw the border of both states, and if you modify the line, it changes the shape of both states.
+Esto hace que sea difícil determinar algo como '¿Cuántos estados son colindantes?' o simplificar las formas de los objetos mientras se mantienen los bordes alineados. Se usa el concepto de topología: información vectorial, en lugar de almacenar una forma de Arizona y otra de Nuevo Méjico, lo que ahorra muchas líneas y mantiene la información de los objetos colindantes. En definitiva, la frontera entre Arizona y Nuevo Méjico es una simple línea usada para dibujar el borde de ambos estados y, si modificas dicha línea, la forma de ambos estados cambiaría.
 
 ## Geocoding
 
-A great deal of geographic data is none of the above - instead of being composed of the numbers that computers understand, it is stored as text data - references to placenames, streets, addresses, and so on.
+Un punto importante sobre información geográfica no es ninguno de los anteriores. En lugar de estar compuesta por números, que es lo que entienden los ordenadores, se almacena en texto - referencias a nombres de lugares, calles, direcciones, etc.
 
-Unfortunately, this isn't directly mappable. Due to variance in naming and the many definitions of place, there's an indirect and often inaccurate process involved in transforming the words 'United States' into the point `-120, 40`. This process is what we call **geocoding**.
+Desafortunadamente no es posible mapear esto directamente. Debido a las variaciones en nomenclaturas y las diferentes formas de definir un lugar, hay un proceso indirecto y, a menudo inexacto, cuando transformamos las palabras 'Estados Unidos' en el punto `-120, 40`. A este proceso es a lo que llamamos **geocoding**.
 
-The opposite process is **reverse geocoding**, where the readily available data is precise geographic positions, and the objective is a human description, like `United States` or `1714 14th Street`. Likewise, this isn't always accurate - one place on earth can be inside of overlapping and conflicting boundaries or between address points.
-
-Geocoding and reverse geocoding can be very tricky: coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings contribute to the difficulty in turning addresses into coordinates, or vice versa.
-
+El proceso inverso es **geocoding inverso**, donde los datos legibles disponibles son posiciones geográficas precisas y el objetivo es una descripción humana como `Estados Unidos` o `1714 14th Street`. Del mismo modo, esto tampoco es siempre exacto - puede haber un lugar en la tierra dentro de bordes que estén superpuestos y en conflicto o entre direcciones de puntos. 
+Geocoding y geocoding inverso puede ser difícil: errores en las posiciones de las coordenadas, formato escaso de direcciones y un contínuo cambio en las estructuras de las calles y edificios contribuye a la dificultad a la hora de convertir direcciones en coordenadas o viceversa.
 
 /* End of blocked by rteijeiro */
 
