@@ -101,8 +101,6 @@ La ordenación de las coordenadas puede causar alguna confusión, como los busca
 
 A veces además de la posición de la latitud, longitud es almacenada como dato: la altitud también puede ser incluida, así como el tiempo de captura y otros factores. En el caso de incluir la altitud, es normalmente almacenada como tercera coordenada, tal que así 'longitud, latitud, altitud.'
 
-/* End of blocked by moiarcsan */
-/* Blocked by jsanz */
 ## The Shape of the Earth
 
 ![](img/earth-shapes.jpg)
@@ -115,11 +113,9 @@ Para el trabajo diario, utilizamos diferentes formas aproximadas: estándares co
 
 Esta rama de las ciencias, llamada [geodesia](https://es.wikipedia.org/wiki/Geodesia), es un proyecto continuo ya que nuestra capacidad para modelar y medir la tierra está en constante evolución, al igual que la tierra cambia de forma constantemente.
 
-## Projection
+## Proyecciones
 
-Projections are what we call the mathematical equations that do the trick of turning the world into some flat shape that fits on a printout or a computer screen. It's a messy task to do, this transformation - there's no way to smoosh the world onto a screen without distorting it in some way. You either lose direction, or relative size, or come out with something very weird looking. 
-
-/* End of blocked by jsanz */
+Llamamos proyecciones a las ecuaciones matemáticas que hacen el truco que convertir el mundo en usa forma plana que puede utilizarse en una impresión o una pantalla de computadora. Es un trabajo sucio esta transformación, no hay forma de aplastar el mundo en una pantalla sin distorsionarlo de alguna manera. O distorsionas las direcciones, o los tamaños relativos o acabos con algo con una apariencia realmente extraña.
 
 /* Blocked by aitorfreire */
 
@@ -151,6 +147,7 @@ The selection of colors in a choropleth map is generally called the 'palette' or
 
 /* End of blocked by aitorfreire /
 
+/* Blocked by jsanz
 ### Point
 
 Point maps are a better alternative for absolute values - the only geometry that they preserve is a single point for each feature.
@@ -159,7 +156,9 @@ The specific point or marker used in this style varies tremendously - Coloring p
 
 Care must be taken to not show too many points at once, as this will make a map difficult to read. In cases where there are too many points, a choropleth with aggregated values from the points may be a good alternative. Another alternative is to use clustering, where crowded points are grouped together until the map is zoomed in closer.
 
-## Publishing
+/* end of blocked by jsanz */
+
+## Publicación
 
 ## Analysis
 
