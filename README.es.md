@@ -147,16 +147,13 @@ The selection of colors in a choropleth map is generally called the 'palette' or
 
 /* End of blocked by aitorfreire /
 
-/* Blocked by jsanz
-### Point
+### Puntos
 
-Point maps are a better alternative for absolute values - the only geometry that they preserve is a single point for each feature.
+Los mapas de puntos son una mejor alternativa para valores absolutos, la única geometría que preservan es un único punto por cada fenómeno.
 
-The specific point or marker used in this style varies tremendously - Coloring points based on their sequential or categorical value can be useful, but points can also be scaled to different sizes to show their relative value. These scaled symbols can be any shape or image, such as circles, squares, or pictures of what they represent. In cases where there are multiple values that total up, scaled pie charts can be a terrific way to visualize what would otherwise be a complex dataset.
+El punto específico o marcador usado en este estilo varía tremendamente, los puntos coloreados basados en su valor secuencial o valor categórico pueden ser útiles, pero los puntos también pueden escalarse para tener diferentes tamaños y así mostrar sus valores relativos. Estos símbolos escalados pueden ser de cualquier forma o imagen, tales como círculos, cuadrados o pictogramas de aquello que representan. En aquellos casos en los que hay varios valores que mostrar, los gráficos de tartas pueden ser una alternativa excelente para visualizar lo que de otra manera sería una compleja visualización.
 
-Care must be taken to not show too many points at once, as this will make a map difficult to read. In cases where there are too many points, a choropleth with aggregated values from the points may be a good alternative. Another alternative is to use clustering, where crowded points are grouped together until the map is zoomed in closer.
-
-/* end of blocked by jsanz */
+Ha de tenerse cuidado para no mostrar demasiados puntos al mismo tiempo, esto hará que el mapa sea difícil de leer. En aquellos casos en los que hay muchos puntos, un mapa de coropletas con valores agregados de los puntos es una buena alternativa. Otra alternativa es utilizar la técnica de _clustering_, en la que la gran cantidad de puntos se agrupan hasta que se acerca el encuadre del mapa.
 
 ## Publicación
 
