@@ -119,31 +119,31 @@ Llamamos proyecciones a las ecuaciones matemáticas que hacen el truco que conve
 
 /* Blocked by aitorfreire */
 
-## Symbolization
+## Simbolización
 
-Symbolization is a fancy word for the particular ways that data is transformed into graphics in the world of maps.
+Simbolización es la palabra elegante para designar la forma en que los datos son transformados en gráficos en el mundo de los mapas.
 
-Fundamentally, data doesn't look like anything: a list of pixel values or road lines is just as well represented in a spreadsheet or a chart as it is on a map. Thus to 'convert' is not the right word for what we do with data: at the most basic level, everything is a decision.
+En esencia, los datos no se parecen a nada: una lista de los valores de los píxeles o las líneas de carretera están tan bien representados en una hoja de cálculo o un gráfico como en un mapa. Por ello, 'convertir' no es la palabra correcta para lo que hacemos con los datos: en el nivel más básico, todo es una decisión.
 
-Symbolic techniques include anything representable in graphics or even 3D, so let's only look at a few:
+Las técnicas simbólicas incluyen cualquier cosa representable en gráficos o incluso en 3D, así que sólo vamos ver unas cuantas:
 
-## Sequential & Categorical
+## Secuencial y Categórica
 
 ![](img/scales.jpg)
 
-Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential, or continuous data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100. Categorical, or discrete data is, instead, one of a set number of values - like 'true', 'false', 'democrat' or 'republican'.
+La simbolización tiende a destacar dos características diferentes de datos: secuenciales y categóricas. Los datos secuenciales, o continuos, también podrían ser llamados lineales - que tienden a ser valores numéricos dentro de un rango establecido, como un rango entre 0 y 100. Los datos categóricos, o discretos, son en cambio uno de determinado número de valores - como 'verdadero', 'falso', 'demócrata' o 'republicano'.
 
-This division between data is one of the main concerns for symbolization - a sequential datasource would fit with a scaled point map whereas categorical data would work with multiple symbols for markers, and so on.
+Esta división entre datos es una de las principales preocupaciones de la simbolización - una fuente de datos secuencial encajaría con un mapa de puntos de escala, mientras que los datos categóricos trabajarían con múltiples símbolos de marcadores, y así sucesivamente.
 
-### Choropleth
+### Coropletas
 
-Choropleth maps preserve the existing boundaries and shapes of places and represent data by changing their colors, patterns or textures. A familiar example of this kind of map is in election results or demographic makeup, in which data is percentage values for some fixed piece of land - a value per voting precinct or census area.
+Los mapas de coropletas preservan los límites y las formas existentes de los lugares y representan los datos cambiando sus colores, diseños y texturas. Un ejemplo conocido de este tipo de mapa es el de los resultados electorales o la composición demográfica, en la que los datos son valores porcentuales para un lugar concreto - un valor por distrito electoral o área del censo. 
 
-Choropleth maps are a natural fit for data like rates, densities, or percentages. They aren't recommended for absolute values: since they keep the area of shapes the same, they tend to over-emphasize large features. Also, since choropleth maps rely on color differences to represent information, it's important that the colors are well-chosen to be colorblind-safe, understandable, and consistent.
+Los mapas de coropletas son un ajuste natural para datos como rangos, densidades o porcentajes. No son recomendables valores absolutos: ya que mantienen el área de las formas, tienden a exagerar la importancia de los elementos grandes. Además, puesto que los mapas de coropletas dependen de las diferencias de color para representar la información, es muy importante escoger bien los colores para que sea comprensible y consistente, y teniendo en cuenta el daltonismo.
 
-##### Choropleths in Depth
+##### Coropletas en profundidad
 
-The selection of colors in a choropleth map is generally called the 'palette' or the 'color ramp', especially when the colors are sequential. [ColorBrewer](http://colorbrewer2.org/) is a well-researched set of colors that are understandable and clear.
+La selección de colores en un mapa de coropletas generalmente se llama la "paleta" o "rampa de color", especialmente cuando los colores son secuenciales. [ColorBrewer] (http://colorbrewer2.org/) es un conjunto bien documentado de colores comprensibles y claros.
 
 /* End of blocked by aitorfreire /
 
@@ -179,6 +179,8 @@ With geographic data, it's possible to simulate certain natural processes, and t
 
 More complex processes are also possible, like determining where water will collect after rainfall, called a 'watershed', or determining everywhere on the map that will be visible if you're standing at a mountaintop, called a 'viewshed'.
 
+/* Blocked by aitorfreire */
+
 ### Aggregation
 
 The most common form of aggregation is the idea of a sum - given a large group of numbers, you can add them together to get an idea of them all at once. For instance, the GDP of a country is more immediately informative than simply listing every individual contribution to an economy.
@@ -199,6 +201,8 @@ There are many ways to interpolate point data:
 - **Contour lines** take point sample data and draw lines around them that represent a continuous estimated value. Elevation maps often use this technique.
 - A **TIN** (Triangulated Irregular Network) draws triangles between points that can be used to visualize terrains.
 - **Voronoi diagrams** take a set of points and turn them into polygons of all of the area around them.
+
+/* End of blocked by aitorfreire /
 
 ## Afterword
 
