@@ -117,8 +117,6 @@ Esta rama de las ciencias, llamada [geodesia](https://es.wikipedia.org/wiki/Geod
 
 Llamamos proyecciones a las ecuaciones matemáticas que hacen el truco que convertir el mundo en usa forma plana que puede utilizarse en una impresión o una pantalla de computadora. Es un trabajo sucio esta transformación, no hay forma de aplastar el mundo en una pantalla sin distorsionarlo de alguna manera. O distorsionas las direcciones, o los tamaños relativos o acabos con algo con una apariencia realmente extraña.
 
-/* Blocked by aitorfreire */
-
 ## Simbolización
 
 Simbolización es la palabra elegante para designar la forma en que los datos son transformados en gráficos en el mundo de los mapas.
@@ -139,13 +137,11 @@ Esta división entre datos es una de las principales preocupaciones de la simbol
 
 Los mapas de coropletas preservan los límites y las formas existentes de los lugares y representan los datos cambiando sus colores, diseños y texturas. Un ejemplo conocido de este tipo de mapa es el de los resultados electorales o la composición demográfica, en la que los datos son valores porcentuales para un lugar concreto - un valor por distrito electoral o área del censo. 
 
-Los mapas de coropletas son un ajuste natural para datos como rangos, densidades o porcentajes. No son recomendables valores absolutos: ya que mantienen el área de las formas, tienden a exagerar la importancia de los elementos grandes. Además, puesto que los mapas de coropletas dependen de las diferencias de color para representar la información, es muy importante escoger bien los colores para que sea comprensible y consistente, y teniendo en cuenta el daltonismo.
+Los mapas de coropletas son un ajuste natural para datos como rangos, densidades o porcentajes. No son recomendables valores absolutos: ya que mantienen el área de las formas, tienden a exagerar la importancia de los elementos grandes. Además, puesto que los mapas de coropletas dependen de las diferencias de color para representar la información, es muy importante escoger bien los colores para que seas comprensibles y consistentes, y teniendo en cuenta el daltonismo.
 
 ##### Coropletas en profundidad
 
 La selección de colores en un mapa de coropletas generalmente se llama la "paleta" o "rampa de color", especialmente cuando los colores son secuenciales. [ColorBrewer] (http://colorbrewer2.org/) es un conjunto bien documentado de colores comprensibles y claros.
-
-/* End of blocked by aitorfreire /
 
 ### Puntos
 
