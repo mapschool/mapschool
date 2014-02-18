@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset='utf-8'>
-        <title>mapschool: Topology: a free introduction to geo</title>
+        <title>{{ page.title }}: a free introduction to geo</title>
         <link rel='stylesheet' type='text/css' href='css/site.css' />
         <meta http-equiv='content-type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
@@ -11,22 +11,19 @@
     </head>
     <body>
         <div class='header'>
-            <h1><a href='./'>mapschool: Topology</a></h1>
+            <h1><a href='./'>{{ page.title }}</a></h1>
             <p>a free introduction to geo.</p>
             <nav>
                 <a href='./'>home</a>
                 <a href='https://github.com/tmcw/mapschool'>code</a>
                 <a href='https://tmcw.wufoo.com/forms/mapschool-feedback/'>feedback</a>
-                <a href='https://raw.github.com/tmcw/mapschool/gh-pages/mapschool.epub'>ebook</a>
                 <a href='./contributors.html'>contributors</a>
                 <a href='./furtherreading.html'>further reading</a>
             </nav>
         </div>
         <div class='wrap'>
             <div class='content'>
-                <p>In addition to storing places and shapes, some vector data keeps track of topology, the relationships between different shapes. For instance, political borders often touch - you can stand with one foot in Arizona and another in New Mexico. A lot of geospatial data, though, will have one shape that represents Arizona and another that represents New Mexico, with two borders that precisely overlap, but have no other association.</p>
-<p>This gets tricky when you want to do something like ask &#39;which states touch?&#39; or simplify the shapes of objects while preserving borders lined up. We use the concept of topology: some vector data, instead of storing a shape of Arizona and another of New Mexico, saves a bunch of lines and keeps track of which ones form the boundary of which object. So, the border between Arizona and New Mexico is a single line that&#39;s used to draw the border of both states, and if you modify the line, it changes the shape of both states.</p>
-
+                {{ content }}
                 <div id='disqus_thread'></div>
                 <script type='text/javascript'>
                     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -43,6 +40,7 @@
                 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             </div>
         </div>
+        <script type='text/javascript' src='js/site.js'></script>
         <script type='text/javascript'>
           var _gauges = _gauges || [];
           (function() {

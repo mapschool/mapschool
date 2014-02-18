@@ -1,5 +1,7 @@
-% map school
-% Tom MacWright
+---
+title: mapschool
+layout: default
+---
 
 # map school
 

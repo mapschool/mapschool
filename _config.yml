@@ -1,0 +1,8 @@
+destination: ./_site
+lsi:         false
+port: 4000
+pygments:    true
+markdown:    rdiscount
+url:         http://mapschool.io/
+rdiscount:
+  extensions: [smart]

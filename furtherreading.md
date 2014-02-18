@@ -1,3 +1,8 @@
+---
+title: further reading
+layout: default
+---
+
 ## Lecture Notes
 
 * [Nui Maynooth GIS Lecture Notes](http://www.nuim.ie/staff/dpringle/gis/lectures.shtml)

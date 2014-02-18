@@ -1,3 +1,8 @@
+---
+title: contributors
+layout: default
+---
+
 mapschool is what it is thanks to the collective hard work of its authors:
 
 * [Bill Morris](https://github.com/wboykinm)
