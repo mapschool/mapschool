@@ -181,6 +181,8 @@ The most common form of aggregation is the idea of a sum - given a large group o
 
 Aggregation in maps is similarly used. Given granular data, like millions of individual household incomes, you can use mapping algorithms to sum or average the values inside of specific areas of the world, to show average income per town or city.
 
+![](img/binning-wide.jpg)
+
 Aggregation is also used along with a technique called **binning**: given many discrete points, you can draw arbitrary shapes on the map, like squares or hexagons, and total all of the points that fall in each shape. That way, instead of having millions of tiny points that are difficult to grasp at a glance, you can style the map as a choropleth.
 
 ### Interpolation
