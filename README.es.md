@@ -175,30 +175,26 @@ With geographic data, it's possible to simulate certain natural processes, and t
 
 More complex processes are also possible, like determining where water will collect after rainfall, called a 'watershed', or determining everywhere on the map that will be visible if you're standing at a mountaintop, called a 'viewshed'.
 
-/* Blocked by aitorfreire */
+### Agregación
 
-### Aggregation
+La forma más común de agregación es la idea de suma – dado un grupo de números, se pueden juntar todos para tener una idea general. Por ejemplo, el PIB de un país aporta más información que una lista con cada contribución individual al conjunto de la economía.
 
-The most common form of aggregation is the idea of a sum - given a large group of numbers, you can add them together to get an idea of them all at once. For instance, the GDP of a country is more immediately informative than simply listing every individual contribution to an economy.
+La agregación en los mapas se utiliza de una forma similar. Datos muy minuciosos, como millones de datos individuales de ingresos familiares, se pueden usar algoritmos para cartografiar la suma o la media de los valores en un área específica del mundo para mostrar la media de ingresos por ciudad.
 
-Aggregation in maps is similarly used. Given granular data, like millions of individual household incomes, you can use mapping algorithms to sum or average the values inside of specific areas of the world, to show average income per town or city.
+La agregación también se utiliza junto con una técnica llamada **binning**: si tenemos muchos puntos discretos se pueden dibujar formas arbitrarias en el mapa, como cuadrados o hexágonos, y tomar la suma total de puntos que hay en cada forma. De esta manera, en lugar de tener millones de puntos diminutos difíciles de captar a simple vista se pueden presentar los datos en un mapa de cloropletas.
 
-Aggregation is also used along with a technique called **binning**: given many discrete points, you can draw arbitrary shapes on the map, like squares or hexagons, and total all of the points that fall in each shape. That way, instead of having millions of tiny points that are difficult to grasp at a glance, you can style the map as a choropleth.
+### Interpolación
 
-### Interpolation
+Mientras que la agregación toma gran cantidad de datos y los condensa en algo más fácil de analizar y visualizar, la interpolación 'llena los espacios en blanco' que haya entre los valores. La interpolación se utiliza a menudo para conjuntos de datos como la altitud, donde se tiene una matriz de datos con valores de altura de cada centímetro de una montaña, pero hay unos pocos lugares en los que faltan datos - lo que los programadores llaman valores `**null**`.
 
-Whereas aggregation takes lots of data and distills it into something simpler to analyze and visualize, interpolation 'fills in the blanks' between values. Interpolation is often used for datasets like elevation, where you have raster data values that records the height of every inch of a mountain, but there are a few places missing from the data - what programmers call `null` values.
+La interpolación examina los valores alrededor de los 'blancos' y asume que los valores que faltan son similares a los que están alrededor de ellos – la presencia de un píxel 'null' en la cima de una montaña se supone que también estará alto, mientras que otro en un valle se supone que estará bajo.
 
-Interpolation looks at the values around the 'blanks' and assumes that the missing values are basically similar to what's around them - a missing pixel at the top of a mountain will be assumed to be pretty high, while one in a valley is assumed to be low.
+Hay diversas formas de interpolar datos puntuales:
 
-There are many ways to interpolate point data:
-
-- **Heatmaps** assign each point a weight and represent density of point values in "hotter" colors.
-- **Contour lines** take point sample data and draw lines around them that represent a continuous estimated value. Elevation maps often use this technique.
-- A **TIN** (Triangulated Irregular Network) draws triangles between points that can be used to visualize terrains.
-- **Voronoi diagrams** take a set of points and turn them into polygons of all of the area around them.
-
-/* End of blocked by aitorfreire /
+- **Heatmaps** asignan a cada punto una importancia y representan la densidad de de puntos en colores "más cálidos". 
+- Las **curvas de nivel** toman una muestra de datos y dibujan líneas alrededor de ellos, representando un valor estimado continuo. Los mapas de elevación suelen utilizar esta técnica. 
+- Un **TIN** (Red Irregular de Triángulos) dibuja triángulos entre los puntos que pueden ser utilizados para visualizar el terreno. 
+- **Diagramas de Voronoi** toman un conjunto de puntos y los convierten en polígonos de toda el área a su alrededor.
 
 ## Afterword
 
