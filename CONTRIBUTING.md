@@ -41,7 +41,9 @@ product manuals, and any other creative usage is permitted, as long as attributi
 
 # Style
 
-`mapschool` is written in casual Standard Written English.
+* `mapschool` is written in casual Standard Written English.
+* [Avoid unnecessary gendered language](http://writingcenter.unc.edu/handouts/gender-sensitive-language/)
+* Spell & grammar check your writing
 
 # Translation
 
