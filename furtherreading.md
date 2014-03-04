@@ -22,6 +22,7 @@ layout: default
 ## Software-Centered
 
 * [QGIS: Gentle GIS Introduction](http://www.qgis.org/en/docs/gentle_gis_introduction/index.html) - a guide to doing GIS with [QGIS](http://qgis.org/en/site/), a popular open source application.
+* [Reference Systems: What They Are](https://weblogs.java.net/blog/manningpubs/archive/2013/02/13/spatial-reference-system-what-it): great expanation of the finer details of SRS, CRS, datums and projections with reference to PostGIS.
 
 ## Books
 
