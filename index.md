@@ -21,7 +21,7 @@ Fundamentally, geographical data is either **raster** or **vector** - composed o
 
 **Raster** data is like a picture that you would take with a digital camera: at the lowest level of abstraction, it is a list of pixels with values. When you 'zoom in' and look closer at raster data, at some point you'll see these discrete pixels, and it will look pixelated.
 
-Raster data is used in pictures of the earth, like those taken by satellites - but that is just the beginning. Pixels don't need to have colors - instead, each pixel can have a number that represents height and the raster data as a whole stores elevation data. Or pixels can store temperature or reflection data and be useful for environmental work.
+Raster data is used in pictures of the Earth, like those taken by satellites - but that is just the beginning. Pixels don't need to have colors - instead, each pixel can have a number that represents height and the raster data as a whole stores elevation data. Or pixels can store temperature or reflection data and be useful for environmental work.
 
 ##### Raster Bands
 
@@ -59,7 +59,7 @@ A great deal of geographic data is none of the above - instead of being composed
 
 Unfortunately, this isn't directly mappable. Due to variance in naming and the many definitions of place, there's an indirect and often inaccurate process involved in transforming the words 'United States' into the point `-120, 40`. This process is what we call **geocoding**.
 
-The opposite process is **reverse geocoding**, where the readily available data is precise geographic positions, and the objective is a human readable description, like `United States` or `1714 14th Street`. Likewise, this isn't always accurate - one place on earth can be inside of overlapping and conflicting boundaries or between address points.
+The opposite process is **reverse geocoding**, where the readily available data is precise geographic positions, and the objective is a human readable description, like `United States` or `1714 14th Street`. Likewise, this isn't always accurate - one place on Earth can be inside of overlapping and conflicting boundaries or between address points.
 
 Geocoding and reverse geocoding can be very tricky: coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings contribute to the difficulty in turning addresses into coordinates, or vice versa.
 
@@ -83,11 +83,11 @@ There are many different filetypes and conventions for storing geographical data
 
 # Information
 
-Maps are visualized information: At one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on earth. Between data and visualization is a transformation we call 'projection' - in which places on earth become places on usually flat surfaces, like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and interpret.
+Maps are visualized information: At one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on Earth. Between data and visualization is a transformation we call 'projection' - in which places on Earth become places on usually flat surfaces, like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and interpret.
 
 ## Latitude & Longitude
 
-The most common way to store places on earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like `38° 12'`, but the new standard is to represent them as simple numbers, like `38.2`, that are easy for computers to understand.
+The most common way to store places on Earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like `38° 12'`, but the new standard is to represent them as simple numbers, like `38.2`, that are easy for computers to understand.
 
 ![](img/latlon.png)
 
@@ -107,11 +107,11 @@ Sometimes more than just the latitude, longitude position is recorded as data: a
 
 Storing and presenting the world brings us to the question of what shape it is - can latitude and longitude values be mapped to a perfect sphere and back, and retain their accuracy spatially?
 
-Since the earth is a spinning object and its components can change shape, it bulges at the middle - so instead of being a sphere, it's actually more similar in shape to a [oblate spheroid](http://en.wikipedia.org/wiki/Oblate_spheroid). If you look even closer, that isn't entirely true either - the earth is covered in [elevation differences](http://en.wikipedia.org/wiki/Topography) like mountains and valleys, and even manmade changes like cities.
+Since the Earth is a spinning object and its components can change shape, it bulges at the middle - so instead of being a sphere, it's actually more similar in shape to a [oblate spheroid](http://en.wikipedia.org/wiki/Oblate_spheroid). If you look even closer, that isn't entirely true either - the Earth is covered in [elevation differences](http://en.wikipedia.org/wiki/Topography) like mountains and valleys, and even manmade changes like cities.
 
-For day-to-day work, we use different estimates of this shape: standards like [WGS84](http://en.wikipedia.org/wiki/WGS84) define precise values for the length of both of the earth's axes, so we can estimate for a [reference ellipsoid](http://en.wikipedia.org/wiki/Reference_ellipsoid) rather than a sphere. Local measurements and science that relies on precise surface values can also use [geoid models](https://en.wikipedia.org/wiki/Geoid), which are three-dimensional calculations of theoretical ocean heights.
+For day-to-day work, we use different estimates of this shape: standards like [WGS84](http://en.wikipedia.org/wiki/WGS84) define precise values for the length of both of the Earth's axes, so we can estimate for a [reference ellipsoid](http://en.wikipedia.org/wiki/Reference_ellipsoid) rather than a sphere. Local measurements and science that relies on precise surface values can also use [geoid models](https://en.wikipedia.org/wiki/Geoid), which are three-dimensional calculations of theoretical ocean heights.
 
-This branch of earth sciences, called [geodesy](https://en.wikipedia.org/wiki/Geodesy), is a continuing project since our ability to model and measure the earth moves quickly and the earth itself changes in shape.
+This branch of Earth sciences, called [geodesy](https://en.wikipedia.org/wiki/Geodesy), is a continuing project since our ability to model and measure the Earth moves quickly and the Earth itself changes in shape.
 
 ## Projection
 
@@ -169,7 +169,7 @@ Sometimes we convert vector data to raster ahead of time - in order to run some 
 
 ### Raster to Vector
 
-Likewise, raster data can be vectorized in a number of ways. On raster satellite images of the earth, people draw, or 'trace', lines for streets, points for houses, or polygons for buildings. This lets us have a version of the data upon which we can do more things - you can figure out driving routes from vector data of streets, but can't do that with a satellite image of streets.
+Likewise, raster data can be vectorized in a number of ways. On raster satellite images of the Earth, people draw, or 'trace', lines for streets, points for houses, or polygons for buildings. This lets us have a version of the data upon which we can do more things - you can figure out driving routes from vector data of streets, but can't do that with a satellite image of streets.
 
 ### Simulation
 
