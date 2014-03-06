@@ -117,7 +117,7 @@ This branch of Earth sciences, called [geodesy](https://en.wikipedia.org/wiki/Ge
 
 ![](img/projections.jpg)
 
-Projections are what we call the mathematical equations that do the trick of turning the world into some flat shape that fits on a printout or a computer screen. It's a messy task to do, this transformation - there's no way to smoosh the world onto a screen without distorting it in some way. You either lose direction, or relative size, or come out with something very weird looking.
+Projections are those mathematical equations that do the trick of turning the world into some flat shape that fits on a printout or a computer screen. It's a messy task to do, this transformation - there's no way to smoosh the world onto a screen without distorting it in some way. You either lose direction, or relative size, or come out with something very weird looking.
 
 ## Symbolization
 
