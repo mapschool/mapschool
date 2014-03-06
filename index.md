@@ -123,7 +123,7 @@ Projections are those mathematical equations that do the trick of turning the wo
 
 Symbolization is a fancy word for the particular ways that data is transformed into graphics in the world of maps.
 
-Fundamentally, data doesn't look like anything: a list of pixel values or road lines is just as well represented in a spreadsheet or a chart as it is on a map. Thus to 'convert' is not the right word for what we do with data: The decision is more about how to render it.
+Fundamentally, data doesn't look like anything: a list of pixel values or road routes is just as well represented in a spreadsheet or a chart as it is on a map. Thus to 'convert' is not the right word for what we do with data: the decision is more about how to render it.
 
 Symbolic techniques include anything representable in graphics or even 3D, so let's only look at a few:
 
