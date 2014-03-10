@@ -14,7 +14,7 @@ mapschool is what it is thanks to the collective hard work of its authors:
 * [Rob Story](https://github.com/wrobstory)
 * [Stephanie May](https://github.com/mizmay)
 * [Tom MacWright](http://www.macwright.org/)
-* [sabas](https://github.com/sabas)
+* [Stefano Sabatini](https://github.com/sabas)
 
 the mapschool favicon is from the [Maki icon project](https://www.mapbox.com/maki/).
 Its source is licensed BSD.
