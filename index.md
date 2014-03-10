@@ -131,7 +131,7 @@ Symbolic techniques include anything representable in graphics or even 3D, so le
 
 ![](img/scales.jpg)
 
-Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential, or continuous, data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100, or elevation. Categorical, or discrete, data is, instead, one of a set number of values - like 'true', 'false', 'democrat' or 'republican'.
+Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential or continuous data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100, or elevation. Categorical or discrete data is, instead, one of a set number of values - like 'true', 'false', 'democrat' or 'republican'.
 
 This division between data is one of the main concerns for symbolization - a sequential datasource would fit with a scaled point map or a gradient color ramp on a raster, whereas categorical data generally is displayed using multiple symbols for markers, or discrete bucketing of colors.
 
