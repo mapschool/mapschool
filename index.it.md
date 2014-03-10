@@ -1,6 +1,7 @@
 ---
 title: mapschool
 layout: default
+language: it
 ---
 
 # map school
