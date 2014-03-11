@@ -18,11 +18,11 @@ is an introduction that covers as much of the field as possible, without attempt
 
 It is written for a high-school reading level and tries not to rely on deep knowledge of any other domain.
 
-Prior art is maintained in the `SEEALSO.md` document alongside `mapschool`. Cross-references, if any, should be recorded in this document.
+Prior art is maintained in the `furtherreading.md` document alongside `mapschool`. Cross-references, if any, should be recorded in this document.
 
 # Practical
 
-The content of `mapschool` is a single page document ([`README.md`](https://github.com/tmcw/mapschool/blob/gh-pages/README.md)) maintained in the [Markdown](http://daringfireball.net/projects/markdown/) format. The content in that file is used to generate the web version of this text that lives at at [MapSchool.io](http://mapschool.io/), and so all contributions should be made by editing [`README.md`](https://github.com/tmcw/mapschool/blob/gh-pages/README.md).
+The content of `mapschool` is a single page document ([`index.md`](https://github.com/tmcw/mapschool/blob/gh-pages/index.md)) maintained in the [Markdown](http://daringfireball.net/projects/markdown/) format. The content in that file is used to generate the web version of this text that lives at at [MapSchool.io](http://mapschool.io/), and so all contributions should be made by editing [`README.md`](https://github.com/tmcw/mapschool/blob/gh-pages/README.md).
 
 It should be readily accessible as a web page, but should also be understandable
 in full as a printout or PDF; that is, it does not rely on dynamic examples or hyperlinks.
@@ -48,5 +48,5 @@ product manuals, and any other creative usage is permitted, as long as attributi
 # Translation
 
 We love translations, and are keeping it simple for now. While `mapschool` is
-maintained in American English as `README.md`, please add translations as
-`README.language.md`, preferably using a [standard language subtag](http://people.w3.org/rishida/utils/subtags/).
+maintained in American English as `index.md`, please add translations as
+`index.language.md`, preferably using a [standard language subtag](http://people.w3.org/rishida/utils/subtags/).
