@@ -12,6 +12,7 @@ layout: default
 
 * [Learning Lunches: How to Make a Map](https://github.com/veltman/learninglunches/tree/master/maps) - focused on teaching fundamentals in order to get to the point of
   creating and understanding dynamic web maps.
+* [Geospatial Analysis, 4th Edition](http://www.spatialanalysisonline.com/HTML/index.html) by de Smith, Goodchild, Longley
 * [NCGIA Core Curriculum](http://www.geog.ubc.ca/courses/klink/gis.notes/ncgia/toc.html)
 
 ## Video
