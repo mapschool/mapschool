@@ -4,9 +4,9 @@ layout: default
 language: it
 ---
 
-# map school
+# A scuola di mappe
 
-Cos'è una mappa? Fino agli anni 80, le mappe erano documenti creati scrupolosamente a mano. Oggigiorno le mappe sono quasi sempre fatte con l'aiuto di un computer. Esse sono comunemente trovate, mescolate con direzioni di percorso, visualizzazioni e dispute sui confini amministrativi. Guardiamo più a fondo e pensiamo quali sono gli elementi fondanti delle mappe dal punto di vista del creatore.
+Cos'è una mappa? Fino agli anni 80, le mappe erano documenti creati scrupolosamente a mano. Oggigiorno le mappe sono quasi sempre fatte con l'aiuto di un computer. Esse sono comunemente viste mescolate con direzioni di percorso, visualizzazioni e dispute sui confini amministrativi. Guardiamo più a fondo e pensiamo quali sono gli elementi fondanti delle mappe dal punto di vista del creatore.
 
 Le mappe sono fondamentalmente composte da dati. I dati sono entità astratte, possono essere composti da miliardi di punti o solamente da pochi poligoni, oppure da registrazioni simil-fotografiche di colori e temperature. E' importante che i dati non siano vincolati ad uno specifico contesto d'uso.
 
@@ -26,7 +26,7 @@ I dati raster sono usati nelle fotografie della Terra, come quelle scattate dai 
 
 ##### Bande Raster
 
-I pixel nei dati raster non sono necessariamente solo colore di riempimento: i loro contenuti sono detti ‘bande’. Una immagine normale ha tre bande familiari: Rosso, Verde, e Blu. Combinate esse producono una immagine cui siamo abituati. Alcuni dati raster possono avere meno bande, ad esempio solamente quella per l’Elevazione, ed altri ne possono avere molte di più - non solo colori visibili, ma lunghezze d’onda che noi non possiamo vedere, come l’infrarosso e l’ultravioletto. Quando i dati raster sono analizzati e mostrati, puoi combinarli e scegliere le bande da usare a seconda di ciò che stai cercando.
+I pixel nei dati raster non sono necessariamente solo colore di riempimento: i loro contenuti sono detti ‘bande’. Una immagine normale ha tre bande familiari: Rosso, Verde, e Blu. Combinate esse producono una immagine alla quale siamo abituati. Alcuni dati raster possono avere meno bande, ad esempio solamente quella per l’Elevazione, ed altri ne possono avere molte di più - non solo colori visibili, ma lunghezze d’onda che noi non possiamo vedere, come l’infrarosso e l’ultravioletto. Quando i dati raster sono analizzati e mostrati, puoi combinarli e scegliere le bande da usare a seconda di ciò che stai cercando.
 
 ##### Formati Raster
 
@@ -44,9 +44,9 @@ Dati vettoriali servono per archiviare strade, edifici, punti di interesse, ed a
 
 ##### Formati vettoriali
 
-Il formato vettoriale più diffuso è lo [Shapefile] (http://it.wikipedia.org/wiki/Shapefile) - è un semplice formato che stranamente suddivide i dati necessari in quattro file distinti - `.shp` (dove risiedono le geometrie), `.prj` (una stringa che descrive la proiezione utilizzata), `shx` (un indice per abilitare ricerche veloci) e `.dbf`' (un file contenente il database di tutti i dati associati alle geometrie descritte nel file .shp). Molti di questi file sono composti da dati di tipo binario, se li si aprisse un editor di testo esso non mostrerà nulla di leggibile a parte il file .prj, che definisce la proiezione in solo testo. Il database (.dbf) può essere letto da LibreOffice Calc perché il suo formato deriva da una vecchia specifica di base di dati. Ciononostante, questa vecchia specifica limita la quantità dei dati degli attributi che puoi archiviare in uno shapefile. Per esempio: la dimensione di un file dbf non può eccedere i 2 GB, i nomi dei campi non possono contenere spazi e non possono eccedere i 10 caratteri, non sono supportati ne' i valori NULL ne' molti caratteri speciali, [eccetera](http://it.wikipedia.org/wiki/Shapefile#Limiti).
+Il formato vettoriale più diffuso è lo [Shapefile](http://it.wikipedia.org/wiki/Shapefile) - è un semplice formato che stranamente suddivide i dati necessari in quattro file distinti - `.shp` (dove risiedono le geometrie), `.prj` (una stringa che descrive la proiezione utilizzata), `shx` (un indice per abilitare ricerche veloci) e `.dbf` (un file contenente il database di tutti i dati associati alle geometrie descritte nel file .shp). Molti di questi file sono composti da dati di tipo binario, se li si aprisse un editor di testo esso non mostrerà nulla di leggibile a parte il file .prj, che definisce la proiezione in solo testo. Il database (.dbf) può essere letto da LibreOffice Calc perché il suo formato deriva da una vecchia specifica di base di dati. Ciononostante, questa vecchia specifica limita la quantità dei dati degli attributi che puoi archiviare in uno shapefile. Per esempio: la dimensione di un file dbf non può eccedere i 2 GB, i nomi dei campi non possono contenere spazi e non possono eccedere i 10 caratteri, non sono supportati ne' i valori NULL ne' molti caratteri speciali, [eccetera](http://it.wikipedia.org/wiki/Shapefile#Limiti).
 
-[GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson), e [KML](http://developers.google.com/kml) sono nuovi formati basati rispettivamente sulle codifiche [JSON](http://www.json.org/) e [XML](http://it.wikipedia.org/wiki/XML). Essendo basati su testo, essi tendono ad essere più semplici da implementare rispetto agli Shapefile e, combinati con ulteriore flessibilità e caratteristiche, essi sono diventati lo standard nei nuovi software per il web. eing text-based, they tend to be simpler to implement in software than Shapefiles, and combined with additional flexibility and features, they have become the standard in new web software. L'inconveniente del formato GeoJSON è costituito dal fatto che esistano meno strumenti per confrontare facilmente proprietà fra le occorrenze, quindi la pulizia e l'analisi dei dati è impegnativa.
+[GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson), e [KML](http://developers.google.com/kml) sono nuovi formati basati rispettivamente sulle codifiche [JSON](http://www.json.org/) e [XML](http://it.wikipedia.org/wiki/XML). Essendo basati su testo, essi tendono ad essere più semplici da implementare rispetto agli Shapefile e, combinati con ulteriore flessibilità e caratteristiche, essi sono diventati lo standard nei nuovi software per il web. L'inconveniente del formato GeoJSON è costituito dal fatto che esistano meno strumenti per confrontare facilmente proprietà fra le occorrenze, quindi la pulizia e l'analisi dei dati è impegnativa.
 
 ### Topologia
 
@@ -58,7 +58,7 @@ Questo diventa complicato quando vuoi chiederti ad esempio 'quali stati si tocca
 
 Una gran quantità di dati geografici non rientra nei casi precedenti - invece di essere composta da numeri comprensibili dai computer, è memorizzata come dati testuali - sono riferimenti a toponimi, strade, indirizzi e così via
 
-Sfortunatamente, questi non sono direttamente mappabili. A causa della variabilità dei nomi e delle molte definizioni di luogo, c'è un processo indiretto e spesso inpreciso per trasformare la parola 'Stati Uniti' nel punto '-120, 40'. Questo preocesso è quello che chiamamo **geocodifica**
+Sfortunatamente, questi non sono direttamente mappabili. A causa della variabilità dei nomi e delle molte definizioni di luogo, c'è un processo indiretto e spesso inpreciso per trasformare la parola 'Stati Uniti' nel punto '-120, 40'. Questo processo è quello che chiamamo **geocodifica**
 
 Il processo opposto è la **geocodifica inversa**, dove i dati già disponibili sono coordinate geografiche precise, e l'obiettivo è una descrizione leggibile da persone, ad esempio `Stati Uniti` o `1714 14th Street`. Allo stesso modo, questo non sempre è accurato - un luogo sulla Terra può essere all'interno di confini sovrapposti o in conflitto oppure tra indirizzi diversi.
 
@@ -66,15 +66,15 @@ La geocodifica e la geocodifica inversa possono essere veramente difficoltose: e
 
 ## Raccolta dei dati
 
-I dati alla base delle mappe sono stati raccolti in molti modi durante il corso degli anni - ogni fonte dai diari dei navigatori ai tweet geolocalizzati. Attualmente ci sono un paio di fonti maggiori che meritano una discussione:
+I dati alla base delle mappe sono stati raccolti in molti modi durante il corso degli anni - ogni fonte dai diari dei navigatori ai tweet geolocalizzati. Attualmente ci sono un paio di sorgenti maggiori che meritano una discussione:
 
 ![](img/gps.jpg)
 
 Il **GPS**, la costellazione di satelliti che fornisce al tuo cellulare un punto blu sulla mappa, è il fondamento della raccolta accurata di dati vettoriali. Gli agrimensori guideranno con unità GPS altamente accurate e combineranno i loro risultati in un qualcosa di affidabile.
 
-I **satelliti ed aeroplani** da osservazione raccolgono la maggior parte dei dati raster che oggi possediamo, scattando costantemente immagini da altitudini differenti e combinandole in qualcosa che assomiglia ad una fotografia del mondo. Gli stessi sensori catturano quelli che chiamiamo 'spettri non visibili', come la luce infrarossa che è utile per mappare l'agricoltura e la deforestazione. Tra i vari armamentari si include il [LiDAR](http://it.wikipedia.org/wiki/Lidar), un tipo di sensore laser che misura l'altitudine e ci fornisce dati raster su di essa.
+I **satelliti e gli aeroplani** da osservazione raccolgono la maggior parte dei dati raster che oggi possediamo, scattando costantemente immagini da altitudini differenti e combinandole in qualcosa che assomiglia ad una fotografia del mondo. Gli stessi sensori catturano quelli che chiamiamo 'spettri non visibili', come la luce infrarossa che è utile per mappare l'agricoltura e la deforestazione. Tra i vari armamentari si include il [LiDAR](http://it.wikipedia.org/wiki/Lidar), un tipo di sensore laser che misura l'altitudine e ci fornisce dati raster su di essa.
 
-**Le aziende, i governi, e le comunità**  mantengono diverse mappe del mondo di dettaglio variabile. Ad esempio, Google ed [OpenStreetMap](http://www.openstreetmap.org/) si focalizzano sul mappare le strade ed i dettagli su di esse, e fonti come il [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) ed il [Natural Earth](http://www.naturalearthdata.com/) tengono traccia dei confini politici.
+**Le aziende, i governi, e le comunità**  mantengono diverse mappe del mondo di dettaglio variabile. Ad esempio, [Google](http://maps.google.com) ed [OpenStreetMap](http://www.openstreetmap.org/) si focalizzano sul mappare le strade ed i dettagli su di esse, e fonti come il [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) ed il [Natural Earth](http://www.naturalearthdata.com/) tengono traccia dei confini politici.
 
 ## Archiviazione
 
@@ -84,7 +84,7 @@ Ci sono diversi tipi di file e convenzioni per archiviare dati geografici, e di 
 
 # Informazione
 
-Le mappe sono informazione visualzizata: ad un capo giacciono i problemi legati ai rifermenti, numeri, ed archiviazione - gli aspetti pratici di come registriamo e differenziamo differenti luoghi della Terra. Tra dati e visualizzazione c'è una trasformazione che chiamiamo 'proiezione' - con la quale luoghi sulla Terra diventano luoghi su superfici generalmente piatte, come stampe o schermi di computer. E poi, finalmente, decidiamo i dettagli dei colori, toni, e simbolismi che provano a tradurre dettagli riguardo ai dati in immagini che le persone possono capire ed interpretare.
+Le mappe sono informazione visuazzizata: ad un capo giacciono i problemi legati ai rifermenti, numeri, ed archiviazione - gli aspetti pratici di come registriamo e differenziamo differenti luoghi della Terra. Tra dati e visualizzazione c'è una trasformazione che chiamiamo 'proiezione' - con la quale luoghi sulla Terra diventano luoghi su superfici generalmente piatte, come stampe o schermi di computer. E poi, finalmente, decidiamo i dettagli dei colori, toni, e simbolismi che provano a tradurre dettagli riguardo ai dati in immagini che le persone possono capire ed interpretare.
 
 ## Latitudine & Longitudine
 
@@ -108,7 +108,7 @@ A volte vengono registrate come dati più informazioni rispetto alla sola latitu
 
 Archiviare e fornire una rappresentazione del mondo ci pone la questione di quale forma abbia - latitudine e longitudine possono essere mappate su una sfera perfetta e viceversa, manenendo la loro accuratezza spaziale?
 
-Siccome la Terra è un oggetto che ruota su se stesso ed i suoi componenti possono cambiare forma, essa è gonfia nel mezzo - pertanto, invece di essere una sfera, è in realtà di forma più simile ad uno [sferoide oblato](https://it.wikipedia.org/wiki/Ellissoide) (schiacciato ai poli). Se si guarda da più vicino, questo non è neppure completamente vero - la Terra è ricoperta da [differenze di elevazione] (http://it.wikipedia.org/wiki/Topografia) come montagne e valli, ed anche modifiche fatte dall'uomo come le città.
+Siccome la Terra è un oggetto che ruota su se stesso ed i suoi componenti possono cambiare forma, essa è gonfia nel mezzo - pertanto, invece di essere una sfera, è in realtà di forma più simile ad uno [sferoide oblato](https://it.wikipedia.org/wiki/Ellissoide) (schiacciato ai poli). Se si guarda da più vicino, questo non è neppure completamente vero - la Terra è ricoperta da [differenze di elevazione](http://it.wikipedia.org/wiki/Topografia) come montagne e valli, ed anche modifiche fatte dall'uomo come le città.
 
 Per il lavoro quotidiano usiamo diverse stime di questa forma: standard quali il [WGS84](http://it.wikipedia.org/wiki/WGS84) definiscono valori precisi per la lunghezza di entrambi gli assi della Terra, quindi possiamo stimare rispetto ad un [ellissoide di riferimento](http://it.wikipedia.org/wiki/Ellissoide_di_riferimento) piuttosto che ad una sfera. Le misure locali e la scienza che si basa su valori precisi di superficie possono usare [modelli di geoide](https://it.wikipedia.org/wiki/Geoide), che sono calcoli tridimensionali di altezze degli oceani teoriche.
 
