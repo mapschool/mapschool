@@ -16,11 +16,11 @@ language:
     home: 'home'
   it:
     feedback: 'feedback'
-    contributors: 'contributors'
-    tagline: 'a free introduction to geo'
-    furtherreading: 'further reading'
-    code: 'code'
-    home: 'home'
+    contributors: 'autori'
+    tagline: 'una introduzione libera alla geografia'
+    furtherreading: 'letture ulteriori'
+    code: 'codice'
+    home: 'pagina principale'
   es:
     feedback: 'feedback'
     contributors: 'autores'
