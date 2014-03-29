@@ -2,11 +2,11 @@
 <html lang='{% if page.language %}{{ page.language }}{% else %}en{% endif %}'>
     <head>
         <meta charset='utf-8'>
-        <title>{{ page.title }}: a free introduction to geo</title>
+        <title>{{ page.title }}: {{ site.language[page.language].tagline }}</title>
         <link rel='stylesheet' type='text/css' href='css/site.css' />
         <meta http-equiv='content-type' content='text/html; charset=utf-8' />
         <meta name='viewport' content='initial-scale=1.0 maximum-scale=1.0'>
-        <meta name='description' content='a brief introduction to map and geospatial concepts'>
+        <meta name='description' content='{{ site.language[page.language].tagline }}'>
         <link rel='shortcut icon' href='img/library-24.png'>
     </head>
     <body>
@@ -17,13 +17,17 @@
         </div>
         <div class='header'>
             <h1><a href='./'>{{ page.title }}</a></h1>
-            <p>a free introduction to geo.</p>
+            <p>
+                {{ site.language[page.language].tagline }}
+            </p>
             <nav>
-                <a href='./'>home</a>
-                <a href='https://github.com/tmcw/mapschool'>code</a>
-                <a href='https://tmcw.wufoo.com/forms/mapschool-feedback/'>feedback</a>
-                <a href='./contributors.html'>contributors</a>
-                <a href='./furtherreading.html'>further reading</a>
+                <a href='./'>
+                    {{ site.language[page.language].home }}</a>
+                <a href='https://github.com/tmcw/mapschool'>
+                    {{ site.language[page.language].code }}</a>
+                <a href='https://tmcw.wufoo.com/forms/mapschool-feedback/'>{{ site.language[page.language].feedback }}</a>
+                <a href='./contributors.html'>{{ site.language[page.language].contributors }}</a>
+                <a href='./furtherreading.html'>{{ site.language[page.language].furtherreading }}</a>
             </nav>
         </div>
         <div class='wrap'>

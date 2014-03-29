@@ -6,3 +6,25 @@ markdown:    rdiscount
 url:         http://mapschool.io/
 rdiscount:
   extensions: [smart]
+language:
+  en:
+    feedback: 'feedback'
+    contributors: 'contributors'
+    tagline: 'a free introduction to geo'
+    furtherreading: 'further reading'
+    code: 'code'
+    home: 'home'
+  it:
+    feedback: 'feedback'
+    contributors: 'contributors'
+    tagline: 'a free introduction to geo'
+    furtherreading: 'further reading'
+    code: 'code'
+    home: 'home'
+  es:
+    feedback: 'feedback'
+    contributors: 'autores'
+    tagline: 'una introducción libre de geo'
+    furtherreading: 'lecturas adicionales'
+    code: 'código fuente'
+    home: 'casa'
