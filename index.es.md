@@ -1,7 +1,8 @@
-**To be translated into Spanish following tmcw [instructions](CONTRIBUTING.md)**
-
-% map school
-% Tom MacWright
+---
+title: mapschool
+layout: default
+language: es
+---
 
 # map school
 
