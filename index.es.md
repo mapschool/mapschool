@@ -55,13 +55,13 @@ Además de almacenar lugares y formas algunos vectores contienen información so
 
 Esto hace que sea difícil determinar algo como '¿Cuántos estados son colindantes?' o simplificar las formas de los objetos mientras se mantienen los bordes alineados. Se usa el concepto de topología: información vectorial, en lugar de almacenar una forma de Arizona y otra de Nuevo México, lo que ahorra muchas líneas y mantiene la información de los objetos colindantes. En definitiva, la frontera entre Arizona y Nuevo México es una simple línea usada para dibujar el borde de ambos estados y, si modificas dicha línea, la forma de ambos estados cambiaría.
 
-## Geocoding
+## Geocodificación
 
 Un punto importante sobre información geográfica no es ninguno de los anteriores. En lugar de estar compuesta por números, que es lo que entienden los ordenadores, se almacena en texto - referencias a nombres de lugares, calles, direcciones, etc.
 
 Desafortunadamente no es posible mapear esto directamente. Debido a las variaciones en nomenclaturas y las diferentes formas de definir un lugar, hay un proceso indirecto y, a menudo inexacto, cuando transformamos las palabras 'Estados Unidos' en el punto `-120, 40`. A este proceso es a lo que llamamos **geocoding** (o geocodificación).
 
-El proceso inverso es **geocoding inverso**, donde los datos legibles disponibles son posiciones geográficas precisas y el objetivo es una descripción humana como `Estados Unidos` o `1714 14th Street`. Del mismo modo, esto tampoco es siempre exacto - puede haber un lugar en la tierra dentro de bordes que estén superpuestos y en conflicto o entre direcciones de puntos. 
+El proceso inverso es **geocoding inverso**, donde los datos legibles disponibles son posiciones geográficas precisas y el objetivo es una descripción humana como `Estados Unidos` o `1714 14th Street`. Del mismo modo, esto tampoco es siempre exacto - puede haber un lugar en la tierra dentro de bordes que estén superpuestos y en conflicto o entre direcciones de puntos.
 El geocoding y geocoding inverso pueden ser difíciles: errores en las posiciones de las coordenadas, formato escaso de direcciones y un continuo cambio en las estructuras de las calles y edificios contribuye a la dificultad a la hora de convertir direcciones en coordenadas o viceversa.
 
 ## Recogida de datos
@@ -102,13 +102,13 @@ La ordenación de las coordenadas puede causar alguna confusión, como los busca
 
 A veces además de la posición de la latitud, longitud es almacenada como dato: la altitud también puede ser incluida, así como el tiempo de captura y otros factores. En el caso de incluir la altitud, es normalmente almacenada como tercera coordenada, tal que así 'longitud, latitud, altitud.'
 
-## The Shape of the Earth
+## La forma de la Tierra
 
 ![](img/earth-shapes.jpg)
 
 Almacenar y presentar el mundo nos conduce a la cuestión de ¿cuál es su forma? ¿pueden los valores de longitud y latitud asimilarse a una esfera perfecta y de vuelta, y aún mantener su precisión espacial?
 
-En tanto la tierra es un objeto que rota y sus componentes pueden cambiar su forma, ésta se deforma hacia su parte media, por lo que en lugar de parecerse a una esfera, se parece más bien a un [esferoide](https://es.wikipedia.org/wiki/Esferoide).  Si nos acercamos aún más, esto tampoco es del todo cierto, la tierra está cubierta de [diferencias de elevaciones](https://es.wikipedia.org/wiki/Topograf%C3%ADa) como montañas y valles, e incluso cambios producidos por el hombre como las ciudades. 
+En tanto la tierra es un objeto que rota y sus componentes pueden cambiar su forma, ésta se deforma hacia su parte media, por lo que en lugar de parecerse a una esfera, se parece más bien a un [esferoide](https://es.wikipedia.org/wiki/Esferoide).  Si nos acercamos aún más, esto tampoco es del todo cierto, la tierra está cubierta de [diferencias de elevaciones](https://es.wikipedia.org/wiki/Topograf%C3%ADa) como montañas y valles, e incluso cambios producidos por el hombre como las ciudades.
 
 Para el trabajo diario, utilizamos diferentes formas aproximadas: estándares como el sistema [WGS84](https://es.wikipedia.org/wiki/WGS84) definen de forma precisa los valores de ambos ejes de la tierra, y así utilizar un [elipsoide de referencia](https://es.wikipedia.org/wiki/Elipsoide_de_referencia) en lugar de una esfera. Las medidas locales y científicas que se apoyan en valores de la superficie más precisos utilizan [modelos de geoide](https://es.wikipedia.org/wiki/Geoide), que ofrecen valores tridimensionales de las alturas teóricas de los océanos en toda la superficie de la tierra.
 
@@ -136,13 +136,13 @@ Esta división entre datos es una de las principales preocupaciones de la simbol
 
 ### Coropletas
 
-Los mapas de coropletas preservan los límites y las formas existentes de los lugares y representan los datos cambiando sus colores, diseños y texturas. Un ejemplo conocido de este tipo de mapa es el de los resultados electorales o la composición demográfica, en la que los datos son valores porcentuales para un lugar concreto - un valor por distrito electoral o área del censo. 
+Los mapas de coropletas preservan los límites y las formas existentes de los lugares y representan los datos cambiando sus colores, diseños y texturas. Un ejemplo conocido de este tipo de mapa es el de los resultados electorales o la composición demográfica, en la que los datos son valores porcentuales para un lugar concreto - un valor por distrito electoral o área del censo.
 
 Los mapas de coropletas son un ajuste natural para datos como rangos, densidades o porcentajes. No son recomendables valores absolutos: ya que mantienen el área de las formas, tienden a exagerar la importancia de los elementos grandes. Además, puesto que los mapas de coropletas dependen de las diferencias de color para representar la información, es muy importante escoger bien los colores para que seas comprensibles y consistentes, y teniendo en cuenta el daltonismo.
 
 ##### Coropletas en profundidad
 
-La selección de colores en un mapa de coropletas generalmente se llama la "paleta" o "rampa de color", especialmente cuando los colores son secuenciales. [ColorBrewer] (http://colorbrewer2.org/) es un conjunto bien documentado de colores comprensibles y claros.
+La selección de colores en un mapa de coropletas generalmente se llama la "paleta" o "rampa de color", especialmente cuando los colores son secuenciales. [ColorBrewer](http://colorbrewer2.org/) es un conjunto bien documentado de colores comprensibles y claros.
 
 ### Puntos
 
@@ -154,27 +154,29 @@ Ha de tenerse cuidado para no mostrar demasiados puntos al mismo tiempo, esto ha
 
 ## Publicación
 
-## Analysis
+## Análisis
 
-Raster & vector analysis as aggregation & transformation
+Análisis vectorial y _raster_ como agregación y transformación
 
-### Vector to Raster
+### Vectorial a _raster_
 
-It's possible to move between the two types of map data, as disparate as they might seem, and it's actually quite common: it's just not direct.
+Es posible realizar conversiones entre los dos tipos de datos cartográficos  aunque puedan parecer muy diferentes; de hecho es bastante común: simplemente no es una conversión directa.
 
-Typically vector data always becomes raster - what we call 'rasterized' or 'rendered' when it is displayed: computer screens and printers operate on the level of pixels, not lines or shapes. This conversion is imperfect: remember that vector data is not pixel-based, so you can never zoom in and see fuzzy features. Thus, generally, when vector data is converted into a raster format, you can't transform that raster representation back into exactly the source.
+Habitualmente un dato vectorial siempre se convierte a _raster_, lo que se denomina comúnmente como _rasterizar_, cuando es visualizado: las pantallas de las computadoras y las impresoras operan en el ámbito de los píxeles, no con líneas o formas. Esta conversión es imperfecta, recuerda que los datos vectoriales no utilizan píxeles, por lo que puedes hacer _zoom_ indefinidamente y nunca verás formas borrosas. Por lo tanto, en general cuando los datos vectoriales se convierten a un formato _raster_, no se puede hacer la transformación de vuelta y llegar exactamente al mismo origen.
 
-Sometimes we convert vector data to raster ahead of time - in order to run some kinds of analysis, it's easier to do the math on a pixel basis.
+En ocasiones hacemos esta conversión de datos vectoriales a datos _raster_ por adelantado, ya que para ciertos tipos de análisis, es más sencillo hacer las operaciones en el ámbito de los píxeles.
 
-### Raster to Vector
 
-Likewise, raster data can be vectorized in a number of ways. On raster satellite images of the earth, people draw, or 'trace', lines for streets, points for houses, or polygons for buildings. This lets us have a version of the data upon which we can do more things - you can figure out driving routes from vector data of streets, but can't do that with a satellite image of streets.
+### _Raster_ a vectorial
 
-### Simulation
+Del mismo modo, los datos _raster_ pueden ser _vectorizados_ de diferentes maneras. En imágenes _raster_ de satélite de la Tierra, la gente dibuja líneas para calles, puntos para viviendas o polígonos para los edificios. Esto nos permite disponer de una versión de los datos con la que podemos hacer más cosas: por ejemplo uno puede conseguir rutas de conducción a partir de los datos vectoriales de las calles, pero no puede hacer esto con imágenes de satélite de las mismas calles.
 
-With geographic data, it's possible to simulate certain natural processes, and this simulation is a big part of what working mappers do. Given elevation data for a mountain range, it's possible to simulate highlights and shadows for those mountains in light, in a process called hillshading.
+### Simulación
 
-More complex processes are also possible, like determining where water will collect after rainfall, called a 'watershed', or determining everywhere on the map that will be visible if you're standing at a mountaintop, called a 'viewshed'.
+Con datos geográficos, es posible simular ciertos procesos naturales, y esta simulación es una gran área en la que los cartógrafos trabajan. Por ejemplo a partir de los datos de elevación de una cordillera, es posible simular las zonas iluminadas y las sombras provocadas por el sol, en un proceso conocido como sombreado (_hillshading_).
+
+También son posibles procesos más complejos, como determinar la cantidad de agua que se recogerá tras una precipitación, conocido como «cuenca hidrográfica», o determinar qué lugares de un mapa serán visibles si te sitúas en lo alto de cierta elevación, conocido como «cuenca visual».
+
 
 ### Agregación
 
@@ -192,9 +194,9 @@ La interpolación examina los valores alrededor de los 'blancos' y asume que los
 
 Hay diversas formas de interpolar datos puntuales:
 
-- **Heatmaps** asignan a cada punto una importancia y representan la densidad de de puntos en colores "más cálidos". 
-- Las **curvas de nivel** toman una muestra de datos y dibujan líneas alrededor de ellos, representando un valor estimado continuo. Los mapas de elevación suelen utilizar esta técnica. 
-- Un **TIN** (Red Irregular de Triángulos) dibuja triángulos entre los puntos que pueden ser utilizados para visualizar el terreno. 
+- **Heatmaps** asignan a cada punto una importancia y representan la densidad de de puntos en colores "más cálidos".
+- Las **curvas de nivel** toman una muestra de datos y dibujan líneas alrededor de ellos, representando un valor estimado continuo. Los mapas de elevación suelen utilizar esta técnica.
+- Un **TIN** (Red Irregular de Triángulos) dibuja triángulos entre los puntos que pueden ser utilizados para visualizar el terreno.
 - **Diagramas de Voronoi** toman un conjunto de puntos y los convierten en polígonos de toda el área a su alrededor.
 
 ## Afterword
