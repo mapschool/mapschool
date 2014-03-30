@@ -22,9 +22,9 @@ language:
     code: 'codice'
     home: 'pagina principale'
   es:
-    feedback: 'feedback'
+    feedback: 'contacto'
     contributors: 'autores'
-    tagline: 'una introducción libre de geo'
+    tagline: 'una introducción libre al mundo geo'
     furtherreading: 'lecturas adicionales'
     code: 'código fuente'
-    home: 'casa'
+    home: 'inicio'
