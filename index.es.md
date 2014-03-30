@@ -199,12 +199,12 @@ Hay diversas formas de interpolar datos puntuales:
 - Un **TIN** (Red Irregular de Triángulos) dibuja triángulos entre los puntos que pueden ser utilizados para visualizar el terreno.
 - **Diagramas de Voronoi** toman un conjunto de puntos y los convierten en polígonos de toda el área a su alrededor.
 
-## Afterword
+## Epílogo
 
-We hope this has been an enlightening and inspiring read: there is so much potential in this field and so many unanswered questions. Maps are a connected topic, stretching into art, mathematics, physics, ecology, and so much more.
+Esperamos que esta haya sido una lectura esclarecedora e inspiradora: hay tanto potencial en este campo y tantas preguntas sin respuesta. Los mapas son un tema conectado, que se extiende al arte, las matemáticas, la física, la ecología y mucho más.
 
-We'd love if you can [report any issues or file any suggestions](https://tmcw.wufoo.com/forms/mapschool-feedback/) that came to mind in your read.
+Estaríamos encantados de que nos [informaras de cualquier problema o sugerencia](https://tmcw.wufoo.com/forms/mapschool-feedback/) que te haya venido a la mente durante tu lectura.
 
-### License
+### Licencia
 
 [Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US)
