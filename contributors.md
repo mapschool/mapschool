@@ -1,6 +1,7 @@
 ---
 title: contributors
 layout: default
+language: en
 ---
 
 mapschool is what it is thanks to the collective hard work of its authors:

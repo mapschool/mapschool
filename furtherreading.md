@@ -1,6 +1,7 @@
 ---
 title: further reading
 layout: default
+language: en
 ---
 
 ## Lecture Notes
