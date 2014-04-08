@@ -20,6 +20,33 @@ It is written for a high-school reading level and tries not to rely on deep know
 
 Prior art is maintained in the `furtherreading.md` document alongside `mapschool`. Cross-references, if any, should be recorded in this document.
 
+# Extras
+
+Since the `/` landing page of `mapschool` is short and should stay that way,
+we have an escape hatch: _extras_. These are additional articles that provide
+more detail to certain concepts. See [existing extras under the `_posts` directory](https://github.com/tmcw/mapschool/tree/gh-pages/_posts).
+
+To add a new extra, name it `_posts/0100-01-01-NAME.md` and add a header like
+
+```
+---
+title: "mapschool: datum"
+layout: default
+language: en
+permalink: datum.html
+---
+```
+
+Change the word 'datum' to the topic of the page. Then you can link to the page
+from mapschool:
+
+```html
+<a class='further-reading' href='/datum.html'>read more about datums</a>
+```
+
+Links to extras should come at natural breaks in sections rather than in paragraphs
+themselves, and should follow the same format like 'read more about elephants'.
+
 # Practical
 
 The content of `mapschool` is a single page document ([`index.md`](https://github.com/tmcw/mapschool/blob/gh-pages/index.md)) maintained in the [Markdown](http://daringfireball.net/projects/markdown/) format. The content in that file is used to generate the web version of this text that lives at at [MapSchool.io](http://mapschool.io/), and so all contributions should be made by editing [`README.md`](https://github.com/tmcw/mapschool/blob/gh-pages/README.md).
