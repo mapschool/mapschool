@@ -4,7 +4,21 @@ layout: default
 language: es
 ---
 
-La siguiente documentación esta en idioma inglés.
+
+La siguiente documentación esta en idioma español:
+
+
+* [Que es un SIG? (Mapa educativo, Argentina)](http://www.mapaeducativo.edu.ar/encontrar/pages/qsig)
+
+* [Proyecto Atlas (Assisted Transnational Learning using Artificial Satellites)](http://www.cfa.harvard.edu/space_geodesy/ATLAS/index_es.html)Proyecto educativo internacional y multidisciplinar para niños de 12 a 14 años. El núcleo del proyecto consta de dos experimentos científicos a través de los cuales los participantes utilizan tecnología de satélites e Internet para intercambiar información acerca del mundo en el que viven.
+ 
+* [Material didactico: Cartografía y Orientación (IGN España)](http://www.ign.es/atlas_didactico/modulo03/pda/modulo03.pdf), Proyecciones, tipos de mapas, escala, elaboración de mapas, SIG, teledetección.
+
+* [eduSIG, aplicación educativa](http://www.edusig.com.ar/) Aplicación gratuita educativa, basada en gvsig orientada a la enseñanza de la utilización de la información geográfica.
+
+
+---
+La siguiente documentación esta en idioma inglés:
 
 ## Lecturas de curso
 
