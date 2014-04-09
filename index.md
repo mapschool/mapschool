@@ -144,9 +144,7 @@ Choropleth maps preserve the existing boundaries and shapes of places and repres
 
 Choropleth maps are a natural fit for data like rates, densities, or percentages. They aren't recommended for absolute values: since they keep the area of shapes the same, they tend to over-emphasize large features. Also, since choropleth maps rely on color differences to represent information, it's important that the colors are well-chosen to be colorblind-safe, understandable, and consistent.
 
-##### Choropleths in Depth
-
-The selection of colors in a choropleth map is generally called the 'palette' or the 'color ramp', especially when the colors are sequential. [ColorBrewer](http://colorbrewer2.org/) is a well-researched set of colors that are understandable and clear.
+<a class='further-reading' href='/colors.html'>read more about colors</a>
 
 ### Point
 
