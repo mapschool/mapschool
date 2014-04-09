@@ -120,7 +120,7 @@ Questa branca delle scienze della terra, chiamata [geodesia](http://it.wikipedia
 
 Le proiezioni sono quelle equazioni matematiche che riescono a trasformare il mondo in una qualunque forma piatta che sta su una stampa o su uno schermo di computer. E' un compito ingarbugliato da svolgere questa trasformaziione - non c'è modo di piazzare il mondo su uno schermo senza distorcerlo in qualche modo. Puoi perdere o la direzione, o la dimensione relativa, od uscirne con qualcosa con un aspetto veramente strano.
 
-<a class='further-reading' href='/datum.html'>Leggi l'approfondimento sui datum geodetici</a>
+<a class='further-reading' href='/datum.html'>Leggi l'approfondimento sui datum geografici</a>
 
 ## Simbolizzazione
 
