@@ -15,6 +15,7 @@ language: en
   creating and understanding dynamic web maps.
 * [Geospatial Analysis, 4th Edition](http://www.spatialanalysisonline.com/HTML/index.html) by de Smith, Goodchild, Longley
 * [NCGIA Core Curriculum](http://www.geog.ubc.ca/courses/klink/gis.notes/ncgia/toc.html)
+* [Map Projections](http://www.progonos.com/furuti/MapProj/Normal/TOC/cartTOC.html) by Carlos A. Furuti, in-depth thinking about projections.
 
 ## Video
 
