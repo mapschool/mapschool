@@ -144,9 +144,7 @@ Le mappe a coropleto preservano i confini e le forme di luoghi esistenti e rappr
 
 Le mappe a coropleto sono una scelta naturale per dati come tassi, densità o percentuali. Non sono raccomandate per valori assoluti: poichè mantengono le aree, tendono a sovraenfatizzare grandi caratteristiche. E, siccome le mappe a coropleto si basano sulle differenze di colori per rappresentare le informazioni, è importante che i colori siano ben scelti per essere visibili ai daltonici, comprensibili e coerenti.
 
-##### Approfondimento sui coropleti
-
-La selezione dei colori in una mappa a coropleto è generalmente chiamata 'palette' o 'rampa di colori', specialmente quando i colori sono sequenziali. [ColorBrewer](http://colorbrewer2.org/) è un insieme molto curato di colori che sono comprensibili e chiari.
+<a class='further-reading' href='/colors.html'>Maggiori informazioni sui colori</a>
 
 ### Puntuali
 
