@@ -54,15 +54,19 @@ Oltre ad archiviare luoghi e forme, alcuni dati vettoriali tengono traccia della
 
 Questo diventa complicato quando vuoi chiederti ad esempio 'quali stati si toccano?' o semplificare le forme degli oggetti preservando l'allineamento dei confini. Usiamo il concetto di topologia: alcuni dati vettoriali, invece di archiviare una forma per l'Arizona ed un'altra per il Nuovo Messico, salvano un sacco di linee e tengono traccia di quali formano il confine di quale oggetto. Quindi il confine tra Arizona e Nuovo Messico è un'unica linea che è usata per disegnare il confine di entrambi gli stati e, se modifichi la linea, cambierà la forma di entrambi gli stati.
 
-##Geocoding
+## Geocodifica
 
-Una gran quantità di dati geografici non rientra nei casi precedenti - invece di essere composta da numeri comprensibili dai computer, è memorizzata come dati testuali - sono riferimenti a toponimi, strade, indirizzi e così via
+Una gran quantità di dati geografici non é nè vettoriale nè raster: invece di essere composta da numeri comprensibili dai computer, è memorizzata come dati testuali, e include riferimenti a toponimi, strade, indirizzi e altri strumenti di identificazione.
 
-Sfortunatamente, questi non sono direttamente mappabili. A causa della variabilità dei nomi e delle molte definizioni di luogo, c'è un processo indiretto e spesso inpreciso per trasformare la parola 'Stati Uniti' nel punto '-120, 40'. Questo processo è quello che chiamamo **geocodifica**
+Sfortunatamente, non è possibile mettere semplicemente questi dati su una mappa. C'è un processo indiretto e spesso inpreciso coinvolto nel trasformare parole come 'Stati Uniti' nel punto '-120, 40'. Questo processo è quello che chiamamo **geocodifica**. La geocodifica si basa su basi di dati di toponimi stradali, nazioni, ed altro ancora, insieme alle posizioni geografiche, e gli algoritmi tentano di trovare il corrispettivo migliore per inserimenti impreecisi.
 
-Il processo opposto è la **geocodifica inversa**, dove i dati già disponibili sono coordinate geografiche precise, e l'obiettivo è una descrizione leggibile da persone, ad esempio `Stati Uniti` o `1714 14th Street`. Allo stesso modo, questo non sempre è accurato - un luogo sulla Terra può essere all'interno di confini sovrapposti o in conflitto oppure tra indirizzi diversi.
+### Geocodifica inversa
 
-La geocodifica e la geocodifica inversa possono essere veramente difficoltose: errori sulle coordinate della posizione, e indirizzi malamente formattati, ed una griglia di strade ed edifici in variazione continua contribuiscono alla difficoltà di convertire indirizzi in coordinate, o viceversa.
+Il processo opposto è la **geocodifica inversa**. Questo trasforma dati geografici come i punti in testo leggibile da persone, ad esempio `Stati Uniti` o `1714 14th Street`. Come per la geocodifica, è approssimativo - un luogo sulla Terra può essere all'interno di confini sovrapposti o in conflitto oppure tra indirizzi diversi.
+
+La geocodifica e la geocodifica inversa sono difficoltose: errori sulle coordinate della posizione, indirizzi malamente formattati, ed una griglia di strade ed edifici in variazione continua contribuiscono alla difficoltà di convertire indirizzi in coordinate, o viceversa.
+
+<a class='further-reading' href='/geocoding.html'>Leggi l'approfondimento sulla geocodifica</a>
 
 ## Raccolta dei dati
 
