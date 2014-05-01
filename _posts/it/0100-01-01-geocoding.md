@@ -1,41 +1,41 @@
 ---
-title: "mapschool: geocoding"
+title: "mapschool: geocodifica"
 layout: default
-language: en
+language: it
 permalink: geocoding.html
 ---
 
-Geocoding is an extremely common need - from postal services to demographic analysis, there are plenty of jobs that require you to turn names into places and vice-versa.
+La geocodifica è un bisogno estremamente comune - dai servizi postali all'analisi demografica, ci sono un sacco di lavori che ti richiedono di trasformare nomi in luoghi e viceversa.
 
-## Challenges
+## Sfide
 
-Geocoding is difficult for a number of reasons. Street names are often misspelled, and even official city sources and signage varies significantly. The formatting of street names - order in which house number, street type, street name, city, and country are placed - varies between cities and countries. Address points also can either be precise in data, or estimated by choosing equidistant places along a known address range on a road.
+La geocodifica è difficile per una serie di ragioni. I nomi delle strade sono spesso scritti non correttamente, e perfino le sorgenti cittadine ufficiali e i cartelli stradali variano significativamente. La formattazione degli indirizzi stradali - l'ordine nel quale sono posti numero civico, tipo di strada, nome, città e nazione - varia tra le città e le nazioni. Anche i punti degli indirizzi possono essere dati precisi o stimati scegliendo luoghi equidistanti lungo un intervallo conosciuto di indirizzi di una strada.
 
-## Data
+## Dati
 
-The data required to run a worldwide geocoder is significant and not readily available. Commercial sources like the [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/) are based on proprietary data, and often require [restrictions on the output](https://developers.google.com/maps/terms#section_10_12). In the US, the largest source of address point data, controlled by the [USPS](https://www.usps.com/), is not available for public release because of potential privacy concerns.
+I dati necessari a far girare un geocoder su scala mondiale sono rilevanti e non immediatamente disponibili. Fonti commerciali come la [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/) sono basate su dati proprietari, e spesso richiedono [restrizioni sui risultati](https://developers.google.com/maps/terms#section_10_12). Negli Stati Uniti la più grande fonte di indirizzi puntuali, controllata dall'[USPS](https://www.usps.com/), non è disponibile per il rilascio pubblico a causa di potenziali problemi di privacy.
 
-## Tools
+## Strumenti
 
-There are many geocoders available, with varying levels of performance, coverage areas, and granularity.
+Ci sono molti geocoder disponibili, con livelli variabili di prestazioni, area di copertura, e granularità.
 
-### Worldwide Services
+### Servizi Globali
 
 * [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/)
 * [MapQuest Open Geocoder](https://developer.mapquest.com/web/products/open/geocoding-service)
 * [Yahoo Geocoder](https://developer.yahoo.com/boss/geo/)
 * [Twofishes](http://demo.twofishes.net/)
 
-### US-Only Services
+### Servizi limitati agli Stati Uniti
 
 * [geocoder.us](http://geocoder.us/)
 * [US Census Geocoding Service](http://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.pdf)
 * [Mapbox](https://www.mapbox.com/developers/api/geocoding/)
 
-### Canadian Services
+### Servizi Canadesi
 
 * [geogratis](http://geogratis.gc.ca/site/eng/geoloc)
 
-### Databases
+### Database
 
 * [geonames](http://www.geonames.org/)
