@@ -46,4 +46,4 @@ La siguiente documentación esta en idioma inglés:
 * [Modelado de cartografía y GIS, Tomlin](http://www.amazon.com/GIS-Cartographic-Modeling-Dana-Tomlin/dp/158948309X)
 * [GIS, Longley](http://www.amazon.com/Geographic-Information-Systems-Science-Longley/dp/0470721448)
 * [Uso de Mapas - Lectura, análisis e interpretación](http://www.amazon.com/Map-Use-Reading-Analysis-Interpretation/dp/1589482794)
-* [Fundamentos del GIS, 4ta edición](http://wwwkpaulbolstad.net/gisbook.html)
+* [Fundamentos del GIS, 4ta edición](http://www.paulbolstad.net/gisbook.html)
