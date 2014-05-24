@@ -33,4 +33,4 @@ language: en
 * [GIS and Cartographic Modeling, Tomlin](http://www.amazon.com/GIS-Cartographic-Modeling-Dana-Tomlin/dp/158948309X)
 * [GIS, Longley](http://www.amazon.com/Geographic-Information-Systems-Science-Longley/dp/0470721448)
 * [Map Use Reading Analysis Intepretation](http://www.amazon.com/Map-Use-Reading-Analysis-Interpretation/dp/1589482794)
-* [GIS Fundamentals, 4th Edition](http://wwwkpaulbolstad.net/gisbook.html)
+* [GIS Fundamentals, 4th Edition](http://www.paulbolstad.net/gisbook.html)
