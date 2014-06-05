@@ -2,7 +2,7 @@
 title: "mapschool: geocodifica"
 layout: default
 language: it
-permalink: geocoding.html
+permalink: geocoding.it.html
 ---
 
 La geocodifica è un bisogno estremamente comune - dai servizi postali all'analisi demografica, ci sono un sacco di lavori che ti richiedono di trasformare nomi in luoghi e viceversa.

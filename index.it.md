@@ -66,7 +66,7 @@ Il processo opposto è la **geocodifica inversa**. Questo trasforma dati geograf
 
 La geocodifica e la geocodifica inversa sono difficoltose: errori sulle coordinate della posizione, indirizzi malamente formattati, ed una griglia di strade ed edifici in variazione continua contribuiscono alla difficoltà di convertire indirizzi in coordinate, o viceversa.
 
-<a class='further-reading' href='/geocoding.html'>Leggi l'approfondimento sulla geocodifica</a>
+<a class='further-reading' href='/geocoding.it.html'>Leggi l'approfondimento sulla geocodifica</a>
 
 ## Raccolta dei dati
 
@@ -124,7 +124,7 @@ Questa branca delle scienze della terra, chiamata [geodesia](http://it.wikipedia
 
 Le proiezioni sono quelle equazioni matematiche che riescono a trasformare il mondo in una qualunque forma piatta che sta su una stampa o su uno schermo di computer. E' un compito ingarbugliato da svolgere questa trasformaziione - non c'è modo di piazzare il mondo su uno schermo senza distorcerlo in qualche modo. Puoi perdere o la direzione, o la dimensione relativa, od uscirne con qualcosa con un aspetto veramente strano.
 
-<a class='further-reading' href='/datum.html'>Leggi l'approfondimento sui datum geografici</a>
+<a class='further-reading' href='/datum.it.html'>Leggi l'approfondimento sui datum geografici</a>
 
 ## Simbolizzazione
 
@@ -148,7 +148,7 @@ Le mappe a coropleto preservano i confini e le forme di luoghi esistenti e rappr
 
 Le mappe a coropleto sono una scelta naturale per dati come tassi, densità o percentuali. Non sono raccomandate per valori assoluti: poichè mantengono le aree, tendono a sovraenfatizzare grandi caratteristiche. E, siccome le mappe a coropleto si basano sulle differenze di colori per rappresentare le informazioni, è importante che i colori siano ben scelti per essere visibili ai daltonici, comprensibili e coerenti.
 
-<a class='further-reading' href='/colors.html'>Maggiori informazioni sui colori</a>
+<a class='further-reading' href='/colors.it.html'>Maggiori informazioni sui colori</a>
 
 ### Puntuali
 
