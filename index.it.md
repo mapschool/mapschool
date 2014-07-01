@@ -144,9 +144,9 @@ Questa divisione fra i dati è una dei principali problemi della simbolizzazione
 
 ### Coropleti
 
-Le mappe a coropleto preservano i confini e le forme di luoghi esistenti e rappresentano i dati cambiando i loro colori, pattern o consistenza. Un esempio familiare di questo tipo di mappe si trova nei risultati delle elezioni o nella disposizione demografica, dove i dati sono percentuali per alcune parti stabilite di territorio - un valore per circoscrizione elettorale o sezione di censimento.
+Le mappe coropletiche preservano i confini e le forme di luoghi esistenti e rappresentano i dati cambiando i loro colori, pattern o consistenza. Un esempio familiare di questo tipo di mappe si trova nei risultati delle elezioni o nella disposizione demografica, dove i dati sono percentuali per alcune parti stabilite di territorio - un valore per circoscrizione elettorale o sezione di censimento.
 
-Le mappe a coropleto sono una scelta naturale per dati come tassi, densità o percentuali. Non sono raccomandate per valori assoluti: poichè mantengono le aree, tendono a sovraenfatizzare grandi caratteristiche. E, siccome le mappe a coropleto si basano sulle differenze di colori per rappresentare le informazioni, è importante che i colori siano ben scelti per essere visibili ai daltonici, comprensibili e coerenti.
+Le mappe coropletiche sono una scelta naturale per dati come tassi, densità o percentuali. Non sono raccomandate per valori assoluti: poichè mantengono le aree, tendono a sovraenfatizzare grandi caratteristiche. E, siccome le mappe a coropleto si basano sulle differenze di colori per rappresentare le informazioni, è importante che i colori siano ben scelti per essere visibili ai daltonici, comprensibili e coerenti.
 
 <a class='further-reading' href='/colors.it.html'>Maggiori informazioni sui colori</a>
 
