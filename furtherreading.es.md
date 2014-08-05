@@ -37,7 +37,7 @@ La siguiente documentación esta en idioma inglés:
 
 ## Orientados al Software
 
-* [QGIS: Quantum GIS, Introducción al GIS](http://www.qgis.org/en/docs/gentle_gis_introduction/index.html) - guía para trabajar con GIS utilizando la herramienta Quantum GIS [QGIS](http://qgis.org/en/site/), software de código abierto.
+* [QGIS: Quantum GIS, Introducción al GIS](http://docs.qgis.org/2.2/en/docs/gentle_gis_introduction/index.html) - guía para trabajar con GIS utilizando la herramienta Quantum GIS [QGIS](http://qgis.org/en/site/), software de código abierto.
 * [Sistemas de referencia: qué es?](https://weblogs.java.net/blog/manningpubs/archive/2013/02/13/spatial-reference-system-what-it): Exposición sobre detalles de SRS, CRS, Datums, Proyecciones y referencias a PostGIS.
 
 ## Libros
