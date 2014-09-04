@@ -28,3 +28,10 @@ language:
     furtherreading: 'lecturas adicionales'
     code: 'código fuente'
     home: 'inicio'
+  se:
+    feedback: 'feedback'
+    contributors: 'medarbetare'
+    tagline: 'en fri introduktion till kartografi'
+    furtherreading: 'vidare läsning'
+    code: 'källkod'
+    home: 'startsidan'
