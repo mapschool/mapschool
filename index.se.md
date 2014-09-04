@@ -8,19 +8,19 @@ language: se
 
 Vad är en karta? Fram till 1980-talet var kartor något som skapades för hand med stor möda. Numera görs kartor oftast med hjälp av datorer. Kartor används i en mängd sammanhang: för vägbeskrivningar, visualiseringar och i politiska gränsdispyter. Här kommer vi titta på en kartas beståndsdelar ur kartografens synpunkt.
 
-Kartor består i grunden av data. Datan se ut på olika sätt. Miljontals punkter, några polygoner eller något som liknar ett fotografi med färger. Det är viktigt att se att datan inte bara kan användas på ett sätt.
+Kartor består i grunden av data. Data kan se ut på olika sätt: miljontals punkter, en handfull polygoner eller ett foto. Det är viktigt att se att datan inte bara kan användas på ett sätt.
 
-Från datan kan vi skapa siffror, bilder och beslut. Det vanligaste är att vi gör bilder. Den här processen kallas symbolisering - vi bestämmer hur vi ska representera olika delar av datan. Vi analyserar datan genom att transformera, aggregera och summera den för att få fram svar och insikter. Symbolisering och analys sker ofta samtidigt. Symboliseringen ger begränsningar i vad vi kan visa och i analysen definieras den aspekt av datan vi fokuserar på.
+Från datan kan vi skapa nummer, bilder och beslut. Det vanligaste är att vi gör bilder. Den här processen kallas symbolisering - vi bestämmer hur vi ska representera olika delar av datan. Vi analyserar datan genom att transformera, aggregera och summera den för att få fram svar och insikter. Symbolisering och analys sker ofta samtidigt. Symboliseringen ger begränsningar i vad vi kan visa och i analysen definieras den aspekt av datan vi fokuserar på.
 
 # Data
 
-I grund och botten finns två sorters geografisk data, **raster-** eller **vektordata**, dessa är uppbyggda av pixlar eller geometri. Typerna används ofta tillsammans, ett exempel är kartor där vägdata läggs ovanpå en satellitbild.
+I grund och botten finns två sorters geografisk data, **raster-** och **vektordata**, dessa är uppbyggda av pixlar eller geometri. Typerna används ofta tillsammans, ett exempel är kartor där vägdata läggs ovanpå en satellitbild.
 
 ## Raster
 
 ![](img/raster.png)
 
-**Rasterdata** är precis som en bild du tar med en digitalkamera. Abstrakt sett är en rasterbild en lista på pixlar med olika värden. När du zoomar in i en rasterbild kommer du förr eller senare att se pixlarna.
+**Rasterdata** är precis som en bild du tar med en digitalkamera. Abstrakt sett är en rasterbild en lista över pixlar med olika värden. När du zoomar in i en rasterbild kommer du förr eller senare att se pixlarna.
 
 Rasterbilder används för fotografier av jorden, exempelvis satellitbilder. Rasterbilder kan visa mycket annat än bara färger. Varje pixel kan ha ett nummer som representerar höjd, på så sätt kan vi spara en höjdmodell i en rasterbild. Pixlarna kan lagra information om temperatur och reflektionsdata och användas i miljöarbete.
 
@@ -32,19 +32,19 @@ Pixlarna i en rasterbild behöver inte nödvändigtvis bara innehålla färg. In
     
 Rasterformaten försöker spara data på ett kompakt sätt och göra den tillgänglig för snabb analys och visning. Vissa av formaten är vanliga bildformat med extra funktionalitet för geospatial användning, t.ex. [GeoTIFF](http://trac.osgeo.org/geotiff/) och JPEG2000.
 
-Internt så gör rasterformaten två saker: lagrar data i pixlar och lagrar förhållandet mellan pixlarna och deras faktiska plats på jordklotet - datans omfång.
+Internt så gör rasterformaten två saker: lagrar data som pixlar och lagrar förhållandet mellan pixlarna och deras faktiska plats på jordklotet - datans omfång.
 
 ## Vektordata
 
 ![](img/vector_types.png)
-    
+
 **Vektordata** lagrar geometrisk data istället för pixeldata. Oavsett hur mycket du zoomar in på vektordata så kommer du aldrig att se pixlar. Datan lagras som geometriska punkter och linjer och konverteras till en bild bara när det behövs.
 
 Vektordata används för att lagra data om vägar, byggnader, sevärdheter och andra saker som finns på jorden.
 
 ##### Vektorformat
-    
-Det vanligaste vektorformatet är [shapefiler](http://en.wikipedia.org/wiki/Shapefile). Shapefiler är ett enkelt filbaserat format som klumpigt nog sparar datan i fyra olika filer: `.shp` (där den geometriska datan sparas), `.prj` (en textsträng som beskriver den projektion som används) och `.dbf` (en databasfil som innehåller all data som hör till geometrierna i .shp-filen). De flesta av dessa filer består av binär data. Du kan alltså inte öppna dem i en textredigerare och få ut något vettigt. Undantaget är .prj-filen som definierar projektionen i ren text. .dbf-filen kan läsas i LibreOffice Calc eftersom dess format kommer från en gammal specifikation för databaser. Specifikationen begränser attributen som kan sparas i en shapefil. Exempelvis kan inte en .dbf-fil vara större än 2 GB, fältnamn kan inte innehålla mellanslag och inte vara längre än 10 tecken, NULL-värden stöds ej, specialtecken stöds ej, [osv.](http://en.wikipedia.org/wiki/Shapefile#Limitations)
+
+Det vanligaste vektorformatet är [shapefiler](http://en.wikipedia.org/wiki/Shapefile). Shapefiler är ett enkelt filbaserat format som klumpigt nog sparar datan i fyra olika filer: `.shp` (där den geometriska datan sparas), `.prj` (en textsträng som beskriver den projektion som används) och `.dbf` (en databasfil som innehåller all data som hör till geometrierna i .shp-filen). De flesta av dessa filer består av binär data. Du kan alltså inte öppna dem i en textredigerare och få ut något vettigt. Undantaget är .prj-filen som definierar projektionen i ren text. .dbf-filen kan läsas i LibreOffice Calc eftersom dess format kommer från en gammal specifikation för databaser. Specifikationen begränser attributen som kan sparas i en shapefil. Exempelvis kan inte en .dbf-fil vara större än 2 GB, fältnamn kan inte innehålla mellanslag och inte vara längre än 10 tecken, NULL-värden stöds ej, specialtecken stöds ej, [osv](http://en.wikipedia.org/wiki/Shapefile#Limitations).
 
 [GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson), och [KML](http://developers.google.com/kml) är nyare format baserade på [JSON](http://www.json.org/) och [XML](http://en.wikipedia.org/wiki/XML). Eftersom de är textbaserade är de lättare att använda än shapefiler. Tack vare deras flexibilitet och funktioner har de blivit standardvalet i nya webbapplikationer. En nackdel med GeoJSON är att det finns få verktyg för att jämföra egenskaper mellan filer, vilket kan göra dataputsning och analys svårare.
 
@@ -70,7 +70,7 @@ Geokodning och omvänd geokodning är svårt, koordinatfel, dåligt formaterad a
 
 ## Datainsamling
 
-Kartdata har samlats in på många sätt genom tiderna, allt från seglares loggböcker till geokodade tweets. Här presenteras de viktigaste moderna metoderna:
+Kartdata har samlats in på många sätt genom tiderna, allt från sjöfarares loggböcker till geokodade tweets. Här presenteras de viktigaste moderna metoderna:
 
 ![](img/gps.jpg)
     
@@ -78,7 +78,7 @@ Kartdata har samlats in på många sätt genom tiderna, allt från seglares logg
 
 **Satelliter och flygplan** samlar in den mesta rasterdata som finns tillgänglig idag. Ständigt fotograferande från olika höjder skapar de en bild av världen. Sensorerna samlar också in det som kallas osynlig strålning. Infrarött används t.ex. för att kartera lantbruksmark och skogsavverkning. Andra flygningar använder [LiDAR](http://en.wikipedia.org/wiki/Lidar), en lasersensor som mäter höjd.
 
-**Företag, stater och andra grupper** skapar världskartor med olika detaljrikedom. [Google](http://maps.google.com) och [OpenStreetMap](http://www.openstreetmap.org/) fokuserar på att kartera alla vägar och information om dem. Andra institutioner som [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) och [Natural Earth](http://www.naturalearthdata.com/) håller koll på politiska gränser.
+**Företag, stater och andra grupper** skapar världskartor med olika detaljrikedom. [Google](http://maps.google.com) och [OpenStreetMap](http://www.openstreetmap.org/) fokuserar på att kartera alla vägar och information om dem. Andra projekt som [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) och [Natural Earth](http://www.naturalearthdata.com/) håller koll på politiska gränser.
 
 ### Lagring
 
@@ -138,7 +138,7 @@ Tekniker för detta kan vara vad som helst som går att representera med grafik 
 
 ![](img/scales.jpg)
 
-Symbolisering leder fram till en titt på två karakteristiska typer av data: linjär och diskret data. Linjär data tenderar att vara värden inom ett intervall, t.ex. värden mellan 0 - 100 eller höjdvärden. Diskret data är fasta värden som "sant", "falskt", "demokrat", "republikan".
+Symbolisering leder fram till en titt på två karakteristiska typer av data: linjär och diskret data. Linjär data tenderar att vara värden inom ett intervall, t.ex. värden mellan 0 - 100 eller höjdvärden. Diskret data är fasta värden som "sant", "falskt", "demokrat" eller "republikan".
 
 Den här uppdelningen av data är en viktig del för symbolisering. En linjär datakälla kan passa bra att symbolisera som en punktkarta med proportionella symboler eller en färgramp. Diskret data kan visas med olika färger eller symboler.
 
@@ -168,9 +168,9 @@ Raster- och vektoranalys som aggregation och transformering.
 
 Det går att röra sig mellan de två olika typerna av kartdata, trots att de kan verka så olika. Det är faktiskt en vanlig operation, det är bara inte en direkt operation.
 
-Vektordata blir alltid rasteriserad eller "renderad" när den visas. Bildskärmar och skrivare arbetar med pixlar, inte med linjer och former. Konverteringen blir aldrig perfekt. Kom ihåg att vektordata inte består av pixlar, så man kan aldrig zooma in och se suddiga kanter. Alltså, när vektordata konverteras till rasterformat så kan man inte konvertera bilden tillbaka till exakt samma vektordata igen.
+Vektordata blir alltid rasteriserad eller "renderad" när den visas. Bildskärmar och skrivare arbetar med pixlar, inte med linjer och former. Konverteringen blir aldrig perfekt. Kom ihåg att vektordata inte består av pixlar, så man kan aldrig zooma in och se suddiga kanter. Alltså, när vektordata konverteras till rasterformat så kan man inte konvertera rasterbilden tillbaka till exakt samma vektordata igen.
 
-Ibland konverteras vektordata till rasterformat för att göra vissa sorters analyser där matematiken blir enklare med pixeldata. 
+Ibland konverteras vektordata till rasterformat för att göra analyser där matematiken blir enklare med pixeldata. 
 
 ### Raster till vektor
 
