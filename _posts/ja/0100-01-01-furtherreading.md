@@ -2,6 +2,7 @@
 title: 参考文献
 layout: default
 language: ja
+permalink: furtherreading.ja.html
 ---
 
 ## 講義ノート

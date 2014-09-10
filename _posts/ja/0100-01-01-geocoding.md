@@ -2,7 +2,7 @@
 title: "ちずのつくりかた: ジオコーディング"
 layout: default
 language: ja
-permalink: geocoding.html
+permalink: geocoding.ja.html
 ---
 
 ジオコーディングは非常に幅広いニーズをもちます。郵便配達サービスから人口統計まで、場所に付与された名称と位置情報を紐付ける必要性は多種多様な職種から必要とされています。
