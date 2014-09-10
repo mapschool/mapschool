@@ -35,3 +35,10 @@ language:
     furtherreading: 'vidare läsning'
     code: 'källkod'
     home: 'startsidan'
+  ja:
+    feedback: 'フィードバック'
+    contributors: '貢献者'
+    tagline: '地理空間への招待状'
+    furtherreading: '参考文献'
+    code: 'コード'
+    home: 'ホーム'
