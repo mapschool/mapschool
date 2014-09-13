@@ -213,4 +213,4 @@ We'd love if you can [report any issues or file any suggestions](https://tmcw.wu
 
 ### License
 
-[Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US)
+[Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/)

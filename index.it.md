@@ -213,4 +213,4 @@ Ci piacerebbe se potessi [segnalare problemi o portare i tuoi suggerimenti](http
 
 ### Licenza
 
-[Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.it)
+[Creative Commons Zero](http://creativecommons.org/licenses/by/3.0/deed.it)

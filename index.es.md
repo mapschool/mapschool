@@ -207,4 +207,4 @@ Estaríamos encantados de que nos [informaras de cualquier problema o sugerencia
 
 ### Licencia
 
-[Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US)
+[Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/deed.es)

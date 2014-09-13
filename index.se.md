@@ -213,4 +213,4 @@ Vi ser gärna att du [rapporterar fel eller kommer med förslag](https://tmcw.wu
 
 ### Licens
 
-[Creative Commons Attribution 3.0 Unported](http://creativecommons.org/licenses/by/3.0/deed.en_US)
+[Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/deed.sv)
