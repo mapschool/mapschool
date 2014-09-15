@@ -214,7 +214,7 @@ language: ja
 
 ### ライセンス
 
-[Creative Commons Attribution 3.0 Unported](http://creativecommons.org/publicdomain/zero/1.0/deed.ja)
+[Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/deed.ja)
 
 #### 日本語版に関して
 日本語翻訳や内容の指摘については [こちら](nyampire@gmail.com)までお寄せください。
