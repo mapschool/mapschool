@@ -21,27 +21,27 @@ Fundamentalmente, dados geográficos são ou **raster** ou **vetor** - composto 
 
 ![](img/raster.png)
 
-**Raster** data is like a picture that you would take with a digital camera: at the lowest level of abstraction, it is a list of pixels with values. When you 'zoom in' and look closer at raster data, at some point you'll see these discrete pixels, and it will look pixelated.
+Dados **raster** são como fotos tiradas com uma câmera digital: no menor nível de abstração, é uma lista de pixels com valores. Quando você aumenta o zoom e olha próximo a uma imagem rasterizada, em algum momento você conseguirá ver os pixels separadamente, e a imagem terá uma aparência pixelizada.
 
-Raster data is used in pictures of the Earth, like those taken by satellites - but that is just the beginning. Pixels don't need to have colors - instead, each pixel can have a number that represents height and the raster data as a whole stores elevation data. Or pixels can store temperature or reflection data and be useful for environmental work.
+Dados raster são usados em imagens da Terra, como as tiradas por satélites - mas isso é apenas o começo. Pixels não precisam ter cores - ao invés disso, cada pixel pode ter um número que representa sua altura e sua informação raster como um todo armazena os dados de elevação. Ou pixels podem armazenar temperatura ou dados de reflexão e serem úteis para trabalhos ambientais.
 
-##### Raster Bands
+##### Bandas Rasters
 
-The pixels in raster data are not necessarily just filled color: we call its contents 'bands'. A normal image has three familiar bands: Red, Green, and Blue. Combined, they make a picture we're familiar with. Some raster data can have fewer bands, like just one for elevation, or some can have a lot more - not just visible colors, but wavelengths we can't see, like infrared and ultraviolet. When raster data is analyzed and displayed, you can combine and pick bands to use to suit what you're looking for.
+Os pixels dos dados raster não são necessariamente preenchidos com dores: nós chamamos seus conteúdos 'bandas'. Uma imagem normal tem três bandas comuns: Vermelho, Verde e Azul. Combinadas, elas formam imagens com que estamos familiarizados. Alguns dados raster podem ter menos bandas, como uma para elevação, enquanto outros podem ter muito mais - não apenas cores visíveis, mas frequências de ondas que nós não podemos ver, como infravermelho e ultravioleta. Quando dados raster são analizados e mostrados, você pode combinar e escolher as bandas que são mais propícias para o que você está procurand.
 
-##### Raster Formats
+##### Formatos Raster
 
-Raster formats aim to compact data and make it accessible fast for analysis and display. Some of them are geospatially-enabled versions of common image formats, [GeoTIFF](http://trac.osgeo.org/geotiff/) and JPEG2000.
+Formatos raster tem como objetivo compactar os dados e torná-los rápidos para análise e visualização. Alguns são versões com suporte geospacial de formatos de imagens comuns, como [GeoTIFF](http://trac.osgeo.org/geotiff/) e JPEG2000.
 
-Internally, raster data formats manage two tasks - packing data into pixels, and then storing the relationship between those pixels and actual places on the globe - the 'extent' of the data.
+Internament, formatos de dados raster geranciam dois propósitos - agrupar dados em pixels, e então armazenar o relacionament entre esses pixels e o lugar real deles no globo - a "extenção" dos dados.
 
-## Vector
+## Vetor
 
 ![](img/vector_types.png)
 
-**Vector** data stores basic geometries rather than pixel data. No matter how much you 'zoom in' on vector data, you won't see pixels: the data stored is composed of geometric points and lines, and only converted into an image when necessary.
+Dados **vetorizados** armazena geometrias básicas ao inveś de pixels. Não importa o quanto você aumente o zoom em dados vetorizados, você não verá pixels: os dados armazenados são compostos de pontoes geométricos e linhas, e apenas convertidos em imagem quendo nececssário.
 
-Vector data is used to store roads, buildings, points of interest, and other things that have some place in the world.
+Dados vetorizados são usados para armazenar ruas, construções, pontos de interesse e outras coisas que existem e ocupam espaço no mundo.
 
 ##### Vector Formats
 
