@@ -204,14 +204,14 @@ Il y a de nombreuses manières d'interpoler des données ponctuelles :
 
 - Les **cartes de chaleur** assignent une valeur à chaque point et représentent la densité des valeurs ponctuelles en couleurs à « chaleur croissante ».
 - Les **courbes de niveaux** se basent sur des échantillons de données ponctuelles, autour desquelles des lignes sont tracées qui représentent une valeur estimée continue. Les cartes d'élévation utilisent souvent cette technique. 
-- Un *TIN* (« Triangulated Irregular Network » pour Réseau Irrégulier de Triangles) dessine des triangles entre les points qui peuvent être utilisés pour visualiser un relief. 
-- Un *diagramme de Voronoi* transforme un ensemble de points en polygones comprenant toute la surface qui entoure chacun d'entre eux.
+- Un **TIN** (« Triangulated Irregular Network » pour Réseau Irrégulier de Triangles) dessine des triangles entre les points qui peuvent être utilisés pour visualiser un relief. 
+- Un **diagramme de Voronoi** transforme un ensemble de points en polygones comprenant toute la surface qui entoure chacun d'entre eux.
 
 ## En conclusion
 
 Nous espérons que cette lecture vous aura éclairé et inspiré : c'est un champ qui reste à explorer, avec beaucoup de potentiel et autant de questions sans réponses. La cartographie est un sujet aux connexions multiples, qui touche à l'art, aux mathématiques, à la physique, à l'écologie ou à bien d'autres domaines.
 
-N'hésitez pas à [nous faire part des problèmes](https://tmcw.wufoo.com/forms/mapschool-feedback/) que vous auriez rencontré à la lecture, ou à nous transmettre vos remarques et suggestions !
+N'hésitez pas à [nous faire part des problèmes que vous auriez rencontré à la lecture](https://tmcw.wufoo.com/forms/mapschool-feedback/), ou à nous transmettre vos remarques et suggestions !
 
 ### Licence
 	
