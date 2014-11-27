@@ -26,14 +26,14 @@ Il y a de nombreux géocodeurs disponibles, aux niveaux de performances, zones d
 * [Yahoo Geocoder](https://developer.yahoo.com/boss/geo/)
 * [Twofishes](http://demo.twofishes.net/)
 
-### Services français et européens
+### Service français et européen
 
 * [API Javascript de ViaMichelin](http://dev.viamichelin.fr/geocoding-js.html)
 
-### Services canadiens
+### Service canadien
 
 * [geogratis](http://geogratis.gc.ca/site/fra/geoloc)
 
-### Base de donnée
+### Base de données
 
 * [geonames](http://www.geonames.org/)
