@@ -114,15 +114,15 @@ Archiviare e fornire una rappresentazione del mondo ci pone la questione di qual
 
 Siccome la Terra è un oggetto che ruota su se stesso ed i suoi componenti possono cambiare forma, essa è gonfia nel mezzo - pertanto, invece di essere una sfera, è in realtà di forma più simile ad uno [sferoide oblato](https://it.wikipedia.org/wiki/Ellissoide) (schiacciato ai poli). Se si guarda da più vicino, questo non è neppure completamente vero - la Terra è ricoperta da [differenze di elevazione](http://it.wikipedia.org/wiki/Topografia) come montagne e valli, ed anche modifiche fatte dall'uomo come le città.
 
-Per il lavoro quotidiano usiamo diverse stime di questa forma: standard quali il [WGS84](http://it.wikipedia.org/wiki/WGS84) definiscono valori precisi per la lunghezza di entrambi gli assi della Terra, quindi possiamo stimare rispetto ad un [ellissoide di riferimento](http://it.wikipedia.org/wiki/Ellissoide_di_riferimento) piuttosto che ad una sfera. Le misure locali e la scienza che si basa su valori precisi di superficie possono usare [modelli di geoide](https://it.wikipedia.org/wiki/Geoide), che sono calcoli tridimensionali di altezze degli oceani teoriche.
+Per il lavoro quotidiano usiamo diverse stime di questa forma: standard quali il [WGS84](http://it.wikipedia.org/wiki/WGS84) definiscono valori precisi per la lunghezza di entrambi gli assi della Terra, pertanto possiamo stimare rispetto ad un [ellissoide di riferimento](http://it.wikipedia.org/wiki/Ellissoide_di_riferimento) piuttosto che ad una sfera. Le misure locali e la scienza che si basa su valori precisi di superficie possono usare [modelli di geoide](https://it.wikipedia.org/wiki/Geoide), che sono calcoli tridimensionali di altezze teoriche degli oceani.
 
-Questa branca delle scienze della terra, chiamata [geodesia](http://it.wikipedia.org/wiki/Geodesia), è un progetto in continua evoluzione visto che la nostra abilità nel modellare e misurare la terra si muove velocemente e la Terra stessa cambia forma.
+Questa branca delle scienze della Terra, chiamata [geodesia](http://it.wikipedia.org/wiki/Geodesia), è un progetto in continua evoluzione visto che la nostra abilità nel modellare e misurare la Terra si muove velocemente e la Terra stessa cambia forma.
 
 ## Proiezione
 
 ![](img/projections.jpg)
 
-Le proiezioni sono quelle equazioni matematiche che riescono a trasformare il mondo in una qualunque forma piatta che sta su una stampa o su uno schermo di computer. E' un compito ingarbugliato da svolgere questa trasformaziione - non c'è modo di piazzare il mondo su uno schermo senza distorcerlo in qualche modo. Puoi perdere o la direzione, o la dimensione relativa, od uscirne con qualcosa con un aspetto veramente strano.
+Le proiezioni sono quelle equazioni matematiche che riescono a trasformare il mondo in una qualunque forma piatta che sta su una stampa o su uno schermo di computer. Questa trasformazione è un compito ingarbugliato da svolgere - non c'è modo di piazzare il mondo su uno schermo senza distorcerlo in qualche modo. Puoi perdere o la direzione, o la dimensione relativa, od uscirne con qualcosa con un aspetto veramente strano.
 
 <a class='further-reading' href='/datum.it.html'>Leggi l'approfondimento sui datum geografici</a>
 
