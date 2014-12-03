@@ -1,5 +1,5 @@
 ---
-title: "mapschool: geocoding"
+title: "mapschool: géocodage"
 layout: default
 language: fr
 permalink: geocoding.fr.html
