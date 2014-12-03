@@ -10,11 +10,11 @@ Qu'est-ce qu'une carte ? Jusqu'aux années 1980, les cartes étaient dessinées
 
 Les cartes réalisées par ordinateur sont essentiellement constituées de données. Une donnée peut être composée de milliards de points, de quelques polygones, ou d'un enregistrement photographique de couleurs et de températures. Il est important de noter qu'une donnée n'est pas spécifique à un seul usage.
 
-De ces données, nous faisons des chiffres, des images, des décisions. Le plus souvent, nous en faisons des images, dans un processus nommé « symbolisation » par lequel nous décidons quelques éléments visuels vont représenter quelle partie d'un jeu de données. Nous analysons les données, c'est-à-dire que nous les transformons, agrégeons et résumons pour apporter différentes réponses et représenter différents aspects de la connaissance. Les deux tâches de la symbolisation et de l'analyse sont souvent combinées, la symbolisation formant les limites de ce qu'on peut représenter et l'analyse définissant les aspects de la donnée sur laquelle se concentrer.
+De ces données, nous faisons des chiffres, des images, des décisions. Le plus souvent, nous en faisons des images, dans un processus nommé « symbolisation » par lequel nous décidons quels éléments visuels vont représenter quelle partie d'un jeu de données. Nous analysons les données, c'est-à-dire que nous les transformons, agrégeons et résumons pour apporter différentes réponses et représenter différents aspects de la connaissance. Les deux tâches de la symbolisation et de l'analyse sont souvent combinées, la symbolisation formant les limites de ce qu'on peut représenter et l'analyse définissant les aspects de la donnée sur laquelle se concentrer.
 
 # Données
 
-En général, les données géographiques sont soit des **raster** (données matricielle), soit des **vecteurs** – composées soit de pixels, soit d'information géométrique. Les deux types de données sont souvent combinées, par exemple lorsque une donnée routière vectorielle est superposée à une donnée satellite raster.
+En général, les données géographiques sont soit des **raster** (données matricielles), soit des **vecteurs** – composées soit de pixels, soit de géométries. Les deux types de données sont souvent combinées, par exemple lorsque une donnée routière vectorielle est superposée à une donnée satellite raster.
 
 ## Raster
 
@@ -26,7 +26,7 @@ Les données raster sont utilisées pour les photographies de la Terre, comme ce
 
 ##### Bandes raster
 
-Les pixel des données raster ne sont donc pas forcément des couleurs pleines : on appelle son contenu des bandes. Une image normale a trois bandes habituelles : rouge, vert et bleu. Combinées, ces bandes font une image avec laquelle nous sommes familiers. Certaines données raster ont moins de bandes - une seule dans le cas d'une donnée d'élévation – et certaines peuvent en avoir beaucoup plus – pas uniquement des couleurs visibles, mais des longueurs d'onde invisible à l'oeil nu, comme l'infrarouge ou l'ultraviolet. Quand une donnée raster est analysée et affichée, on peut combiner les bandes ou n'afficher que celles que l'on souhaite pour un usage donnée.
+Les pixel des données raster ne sont donc pas forcément des couleurs pleines : on appelle son contenu des bandes. Une image normale a trois bandes habituelles : Rouge, Vert et Bleu. Combinées, ces bandes font une image avec laquelle nous sommes familiers. Certaines données raster ont moins de bandes - une seule dans le cas d'une donnée d'élévation – et certaines peuvent en avoir beaucoup plus – pas uniquement des couleurs visibles, mais des longueurs d'onde invisibles à l'oeil nu, comme l'infrarouge ou l'ultraviolet. Quand une donnée raster est analysée et affichée, on peut combiner les bandes ou n'afficher que celles que l'on souhaite pour un usage donné.
 
 ##### Les formats raster
 
@@ -40,19 +40,19 @@ Les formats raster ont pour objectif de compacter les données et de les rendre 
 
 La donnée **vecteur** stocke des géométries basiques plutôt que des données pixels. Peu importe le niveau de zoom, les pixels n'apparaîtront pas : la donnée stockée est composée de points et de lignes géométriques, converties en images uniquement lorsque nécessaire. 
 
-Les données vecteurs sont utilisées pour stocker des informations sur les routes, les bâtiments ou les points d'intérêt, entre autres éléments géographiques.
+Les données vecteurs sont utilisées pour stocker des informations sur les routes, les bâtiments ou les points d'intérêt et bien d'autres éléments ayant une localisation quelque part dans le monde.
 
 ##### Les formats vecteur
 
-Le format vecteur le plus établi est le [shapefile](http://fr.wikipedia.org/wiki/Shapefile), un format simple, de type « fichier », qui divise un peu maladroitement la donnée en quatre fichiers distincts : `.shp` (où la donnée géométrique est stockée), `.prj` (une chaîne de caractères décrivant la projection utilisée), `.shx` (un index permettant d'accélérer les recherches), et `.dbf` (une base de données comprenant toute la donnée associée à la géométrie du fichier `.shp`). La plupart de ces fichiers sont des données binaires : les ouvrir dans un éditeur de texte ne révèlera rien d'accessible, excepté le fichier `.prj`, qui définit la projection en texte simple. La base de données `.dbf` peut être lue avec LibreOffice Calc car son format dérive d'une vieille spécification relative aux base de données. Néanmoins, cette spécification limite le nombre de données attributaires qu'on peut stocker dans un shapefile. Par exemple, la taille d'un fichier `.dbf` ne peut pas dépasser 2 Go, les noms de champs ne peuvent contenir d'espace et ne peuvent excéder 10 caractères, les valeurs nulles (pas d'information) ou l'essentiel des caractères spéciaux ne sont pas pris en charge, [etc.](http://en.wikipedia.org/wiki/Shapefile#Limitations). 
+Le format vecteur le plus couramment utilisé est le [shapefile](http://fr.wikipedia.org/wiki/Shapefile), un format simple, de type « fichier », qui divise un peu maladroitement la donnée en quatre fichiers distincts : `.shp` (où la donnée géométrique est stockée), `.prj` (une chaîne de caractères décrivant la projection utilisée), `.shx` (un index permettant d'accélérer les recherches), et `.dbf` (une base de données comprenant chaque donnée associée à chacune des géométries contenues dans le fichier `.shp`). La plupart de ces fichiers sont des données binaires : les ouvrir dans un éditeur de texte ne révèlera rien d'accessible, excepté le fichier `.prj`, qui définit la projection sous forme texte. La base de données `.dbf` peut être lue avec LibreOffice Calc car son format dérive d'une vieille spécification relative aux bases de données. Néanmoins, cette spécification limite le nombre de données attributaires qu'on peut stocker dans un shapefile. Par exemple, la taille d'un fichier `.dbf` ne peut pas dépasser 2 Go, les noms de champs ne peuvent contenir d'espace et ne peuvent excéder 10 caractères, les valeurs nulles (pas d'information) ou l'essentiel des caractères spéciaux ne sont pas pris en charge, [etc.](http://en.wikipedia.org/wiki/Shapefile#Limitations). 
 
-[GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson) et [KML](http://developers.google.com/kml) sont des formats plus récents basés respectivement sur les encodages de texte [JSON](http://www.json.org/) et [XML](http://fr.wikipedia.org/wiki/XML). Étant basés sur du texte, ils sont plus faciles à implémenter dans des logiciels que les shapefiles, et combinés avec une flexibilité et des fonctionnalités additionnelles, ils sont devenus les standards des logiciels webs les plus récents. L'inconvénient du GeoJSON est qu'il existe moins d'outils construits pour comparer chaque enregistrement, donc le nettoyage ou l'analyse des données peuvent être une peu délicats.
+[GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson) et [KML](http://developers.google.com/kml) sont des formats plus récents basés respectivement sur les encodages de texte [JSON](http://www.json.org/) et [XML](http://fr.wikipedia.org/wiki/XML). Étant basés sur du texte, ils sont plus faciles à implémenter dans des logiciels que les shapefiles, et combinés avec une flexibilité et des fonctionnalités additionnelles, ils sont devenus les standards des logiciels web les plus récents. L'inconvénient du GeoJSON est qu'il existe moins d'outils construits pour comparer chaque enregistrement, donc le nettoyage ou l'analyse des données peuvent s'avérer plus délicat.
 
 ### Topologie
 
-En plus de stocker des lieux et des formes, certains fichiers vecteurs gardent en mémoire la topologie, c'est-à-dire la relation entre différentes formes. Par exemple, les frontières politiques se touchent généralement – il est théoriquement possible d'avoir un pied en France et l'autre en Italie. Pourtant, beaucoup de données géospatiales vont avoir une forme pour représenter la France et  l'autre pour représenter l'Italie, avec deux frontières qui se chevauchent exactement, mais n'ont pas d'autre lien.
+En plus de stocker des lieux et des formes, certains fichiers vecteurs gardent en mémoire la topologie, c'est-à-dire les relations entre les différentes formes. Par exemple, les frontières politiques se touchent généralement – il est théoriquement possible d'avoir un pied en France et l'autre en Italie. Pourtant, beaucoup de données géospatiales vont avoir une forme pour représenter la France et  l'autre pour représenter l'Italie, avec deux frontières qui se chevauchent exactement, mais n'ont pas d'autre lien.
 
-Les choses se compliquent si l'on se pose une question du type « quels États se touchent ? » ou simplifier la forme des objets tout en préservant l'alignement des frontières. On utilise le concept de topologie : certains fichiers vecteurs, au lieu de stocker une forme pour la France et l'autre pour l'Italie, vont enregistrer un ensemble de lignes et garder la mémoire de laquelle constitue la frontière de telle forme. La frontière entre la France et l'Italie est donc une ligne simple utilisée pour dessiner la frontière des deux États, et si l'on modifie cette ligne, la forme des deux États change. 
+Les choses se compliquent si l'on se pose une question du type « quels États se touchent ? » ou de simplifier la forme des objets tout en gardant les frontières correctement alignées. On utilise le concept de topologie : certaines données vecteurs, au lieu de stocker une forme pour la France et l'autre pour l'Italie, sauvent un ensemble de lignes et gardent la trace de l'appartenance de chacune des lignes à chacune des formes. La frontière entre la France et l'Italie est donc une ligne simple utilisée pour dessiner la frontière des deux États, et si l'on modifie cette ligne, la forme des deux États change.
 
 ## Géocodage
 
@@ -71,7 +71,7 @@ Le géocodage et le géocodage inversé sont difficiles à mettre en œuvre : l
 
 ## Collecter des données
 
-Les données cartographiques ont été collectées de mille manières différentes à travers le temps – depuis les données de navigation marine jusqu'aux tweets géocodés. Actuellement quelques sources majeures méritent d'être présentées :
+Les données cartographiques sont collectées de mille manières différentes au fil des années – depuis les données de navigation marine jusqu'aux tweets géocodés. Actuellement quelques sources majeures méritent d'être présentées :
 
 ![](img/gps.jpg)
 
@@ -83,27 +83,27 @@ Les **entreprises, gouvernements et communautés d'intérêts** tiennent à jour
 
 ### Stockage
 
-Il existe de nombreuses manières de stocker des données géographiques. Elles peuvent être stockées sous forme imprimée, mais depuis quelques temps, il est plus fréquent de les stocker sous forme numérique, facilement accessible et partageable.
+Il existe de nombreuses manières de stocker des données géographiques. Elles peuvent être stockées sous forme imprimée, mais récemment, il est devenu plus populaire de les stocker sous forme numérique, facilement accessible et partageable.
 
-Les types de fichiers et les conventions de stockage peuvent être très différents, comme le sont en conséquence les différents outils de conversion entre différentes représentations. La donnée est stockée dans des bases de données ou dans des fichiers individuels, mais la différence pratique entre les deux n'est pas forcément importante. 
+Il y a de nombreux types de fichiers et conventions de stockage différents, et donc une variété d'outils pour assurer la conversion entre différentes représentations. La donnée est stockée dans des bases de données ou dans des fichiers individuels, mais la différence pratique entre les deux n'est pas forcément importante.
 
-# Information 
+# Information
 
-Une carte est une information visualisée : au tout départ se trouvent les questions des datums, des chiffres et du stockage – les rouages essentiels de l'enregistrement et de la différentiation des différents endroits sur Terre. Entre les données et la visualisation, il existe une transformation appelée « projection », à travers laquelle des lieux de la planète deviennent les lieux d'une surface plane, comme une impression ou un écran d'ordinateur. À la toute fin se fait le choix des couleurs, de la tonalité, et d'une symbolisation qui puisse traduire des détails issus des données en images faciles à comprendre et à interpréter par tout le monde.
+Les cartes sont des informations visuelles : au tout debut de la chaîne se trouvent les questions des datums, des chiffres et du stockage – les rouages essentiels pour que nous recensions et différencions différents lieux sur Terre. Entre les données et la visualisation, il existe une transformation appelée « projection », qui transforment des lieux à la surface du globe en lieux représentés sur une surface plane, comme une impression ou un écran d'ordinateur. A la fin, nous faisons le choix des couleurs, de la tonalité, et de la symbolisation qui essayent de traduire les détails issus des données en images faciles à comprendre et à interpréter par tout le monde.
 
 ## Latitude & longitude
 
-La manière la plus comune de stocker des lieux de la planète est en utilisant des valeurs de latitude et de longitude. Historiquement, ces dernières peuvent être représentées en notation sexagésimale, comme `38° 12'`, mais le standard plus récent est de les représenter comme de simples chiffres, comme `38.2`, facile à comprendre pour les ordinateurs. 
+La manière la plus commune de stocker des lieux de la planète est en utilisant des valeurs de latitude et de longitude. Historiquement, ces dernières peuvent être représentées en notation sexagésimale, comme `38° 12'`, mais le standard plus récent est de les représenter comme de simples chiffres, comme `38.2`, facile à comprendre pour les ordinateurs. 
 
 ![](img/latlon.png)
 
 La **latitude** s'étend de -90 au Pôle Sud à 90 au Pôle Nord. La latitude au niveau de l'équateur est de 0. 
 
-La **longitude** s'étende de -180 à 180, et la ligne ou ces valeurs se rencontrent, qui traverse le Pacifique du nord au sud, est appelée l'antiméridien. La valeur 0 est définie comme le premier méridien et traverse l'Afrique et l'Europe (notamment au niveau de l'Observatoire Royal, à Greenwich, Londres).
+La **longitude** s'étend de -180 à 180, et la ligne ou ces valeurs se rencontrent, qui traverse le Pacifique du nord au sud, est appelée l'antiméridien. La valeur 0 est définie comme le premier méridien et traverse l'Afrique et l'Europe (notamment au niveau de l'Observatoire Royal, à Greenwich, Londres).
 
 La combinaison d'une latitude et d'une longitude est habituellement appelée une coordonnée, et peut être représentée de deux manières : 'latitude,longitude' ou 'longitude,latitude'. Historiquement, la première était le standard, mais plus récemment, la notation 'longitude,latitude' a gagné de la popularité, car elle renvoie à l'ordre 'X,Y' des coordonnées dans un espace mathématique euclidien.
 
-L'ordre des coordonnées peut créer de la confusion, notamment parce que les logiciels de cartographie basés sur des navigateurs attendent en général 'latitude,longitude', quand bien même beaucoup de protocoles de communication soient basés sur 'longitude,latitude'.
+L'ordre des coordonnées peut créer de la confusion, notamment parce que les logiciels de cartographie basés sur des navigateurs attendent en général 'latitude,longitude', quand bien même beaucoup de protocoles de communication sont basés sur 'longitude,latitude'.
 
 Parfois, des informations supplémentaires à la latitude ou la longitude sont enregistrées comme données : l'altitude peut être incluse également, tout comme le moment de l'enregistrement ou d'autres facteurs. Lorsque l'altitude est incluse, elle est généralement stockée comme une troisième coordonnée, comme 'longitude,latitude,altitude'.
 
@@ -147,8 +147,7 @@ Cette division entre les données est l'un des enjeux essentiels de la symbolisa
 
 Les cartes choroplèthes préservent les frontières existantes et la formes des lieux actuels et représentent les données en changeant de couleur, de motif ou de texture. On retrouve ce type de carte pour illustrer des résultats d'élection, ou des thématiques liées à la population – les données sont alors des valeurs en pourcentage pour un territoire donné, des secteurs électoraux par exemple.
 
-Les cartes choroplèthes sont naturellement adaptées pour des données comme des taux, des densités ou des pourcentages. Elles ne sont en revanche pas recommandées pour des valeurs absolues : comme elles conservent la superficie des surfaces, elles ont tendance à donner plus d'importance aux éléments les plus grands. De plus, sachant qu'elles utilisent différentes couleurs pour représenter l'information, il est important de choisir des couleurs compréhensibles, cohérentes, et de
-prendre en compte le daltonisme.
+Les cartes choroplèthes sont naturellement adaptées pour des données comme des taux, des densités ou des pourcentages. Elles ne sont en revanche pas recommandées pour des valeurs absolues : comme elles conservent la superficie des surfaces, elles ont tendance à donner plus d'importance aux éléments les plus grands. De plus, sachant qu'elles utilisent différentes couleurs pour représenter l'information, il est important de choisir des couleurs compréhensibles, cohérentes, et de prendre en compte le daltonisme.
 
 <a class='further-reading' href='/colors.html'>Pour en savoir plus sur les couleurs</a>
 
@@ -158,7 +157,7 @@ Les cartes de points sont la meilleure alternative pour des valeurs absolues –
 
 Le point ou le marqueur spécifique utilisé peut varier énormément – colorer les points sur la base de leurs valeurs séquentielles ou catégorielles peut être utile, mais les points peuvent aussi prendre différentes tailles pour montrer leurs différentes valeurs. Ces symboles à taille variable peuvent être n'importe quelle forme ou image, comme des cercles, des carrés, ou des images de ce qu'ils représentent. Au cas où plusieurs valeurs différentes s'accumulent sur un même point, des camemberts peuvent expliquer parfaitement une donnée qui serait autrement très compliquée à lire.
 
-Il faut prendre garde à ne pas montrer trop de points à la fois, ce qui donnerait une carte difficile à lire. Au cas où il y ait trop de point, une carte choroplèthe avec des valeurs agrégées depuis les points peut être une bonne alternative. Une autre alternative est d'utiliser le clustering, où les points sont regroupés jusqu'à un niveau de zoom permettant une lecture claire.
+Il faut prendre garde à ne pas montrer trop de points à la fois, ce qui donnerait une carte difficile à lire. Au cas où il y ait trop de points, une carte choroplèthe avec des valeurs agrégées depuis les points peut être une bonne alternative. Une autre alternative est d'utiliser le clustering, où les points sont regroupés jusqu'à un niveau de zoom permettant une lecture claire.
 
 ## Publication
 
@@ -170,17 +169,17 @@ Analyse raster et vecteur : agrégation et transformation
 
 Aussi différents que ces deux types de données puissent paraître, il est possible de passer du vecteur au raster et inversement, et il est même relativement fréquent de le faire. Il s'agit simplement d'une procédure indirecte. 
 
-Par exemple, les données vecteurs deviennent des raster – on dit qu'elles sont « rasterizées » ou « rendues » – lorsqu'on les affiche : les écrans d'ordinateur utilisent des pixels, pas des lignes ou des formes. Cette conversion est imparfaite : n'oublions pas que les vecteurs n'étant pas basés sur des pixels, le fait de zoomer au maximum ne fait pas apparaître pour autant d'éléments flous. Ainsi, lorsqu'une donnée vecteur est transformée en raster, il est impossible de transformer ce dernier en vecteur à nouveau et de retrouver la donnée originelle.
+Par exemple, les données vecteurs deviennent des raster – on dit qu'elles sont « rasterisées » ou « rendues » – lorsqu'on les affiche : les écrans d'ordinateur utilisent des pixels, pas des lignes ou des formes. Cette conversion est imparfaite : n'oublions pas que les vecteurs n'étant pas basés sur des pixels, le fait de zoomer au maximum ne fait pas apparaître pour autant d'éléments flous. Ainsi, lorsqu'une donnée vecteur est transformée en raster, il est impossible de transformer ce dernier en vecteur à nouveau et de retrouver la donnée originelle.
 
-Il arrive parfois que l'on transforme une donnée vecteur en donnée raster pour des question de temps – il est plus facile d'effectuer certaines analyses sur un fichier raster. 
+Il arrive parfois que l'on transforme une donnée vecteur en donnée raster pour des question de temps – il est plus facile d'effectuer certaines analyses sur un fichier raster.
 
-### Du raster au vecteur 
+### Du raster au vecteur
 
 De la même manière, une donnée raster peut être vectorisée de différentes manières. Sur les images satellites de la planète, on peut dessiner ou « tracer » des lignes pour les routes, des points pour les maisons, ou des polygones pour les bâtiments. Ça nous permet d'avoir une version de la donnée avec laquelle nous ferons plus de choses – calculer un itinéraire est possible avec une donnée routière vectorielle, pas avec une image satellite. 
 
 ### Simulation
 
-Avec des données géographiques, nous pouvons simuler certains processus naturels, et cette simulation est une grande partie du travail du cartographe. En se basant sur des données d'élévation pour une chaîne de montagne, il est possible de simuler le rayonnement solaire et l'ombre projetée de ces montagnes, avec un procédé qu'on appelle « hillshading » (ombrage). 
+Avec des données géographiques, nous pouvons simuler certains processus naturels, et cette simulation est une grande partie du travail du cartographe. En se basant sur des données d'élévation pour une chaîne de montagne, il est possible de simuler le rayonnement solaire et l'ombre projetée de ces montagnes, avec un procédé qu'on appelle « hillshading » (ombrage).
 
 Des processus plus complexes sont aussi possibles, comme de déterminer le bassin-versant (aire délimitée par les lignes de partage des eaux, et dans laquelle toute la pluie tombée alimente le même exutoire) ou de déterminer les parties de la carte visibles depuis le sommet d'une montagne (le « viewshed » en anglais). 
 
@@ -209,7 +208,7 @@ Il y a de nombreuses manières d'interpoler des données ponctuelles :
 
 ## En conclusion
 
-Nous espérons que cette lecture vous aura éclairé et inspiré : c'est un champ qui reste à explorer, avec beaucoup de potentiel et autant de questions sans réponses. La cartographie est un sujet aux connexions multiples, qui touche à l'art, aux mathématiques, à la physique, à l'écologie ou à bien d'autres domaines.
+Nous espérons que cette lecture vous a éclairé et inspiré : c'est un champ qui reste à explorer, avec beaucoup de potentiels et autant de questions sans réponses. La cartographie est un sujet aux connexions multiples, qui touche à l'art, aux mathématiques, à la physique, à l'écologie ou à bien d'autres domaines.
 
 N'hésitez pas à [nous faire part des problèmes que vous auriez rencontré à la lecture](https://tmcw.wufoo.com/forms/mapschool-feedback/), ou à nous transmettre vos remarques et suggestions !
 
