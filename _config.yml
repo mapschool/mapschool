@@ -45,7 +45,7 @@ language:
   fr:
     feedback: 'retours'
     contributors: 'contributeurs'
-    tagline: 'une introduction libre à la géographie'
+    tagline: 'une introduction libre à la cartographie'
     furtherreading: 'pour aller plus loin'
     code: 'code'
     home: 'accueil'
