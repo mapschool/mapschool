@@ -61,31 +61,31 @@ Alguns dados geográficos não são nem vetorias nem raster: ao invés de serem 
 
 Infelizmente, não é possível simplesmente adicionar esses dados em um mapa. Existe uma processo indireto e muitas vezes inacuradao em transformar palavras como 'Estados Unidos' em pontos como `-120, 40`. Esse processo é o que chamamos de **geocodificação**. Geocodificação se baseia em um banco de dados de nomes de cidades, países, e etc, junto com suas localizações geográficas, e algoritmos que tentam achar a escolha mais próxima para uma entrada imprecisa.
 
-### Reverse Geocoding
+### Geocodificação Reversa
 
-The opposite process is **reverse geocoding**. This transforms geographic data like points into human readable text, like `United States` or `1714 14th Street`. Like forward geocoding, it is approximate - one place on Earth can be inside of overlapping and conflicting boundaries or between address points.
+O processo oposto é **geocodificação reversa**. Ele transforma dados geográficos como pontos em texto legível para humanos, como `Estados Unidos` ou `1714 14th Street`. Como a geocodificação, é aproximada - um local na Terra pode estar dentro de fronteiras conflitantes ou entre dois endereço.
 
-Geocoding and reverse geocoding are difficult: coordinate position errors, poorly formatted address data, and an ever-changing grid of streets and buildings contribute to the difficulty in turning addresses into coordinates, or vice versa.
+Geocodificação normal e reversa são difíceis: erros de posicionamento de coordenadas, dados de endereços mal-formatados  e a situação nunca fixa dos mapas de ruas e prédios contribuem para a dificuldade em transformar endereços em coordenadas, ou vice-versa.
 
-<a class='further-reading' href='/geocoding.html'>read more about geocoding</a>
+<a class='further-reading' href='/geocoding.html'>leia mais sobre geocodificação</a>
 
-## Data Collection
+## Coleta de dados
 
-Map data has been collected in countless ways through the years - everything from sailors' logs to geocoded Tweets. Currently, there are a few major sources that merit discussion:
+Dados de mapas vêm sendo coletadas de inúmeras maneiras por diversos anos - tudo desde diários de marinheiros a Tweets geocodificados. Atualmente, existem algumas fontes principais que merecem ser discutidas::
 
 ![](img/gps.jpg)
 
-**GPS**, the satellite constellation that gives your cell phone a blue dot on the map, is the foundation of collecting accurate vector data. Surveyors will drive with highly accurate GPS units and combine their results into something trustworthy.
+**GPS**, a constelação de satélites que lhe fornecem um ponto azul no mapa do seu celular é a fundação para a coleta de dados acurados de data vetorial. Analistas dirigem como GPS altamente acurados e combinam seus resultados em algo confiável.
 
-Observational **satellites and airplanes** collect most raster data we have today, constantly taking photos from different altitudes and combining them into something that looks a little like a picture of the world. The same sensors also capture what we call 'non-visible spectrums', like infrared light that's useful for mapping agriculture and deforestation. Some tricked-out rigs include [LiDAR](http://en.wikipedia.org/wiki/Lidar), a kind of laser sensor that measures altitude and yields us raster altitude data.
+**Satélites e aviões** observacionais coleta grande parte dos dados raster que nós temos hoje, tirando fotos constantemente de diferentes altitudes e combinando elas em algo que mais parece uma fotografia do mundo. Os mesmos sensitise também capturam o que chamamos de 'espectro não-visível’, como luzes infravermelhas que são úteis para mapear agricultura e desmatamento. Dentre dispositivos avançados incluem-se o [LiDAR](http://en.wikipedia.org/wiki/Lidar), um tipo de sensor laser que mede a altitude e informa dados de altitude em raster.
 
-**Corporations, governments, and communities** maintain different world maps of varying detail. For instance, [Google](http://maps.google.com) and [OpenStreetMap](http://www.openstreetmap.org/) focus on mapping all roads and details about them, and sources like the [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) and [Natural Earth](http://www.naturalearthdata.com/) keep track of political borders.
+**Corpotações, governos e comunidades** mantém diferentes mapas mundi que variam em nível de detalhe. Por exemplo, [Google](http://maps.google.com) d [OpenStreetMap](http://www.openstreetmap.org/) focam em mapeamento de todas as ruas e detalhes sobre elas, e fontes como o [CIA World Factbook](https://www.cia.gov/library/publications/the-world-factbook/) e [Natural Earth](http://www.naturalearthdata.com/) mantém registros de divisas políticas.
 
-### Storage
+### Armazenamento
 
-There are many ways to store geographic data. Data can be stored as printouts, but recently it became more popular to store it in a way easily accessed and shared, digitally.
+Existem muitas maneiras de armazenar dados geográficos. Dados podem ser salvos em impressões, mas recentemente popularizou-se armazená-los de amnesia mais facilmente acessível, digitalmente.
 
-There are many different filetypes and conventions for storing geographical data, and thus a variety of tools to translate among different representations. Data is stored in databases or in individual files, but the practical difference between the two is not necessarily important.
+Existem muitos formatos de arquivos e convenções para armazenamento de dados geográfico, e consequentemente uma grande variedade de ferramentas que traduzem entre diferentes representações. Dados são armazenados em bancos de dados ou em arquivos individuais, mas a diferença prática entre eles não é necessariamente importante.
 
 # Information
 
