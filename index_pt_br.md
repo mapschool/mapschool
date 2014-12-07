@@ -49,17 +49,17 @@ O formato vectorial mais conhecido é o [Shapefile](http://en.wikipedia.org/wiki
 
 [GeoJSON](http://geojson.org/), [TopoJSON](https://github.com/mbostock/topojson), e [KML](http://developers.google.com/kml) são formatos mais novos baseados no formato de codificação [JSON](http://www.json.org/) e [XML](http://en.wikipedia.org/wiki/XML) text encoding, respectivamente. Sendo baseados em texto, eles tendem a ser mais simples de implementar em software do que Shapefiles, e combinados com maior flexibilidade e funcionalidades, eles acabaram se tornando padrão em softwares para web. Um ponto negativo de GeoJSON é que existem menos ferramentas criadas para comparar propriedades entre registros facilmente, logo, limpeza de dados e análise são mais desafiadores.
 
-### Topology
+### Topologia
 
-In addition to storing places and shapes, some vector data keeps track of topology, the relationships between different shapes. For instance, political borders often touch - you can stand with one foot in Arizona and another in New Mexico. A lot of geospatial data, though, will have one shape that represents Arizona and another that represents New Mexico, with two borders that precisely overlap, but have no other association.
+Adicionalmente ao armazenamento de lugares e formas, alguns dados vetoriais coletam informações sobre tipologia, o relacionamento entre as diferentes formas. Por exemplo, divisas políticas geralmente se tocam - você pode pisar com um pé em Arizona e outro no Novo México. Muito do dados geoespaciais, porém, terão uma forma que representa Arizona e outra que representa Novo México, com duas bordas que se sobrepôem precisamente, mas que não possuam outra relação.
 
-This gets tricky when you want to do something like ask 'which states touch?' or simplify the shapes of objects while preserving borders lined up. We use the concept of topology: some vector data, instead of storing a shape of Arizona and another of New Mexico, saves a bunch of lines and keeps track of which ones form the boundary of which object. So, the border between Arizona and New Mexico is a single line that's used to draw the border of both states, and if you modify the line, it changes the shape of both states.
+Isso acaba deixando as coisas difíveis quando você tenta descobrir coisas como  ‘que estados se tocam?’ ou simplesmente a forma de objetos, enquanto preserva suas bordas alinhadas. Nós usamos o conceito de topologia: alguns dados vetoriais, ao invés de armazenar o formato de Arizona e outro de Novo México, salva uma série de linhas e mantém o registro de quais delas formam os limites de cada objeto. Então, a divisa entre Arizona e Novo México é uma linha só que é usada para desenhar a borda de ambos  estados, e se você modifica a linha, alterará ambos estados.
 
-## Geocoding
+## Geocodificação
 
-Some geographic data is neither vector nor raster: instead of being composed of the numbers that computers understand, it is stored as text data, including references to place names, streets, addresses, and other means of identification.
+Alguns dados geográficos não são nem vetorias nem raster: ao invés de serem composto por números que computadores entendem, eles são armazenados em texto, incluindo references a nome de lugares, ruas, endereços e outras formas de identificação.
 
-Unfortunately, it's not possible to simply put this data on a map. There's an indirect and often inaccurate process involved in transforming words like 'United States' into points like `-120, 40`. This process is what we call **geocoding**. Geocoding relies on databases of street names, countries, and more, along with geographical locations, and algorithms attempt to find the closest match for imprecise input.
+Infelizmente, não é possível simplesmente adicionar esses dados em um mapa. Existe uma processo indireto e muitas vezes inacuradao em transformar palavras como 'Estados Unidos' em pontos como `-120, 40`. Esse processo é o que chamamos de **geocodificação**. Geocodificação se baseia em um banco de dados de nomes de cidades, países, e etc, junto com suas localizações geográficas, e algoritmos que tentam achar a escolha mais próxima para uma entrada imprecisa.
 
 ### Reverse Geocoding
 
