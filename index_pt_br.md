@@ -87,37 +87,37 @@ Existem muitas maneiras de armazenar dados geográficos. Dados podem ser salvos 
 
 Existem muitos formatos de arquivos e convenções para armazenamento de dados geográfico, e consequentemente uma grande variedade de ferramentas que traduzem entre diferentes representações. Dados são armazenados em bancos de dados ou em arquivos individuais, mas a diferença prática entre eles não é necessariamente importante.
 
-# Information
+# Informação
 
-Maps are visualized information: At one end lie the issues of datums, numbers, and storage - the nuts and bolts of how we record and differentiate different places on Earth. Between data and visualization is a transformation we call 'projection' - in which places on Earth become places on usually flat surfaces, like printouts or computer screens. And then finally, we decide the details of color, tone, and symbolism that try to translate details about data into pictures that people can understand and interpret.
+Mapas são informações visualizadas: De um lado está todos os dados, números e armazenamento - o principal sobre como gravamos e diferenciamos lugares na Terra. Entre dados e visualização está uma transformação que chamamos de ‘projeção’ - em qual lugares no mundo viram lugares usualmente em superfícies planas, como impressões ou telas de computador.E então finalmente, nós decidimos o detalhe de cor, tom e simbolismo que traduza detalhes sobre os dados em imagens que pessoas podem entender e interpretar.
 
 ## Latitude & Longitude
 
-The most common way to store places on Earth is with latitude and longitude values. Historically latitude and longitude are sometimes represented in sexagesimal notation, like `38° 12'`, but the new standard is to represent them as simple numbers, like `38.2`, that are easy for computers to understand.
+A maneira mais comum de armazenar lugares na Terra é com valores de latitude e longitude. Historicamente, latitude e longitude são algumas vezes representadas em uma notação sexagesimal, como `38° 12'`, mas o padrão moderno é representá-las como simples números como `38.2`, que são mais fáceis de computar e de entender.
 
 ![](img/latlon.png)
 
-**Latitude** values range from -90 at the South Pole to 90 at the North Pole. All along the equator the latitude value is 0.
+**Latitude** valores que variam de -90 no pólo sul a 90 no pólo Norte. Por toda a linha do equador, a latitude tem valor 0.
 
-**Longitude** values range from -180 to 180, and the line where these meet, which cuts through the Pacific in north/south direction, is called the antemeridian. The value of 0 is defined as the Prime Meridian, which cuts through Africa and Europe (specifically the Royal Observatory, in Greenwich, London).
+**Longitude** values que variam de -180 a 180, e na linha em que essas se encontra, o que corta o Pacífico de norte a sul, é chamada de antemeridiano. O valor 0 é definido como o Primeiro Meridiano, que corta a África e Europa (especificamente o Observatório Real em Greenwich, Londres).
 
-The combination of latitude and longitude is usually called a coordinate, and can be represented as 'latitude, longitude', or 'longitude, latitude': historically, the former was standard, but 'longitude, latitude' has recently gained popularity because it mirrors the 'X, Y' ordering of coordinates in math's euclidean space.
+A combinação de latitude e longitude é usualmente chamada de coordenada, e pode ser representada tanto como 'latitude, longitude', ou 'longitude, latitude': historicamente, esse último era o formato padrão, mas 'longitude, latitude' tem ganho popularidade porque espelha a ordem 'X, Y' usada em espaços cartesianos da matemática.
 
-Coordinate ordering can cause some confusion, as browser based mapping software often expects 'latitude, longitude', whereas many wire formats specify 'longitude, latitude'.
+A ordem das coordenadas podem causar alguma confusão, porque mapas em browser geralmente esperam 'latitude, longitude', enquanto muitos formados de dados utilizam 'longitude, latitude'.
 
-Sometimes more than just the latitude, longitude position is recorded as data: altitude can also be included, as well as time of capture and other factors. In the case of including altitude, it's usually stored as a third coordinate, like 'longitude, latitude, altitude.'
+Algumas vezes mais que apenas a posição de latitude e longitude são gravadas como dados: altitude também pode ser incluída, assim como o momento (data) da captura e outros fatores. No caso de inclusão de altitude, é comum utilizar-se como uma terceira coordenada, como 	'longitude, latitude, altitude.'
 
-## The Shape of the Earth
+## O formato da Terra
 
 ![](img/earth-shapes.jpg)
 
-Storing and presenting the world brings us to the question of what shape it is - can latitude and longitude values be mapped to a perfect sphere and back, and retain their accuracy spatially?
+Armazenar e apresentar o mundo nos traz a questão sobre qual o formato a Terra possui - podem valores de latitude e longitude serem mapeados perfeitamente a uma esfera e traduzido de volta e manter sua acurácia espacial?
 
-Since the Earth is a spinning object and its components can change shape, it bulges at the middle - so instead of being a sphere, it's actually more similar in shape to a [oblate spheroid](http://en.wikipedia.org/wiki/Oblate_spheroid). If you look even closer, that isn't entirely true either - the Earth is covered in [elevation differences](http://en.wikipedia.org/wiki/Topography) like mountains and valleys, and even manmade changes like cities.
+Como a Terra é um objeto rotatório, seus componentes podem mudar de forma, achatando no meio - então ao invés de uma esfera, na verdade a Terra tem um formato similar a uma [esfera oblata](http://pt.wikipedia.org/wiki/Esfera_oblata). Se você olhar cuidadosamente, isso também não é inteiramente verdade -  a Terra é coberta por [elevações diferentes](http://en.wikipedia.org/wiki/Topografia) como montanhas e vales, e inclusive alterações criadas por humanos como cidades.
 
-For day-to-day work, we use different estimates of this shape: standards like [WGS84](http://en.wikipedia.org/wiki/WGS84) define precise values for the length of both of the Earth's axes, so we can estimate for a [reference ellipsoid](http://en.wikipedia.org/wiki/Reference_ellipsoid) rather than a sphere. Local measurements and science that relies on precise surface values can also use [geoid models](https://en.wikipedia.org/wiki/Geoid), which are three-dimensional calculations of theoretical ocean heights.
+Para o trabalho cotidiano, nós usamos diferentes estimativas deste formato: padrões como [WGS84](http://en.wikipedia.org/wiki/WGS84) definem valores precisos para o comprimento dos eixos daTerra, então podemos estimar para uma [referência elipsoide](http://en.wikipedia.org/wiki/Reference_ellipsoid) ao invés de uma esfera. Medições locais e ciências que dependem de medições precisas de superfície podem também usar [modelos geoides](https://en.wikipedia.org/wiki/Geoide), que são cálculos tri-dimensionais da altura teórica dos oceanos.
 
-This branch of Earth sciences, called [geodesy](https://en.wikipedia.org/wiki/Geodesy), is a continuing project since our ability to model and measure the Earth moves quickly and the Earth itself changes in shape.
+Esse ramo do estudo da Terra é chamado de [Geodésia](https://en.wikipedia.org/wiki/Geodésia), é um projeto contínuo porque nossa habilidade de modelar e medir o movimento da Terra muda rapidamente e a Terra por si só sofre alterações em sua forma.
 
 ## Projection
 
