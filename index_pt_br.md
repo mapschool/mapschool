@@ -119,99 +119,99 @@ Para o trabalho cotidiano, nós usamos diferentes estimativas deste formato: pad
 
 Esse ramo do estudo da Terra é chamado de [Geodésia](https://en.wikipedia.org/wiki/Geodésia), é um projeto contínuo porque nossa habilidade de modelar e medir o movimento da Terra muda rapidamente e a Terra por si só sofre alterações em sua forma.
 
-## Projection
+## Projeção
 
 ![](img/projections.jpg)
 
-Projections are what we call the mathematical equations that do the trick of turning the world into some flat shape that fits on a printout or a computer screen. It's a messy task to do, this transformation - there's no way to smoosh the world onto a screen without distorting it in some way. You either lose direction, or relative size, or come out with something very weird looking.
+Projeções é como chamamos as equações matemáticas que fazem o truque de transformar o mundo em um formato achatado que possa ser usado em impressões e telas de computador. Essa transformação é uma tarefa complicada de se executar - não é possível achatar o mundo sem distorcê-lo de alguma forma. Você ou perde direção, ou tamanho relativo ou acaba com algo com uma aparência muito estranha.
 
 <a class='further-reading' href='/datum.html'>read more about datums</a>
 
-## Symbolization
+## Simbolização
 
-Symbolization is a fancy word for the particular ways that data is transformed into graphics in the world of maps.
+Simbolização é uma chique para as maneiras particulares em que dados são transformados em gráficos no mundo dos mapas.
 
-Fundamentally, data doesn't look like anything: a list of pixel values or road lines is just as well represented in a spreadsheet or a chart as it is on a map. Thus to 'convert' is not the right word for what we do with data: The decision is more about how to render it.
+Fundamentalmente, dados não se parecem com nada: uma lista de de values de pixels ou linhas representando são tão bem representadas em uma planilha de dados ou num gráfico como em um mapa. Por isso, ‘converter’ não é a palavra certa para o que fazemos com dados: A decisão é mais sobre como renderizá-los.
 
-Symbolic techniques include anything representable in graphics or even 3D, so let's only look at a few:
+Técnicas simbólicas incluem qualquer coisa representável graficamente ou até mesmo em 3D, então vamos dar uma olhada em algumas delas:
 
-## Sequential & Categorical
+## Sequencials & Categórica
 
 ![](img/scales.jpg)
 
-Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential, or continuous data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100, or elevation. Categorical, or discrete data is, instead, one of a set number of values - like 'true', 'false', 'democrat' or 'republican'.
+Simbolizacão tende a enfatizar 2 diferentes característica dos dados: sequencial e categórica. Sequencial, ou dados contínuos também podem ser chamados de linear - e tendem a ser valores numéricos em um intervalo, como valores de graduação entre 0 e 100, ou elevação. Categórica, ou dados discretos são, por sua vez, um conjunto de valores como ‘falso’, ‘verdadeiro’, ‘democrata’, ‘republicano’.
 
-This division between data is one of the main concerns for symbolization - a sequential datasource would fit with a scaled point map or a gradient color ramp on a raster, whereas categorical data generally is displayed using multiple symbols for markers, or discrete bucketing of colors.
+Essa divisão entre dados é uma das principais procupações da simbolização - uma fonte de dados sequencial caberia em um mapa escalar ou em uma superfície de cores gradientes em um raster, enquanto dados categóricos geralmente são mostrados usando múltiplos símbolos para marcadores, ou um com uma lista discreta de cores.
 
-### Choropleth
+### Cloropético
 
-Choropleth maps preserve the existing boundaries and shapes of places and represent data by changing their colors, patterns or textures. A familiar example of this kind of map is in election results or demographic makeup, in which data is percentage values for some fixed piece of land - a value per voting precinct or census area.
+Mapas cloropéticos preservam as divisas e formas existentes e representam dados mudando cores, padrões e texturas. Um exemplo familiar desse tipo de mapa é o dos resultados das eleições ou de amostras demográficas, nos quais os dados são valores percentuais para um fixo pedaço de terra - um valor por votos contados ou área de census.
 
-Choropleth maps are a natural fit for data like rates, densities, or percentages. They aren't recommended for absolute values: since they keep the area of shapes the same, they tend to over-emphasize large features. Also, since choropleth maps rely on color differences to represent information, it's important that the colors are well-chosen to be colorblind-safe, understandable, and consistent.
+Mapas cloropéticos são são ótimos para dados como votos, densidades ou porcentagens. Eles não são recomendados para valores absolutos: porque como eles mantém o formato das áreas iguais, eles tendem a super-enfatizar destaques maiores. Também, desde que maps cloropéticos dependem de diferença de cores para representar informação, é importante que as cores sejam bem escolhidas para que sejam reconhecíveis por daltônicos, entendíveis e consistentes.
 
-<a class='further-reading' href='/colors.html'>read more about colors</a>
+<a class='further-reading' href='/colors.html'>leia mais sobre cores</a>
 
-### Point
+### Ponto
 
-Point maps are a better alternative for absolute values - the only geometry that they preserve is a single point for each feature.
+Mapas de pontos são melhores alternativas para valores absolutos - a única geometria que eles preservam é um simples ponto para cada destaque.
 
-The specific point or marker used in this style varies tremendously - Coloring points based on their sequential or categorical value can be useful, but points can also be scaled to different sizes to show their relative value. These scaled symbols can be any shape or image, such as circles, squares, or pictures of what they represent. In cases where there are multiple values that total up, scaled pie charts can be a terrific way to visualize what would otherwise be a complex dataset.
+O ponto ou marcador específico usado nesse estilo varia tremendamente - colorir pontos baseado em seu valor sequencial ou categórico pode ser úteis, mas pontos também podem ser escalados para tamanhos diferentes para mostrar seus valores relativos. Esses podem ser qualquer forma ou image, como círculos, quadrados ou imagens que eles representem. Caso existam diversos valores que completem um total, gráficos de pizza podem ser uma ótima maneira de visualizar grupo de dados, que de outra maneira, seriam muito complexos.
 
-Care must be taken to not show too many points at once, as this will make a map difficult to read. In cases where there are too many points, a choropleth with aggregated values from the points may be a good alternative. Another alternative is to use clustering, where crowded points are grouped together until the map is zoomed in closer.
+É preciso tomar cuidado ao mostrar pontos de mais de uma vez, porque isso deixará o mapa difícil de ler. Nesses casos onde existem muitos pontos, um cloroplético com dados agregados pode ser uma boa alternativa. Outra alternativa é agregar, onde pontos agglomerates são combinados até que o nível de zoom do mapa é próximo o suficiente para que sejam visualizados separadamente.
 
-## Publishing
+## Publicando
 
-## Analysis
+## Análise
 
-Raster & vector analysis as aggregation & transformation
+Análise de Rasters & vetores como agregação & transformação
 
-### Vector to Raster
+### Vetor para Raster
 
-It's possible to move between the two types of map data, as disparate as they might seem, and it's actually quite common: it's just not direct.
+É possível mudar entre dois tipos de dados de mapa, por mais diferente que eles pareçam, e isto é feito comumente: apenas não de maneira direta.
 
-Typically vector data always becomes raster - what we call 'rasterized' or 'rendered' when it is displayed: computer screens and printers operate on the level of pixels, not lines or shapes. This conversion is imperfect: remember that vector data is not pixel-based, so you can never zoom in and see fuzzy features. Thus, generally, when vector data is converted into a raster format, you can't transform that raster representation back into exactly the source.
+Tipicamente dados vetoriais sempre se tornam raster - o que chamamos de ‘rasterizado’ ou ‘renderizado’ quando é mostrado: monitores e impressoras operam no nível dos pixels, não em termos de linhas e formas. Essa conversão é imperfeita: lembre-se que dados vetoriais não são baseados em pixels, logo você não pode nunca aproximar o zoom e ver uma imagem nítida. Então, geralmente, quando dados vitoriais são convertidos em formato raster, você não poderá transformar aquela representação reter de volta exatamente como a fonte original.
 
-Sometimes we convert vector data to raster ahead of time - in order to run some kinds of analysis, it's easier to do the math on a pixel basis.
+As vezes nós convertemos data vetorial para raster antes do tempo - para rodar-mos algum tipo de análise, é mais fácil executar operações matemáticas com base em pixels.
 
-### Raster to Vector
+### Raster para Vetor
 
-Likewise, raster data can be vectorized in a number of ways. On raster satellite images of the Earth, people draw, or 'trace', lines for streets, points for houses, or polygons for buildings. This lets us have a version of the data upon which we can do more things - you can figure out driving routes from vector data of streets, but can't do that with a satellite image of streets.
+Da mesma forma, dados raster também podem ser vetorizados de inúmeras maneiras. Em imagens rasterizadas de satélite da Terra, pessoas desenham, ou ‘tracejam’, linhas para ruas, pontos para casas ou polígonos para prédios. Isso nos permite ter uma versão dos dados em qual nós podemos fazer mais coisas - você pode achar rotas de direção de dados vetoriais de ruas, mas não pode fazer isso com uma imagem de satélite das ruas.
 
-### Simulation
+### Simulação
 
-With geographic data, it's possible to simulate certain natural processes, and this simulation is a big part of what working mappers do. Given elevation data for a mountain range, it's possible to simulate highlights and shadows for those mountains in light, in a process called hillshading.
+Com dados geográficos, é possível simula certos processos naturais, e esse tipo de trabalho é uma grande parte dos trabalhos que mapeadores fazem. Dadas informações de elevação de uma cadeira de montanhas, é possível simular picos claros e sombras dessas montanhas na luz, em um processo chamado ‘hillshading’.
 
-More complex processes are also possible, like determining where water will collect after rainfall, called a 'watershed', or determining everywhere on the map that will be visible if you're standing at a mountaintop, called a 'viewshed'.
+Processos mais complexos também são possívels, como determinar onde água será acumulada depois de uma queda de chuva, chamado de 'watershed', ou determinar onde em um mapa será visível se você estiver no topo de uma montanha, chamado de 'viewshed'.
 
-### Aggregation
+### Agregação
 
-The most common form of aggregation is the idea of a sum - given a large group of numbers, you can add them together to get an idea of them all at once. For instance, the GDP of a country is more immediately informative than simply listing every individual contribution to an economy.
+A forma mais comum de agregação é a idéia de uma soma - dado um grande grupo de números, você pode agrupar-los para ter uma idéia te todos eles de uma vez só. Por exemplo, o PIB de um país  é mais imediatamente informativo que a simplesmente listar cada contribuição individual para uma economia.
 
-Aggregation in maps is similarly used. Given granular data, like millions of individual household incomes, you can use mapping algorithms to sum or average the values inside of specific areas of the world, to show average income per town or city.
+Agregação em mapas é usada similarmente. Dada informações granularizadas, como milhões arrecadamento individuais por residência, você pode algoritmos de mapeamento para somar ou definir a média dos valores dentro de uma área específica do mundo, para mostrar a média de renda por cidade.
 
 ![](img/binning-wide.jpg)
 
-Aggregation is also used along with a technique called **binning**: given many discrete points, you can draw arbitrary shapes on the map, like squares or hexagons, and total all of the points that fall in each shape. That way, instead of having millions of tiny points that are difficult to grasp at a glance, you can style the map as a choropleth.
+Agregação é também usado junto com uma técnica chamada de  **binning**: dados muitos pontos discretos, você pode desenhar formas arbitrárias no mapa, como quadrados ou hexágonos, a calcular todos os pontos que são incluídos em cada formato. Dessa maneira, ao invś de ter milhões de pequenos points que são difíceis de analisar rapidamente, você pode estilizar o mapa como um cloropético.
 
-### Interpolation
+### Interpolação
 
-Whereas aggregation takes lots of data and distills it into something simpler to analyze and visualize, interpolation 'fills in the blanks' between values. Interpolation is often used for datasets like elevation, where you have raster data values that records the height of every inch of a mountain, but there are a few places missing from the data - what programmers call `null` values.
+Enquanto agregação pega muitos dados e transforma eles em algo mais simples de analizar e visualizar, interpolação ‘preenche as lacunas’ entre os valores. Interpolação é comumente usado para conjuntos de dados como elevação, onde você tem valores de dados raster que registram a altura de cada polegada de uma montanha, mas que possuam poucos dados faltando - o que progamadores chamam de valores nulos.
 
-Interpolation looks at the values around the 'blanks' and assumes that the missing values are basically similar to what's around them - a missing pixel at the top of a mountain will be assumed to be pretty high, while one in a valley is assumed to be low.
+Interpolação olha para os valores ao redor das ‘lacunas’ e assume que o valor faltando é similar aos que estão próximos dele - um pixel faltando no topo de uma montanha será assumido se bem alto, enquanto um em um vale é assumido que sejam baixo
 
-There are many ways to interpolate point data:
+Existem muitas manners de interpolar dados de pontos:
 
-- **Heatmaps** assign each point a weight and represent density of point values in "hotter" colors.
-- **Contour lines** take point sample data and draw lines around them that represent a continuous estimated value. Elevation maps often use this technique.
-- A **TIN** (Triangulated Irregular Network) draws triangles between points that can be used to visualize terrains.
-- **Voronoi diagrams** take a set of points and turn them into polygons of all of the area around them.
+- **Mapas de calor** atribui um peso a cada ponto e representa a densidade de um point com cores ‘mais quentes’.
+- **Linhas de contorno** pega pontos de dados de amostra e desenha linhas ao redor deles que representam um valor estimado contínuo. Mapas de elevação geralmente usam essa técnica.
+- Um **TIN** (Rede Irregular Triangulada) desenha triangles entre pontos que podem ser usados para visualizar terrenos.
+- **Diagramas de Voronoi** pagam um grupo de pontos e transformam eles em polígonos de todas as áreas ao redor deles.
 
-## Afterword
+## Posfácio
 
-We hope this has been an enlightening and inspiring read: there is so much potential in this field and so many unanswered questions. Maps are a connected topic, stretching into art, mathematics, physics, ecology, and so much more.
+Nós esperamos que essa tenha sido uma leitura elucidante e inspiradora: existe tanto potencial nesta área e tantas perguntas não respondidas. Mapas são tópicos conectados, construídos em arte, matemática, física, ecologia e muito mais.
 
-We'd love if you can [report any issues or file any suggestions](https://tmcw.wufoo.com/forms/mapschool-feedback/) that came to mind in your read.
+Nó adoraríamos se você pudesse We'd love if you can [reportar qualquer problema ou enviar sugestões](https://tmcw.wufoo.com/forms/mapschool-feedback/) que venham a sua mente durante sua leitura.
 
-### License
+### Licença
 
 [Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/)
