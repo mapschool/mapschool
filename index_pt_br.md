@@ -67,7 +67,7 @@ O processo oposto é **geocodificação reversa**. Ele transforma dados geográf
 
 Geocodificação normal e reversa são difíceis: erros de posicionamento de coordenadas, dados de endereços mal-formatados  e a situação nunca fixa dos mapas de ruas e prédios contribuem para a dificuldade em transformar endereços em coordenadas, ou vice-versa.
 
-<a class='further-reading' href='/geocoding.html'>leia mais sobre geocodificação</a>
+<a class='further-reading' href='/geocoding.pt.html'>leia mais sobre geocodificação</a>
 
 ## Coleta de dados
 
@@ -125,17 +125,17 @@ Esse ramo do estudo da Terra é chamado de [Geodésia](https://en.wikipedia.org/
 
 Projeções é como chamamos as equações matemáticas que fazem o truque de transformar o mundo em um formato achatado que possa ser usado em impressões e telas de computador. Essa transformação é uma tarefa complicada de se executar - não é possível achatar o mundo sem distorcê-lo de alguma forma. Você ou perde direção, ou tamanho relativo ou acaba com algo com uma aparência muito estranha.
 
-<a class='further-reading' href='/datum.html'>read more about datums</a>
+<a class='further-reading' href='/datum.pt.html'>leia mais sobre datums</a>
 
 ## Simbolização
 
-Simbolização é uma chique para as maneiras particulares em que dados são transformados em gráficos no mundo dos mapas.
+Simbolização é uma palavra chique para as maneiras particulares em que dados são transformados em gráficos no mundo dos mapas.
 
-Fundamentalmente, dados não se parecem com nada: uma lista de de values de pixels ou linhas representando são tão bem representadas em uma planilha de dados ou num gráfico como em um mapa. Por isso, ‘converter’ não é a palavra certa para o que fazemos com dados: A decisão é mais sobre como renderizá-los.
+Fundamentalmente, dados não se parecem com nada: uma lista de valores de pixels ou linhas representando uma rua são tão bem representadas em uma planilha de dados ou num gráfico como em um mapa. Por isso, ‘converter’ não é a palavra certa para o que fazemos com dados: A decisão é mais sobre como renderizá-los.
 
 Técnicas simbólicas incluem qualquer coisa representável graficamente ou até mesmo em 3D, então vamos dar uma olhada em algumas delas:
 
-## Sequencials & Categórica
+## Sequenciais & Categóricas
 
 ![](img/scales.jpg)
 
@@ -145,19 +145,19 @@ Essa divisão entre dados é uma das principais procupações da simbolização 
 
 ### Cloropético
 
-Mapas cloropéticos preservam as divisas e formas existentes e representam dados mudando cores, padrões e texturas. Um exemplo familiar desse tipo de mapa é o dos resultados das eleições ou de amostras demográficas, nos quais os dados são valores percentuais para um fixo pedaço de terra - um valor por votos contados ou área de census.
+Mapas cloropéticos preservam as divisas e formas existentes e representam dados mudando cores, padrões e texturas. Um exemplo familiar desse tipo de mapa é o dos resultados das eleições ou de amostras demográficas, nos quais os dados são valores percentuais para um pedaço fixo de terra - um valor por votos contados ou área de censo.
 
-Mapas cloropéticos são são ótimos para dados como votos, densidades ou porcentagens. Eles não são recomendados para valores absolutos: porque como eles mantém o formato das áreas iguais, eles tendem a super-enfatizar destaques maiores. Também, desde que maps cloropéticos dependem de diferença de cores para representar informação, é importante que as cores sejam bem escolhidas para que sejam reconhecíveis por daltônicos, entendíveis e consistentes.
+Mapas cloropéticos são ótimos para dados como votos, densidades ou porcentagens. Eles não são recomendados para valores absolutos: porque como eles mantém o formato das áreas iguais, eles tendem a super-enfatizar destaques maiores. Também, como mapas cloropéticos dependem de diferença de cores para representar informação, é importante que as cores sejam bem escolhidas para que sejam reconhecíveis por daltônicos, compreensíveis e consistentes.
 
-<a class='further-reading' href='/colors.html'>leia mais sobre cores</a>
+<a class='further-reading' href='/colors.pt.html'>leia mais sobre cores</a>
 
 ### Ponto
 
 Mapas de pontos são melhores alternativas para valores absolutos - a única geometria que eles preservam é um simples ponto para cada destaque.
 
-O ponto ou marcador específico usado nesse estilo varia tremendamente - colorir pontos baseado em seu valor sequencial ou categórico pode ser úteis, mas pontos também podem ser escalados para tamanhos diferentes para mostrar seus valores relativos. Esses podem ser qualquer forma ou image, como círculos, quadrados ou imagens que eles representem. Caso existam diversos valores que completem um total, gráficos de pizza podem ser uma ótima maneira de visualizar grupo de dados, que de outra maneira, seriam muito complexos.
+O ponto ou marcador específico usado nesse estilo varia tremendamente - colorir pontos baseado em seu valor sequencial ou categórico pode ser úteis, mas pontos também podem ser escalados para tamanhos diferentes para mostrar seus valores relativos. Esses símbolos podem ter qualquer forma ou imagem, como círculos, quadrados ou figuras que eles representem. Caso existam diversos valores que completem um total, gráficos de pizza podem ser uma ótima maneira de visualizar grupo de dados, que de outra maneira, seriam muito complexos.
 
-É preciso tomar cuidado ao mostrar pontos de mais de uma vez, porque isso deixará o mapa difícil de ler. Nesses casos onde existem muitos pontos, um cloroplético com dados agregados pode ser uma boa alternativa. Outra alternativa é agregar, onde pontos agglomerates são combinados até que o nível de zoom do mapa é próximo o suficiente para que sejam visualizados separadamente.
+É preciso tomar cuidado ao mostrar muitos pontos de uma vez, porque isso deixará o mapa difícil de ler. Nesses casos onde existem muitos pontos, um cloroplético com dados agregados pode ser uma boa alternativa. Outra alternativa é agregar onde pontos se aglomeram até que o nível de zoom do mapa é próximo o suficiente para que sejam visualizados separadamente.
 
 ## Publicando
 
@@ -171,15 +171,15 @@ Análise de Rasters & vetores como agregação & transformação
 
 Tipicamente dados vetoriais sempre se tornam raster - o que chamamos de ‘rasterizado’ ou ‘renderizado’ quando é mostrado: monitores e impressoras operam no nível dos pixels, não em termos de linhas e formas. Essa conversão é imperfeita: lembre-se que dados vetoriais não são baseados em pixels, logo você não pode nunca aproximar o zoom e ver uma imagem nítida. Então, geralmente, quando dados vitoriais são convertidos em formato raster, você não poderá transformar aquela representação reter de volta exatamente como a fonte original.
 
-As vezes nós convertemos data vetorial para raster antes do tempo - para rodar-mos algum tipo de análise, é mais fácil executar operações matemáticas com base em pixels.
+As vezes nós convertemos data vetorial para raster antes do tempo - para executar algum tipo de análise, por ser mais fácil executar operações matemáticas com base em pixels.
 
 ### Raster para Vetor
 
-Da mesma forma, dados raster também podem ser vetorizados de inúmeras maneiras. Em imagens rasterizadas de satélite da Terra, pessoas desenham, ou ‘tracejam’, linhas para ruas, pontos para casas ou polígonos para prédios. Isso nos permite ter uma versão dos dados em qual nós podemos fazer mais coisas - você pode achar rotas de direção de dados vetoriais de ruas, mas não pode fazer isso com uma imagem de satélite das ruas.
+Da mesma forma, dados raster também podem ser vetorizados de inúmeras maneiras. Em imagens rasterizadas de satélite da Terra, pessoas desenham, ou ‘tracejam’, linhas para ruas, pontos para casas ou polígonos para prédios. Isso nos permite ter uma versão dos dados em qual nós podemos fazer mais coisas - você pode achar rotas de direção de dados vetoriais de ruas, mas não pode fazer isso com uma imagem de satélite das mesmas ruas.
 
 ### Simulação
 
-Com dados geográficos, é possível simula certos processos naturais, e esse tipo de trabalho é uma grande parte dos trabalhos que mapeadores fazem. Dadas informações de elevação de uma cadeira de montanhas, é possível simular picos claros e sombras dessas montanhas na luz, em um processo chamado ‘hillshading’.
+Com dados geográficos, é possível simular certos processos naturais, e esse tipo de tarefa é grande parte do trabalho que mapeadores fazem. Dadas informações de elevação de uma cadeia de montanhas, é possível simular picos claros e sombras dessas montanhas na luz, em um processo chamado ‘hillshading’.
 
 Processos mais complexos também são possívels, como determinar onde água será acumulada depois de uma queda de chuva, chamado de 'watershed', ou determinar onde em um mapa será visível se você estiver no topo de uma montanha, chamado de 'viewshed'.
 
@@ -187,30 +187,30 @@ Processos mais complexos também são possívels, como determinar onde água ser
 
 A forma mais comum de agregação é a idéia de uma soma - dado um grande grupo de números, você pode agrupar-los para ter uma idéia te todos eles de uma vez só. Por exemplo, o PIB de um país  é mais imediatamente informativo que a simplesmente listar cada contribuição individual para uma economia.
 
-Agregação em mapas é usada similarmente. Dada informações granularizadas, como milhões arrecadamento individuais por residência, você pode algoritmos de mapeamento para somar ou definir a média dos valores dentro de uma área específica do mundo, para mostrar a média de renda por cidade.
+Agregação em mapas é usada similarmente. Dada informações granularizadas, como milhões em arrecadamentos individuais por residência, você pode executar algoritmos de mapeamento para somar ou definir a média dos valores dentro de uma área específica do mundo, para mostrar a média de renda por cidade, por exemplo.
 
 ![](img/binning-wide.jpg)
 
-Agregação é também usado junto com uma técnica chamada de  **binning**: dados muitos pontos discretos, você pode desenhar formas arbitrárias no mapa, como quadrados ou hexágonos, a calcular todos os pontos que são incluídos em cada formato. Dessa maneira, ao invś de ter milhões de pequenos points que são difíceis de analisar rapidamente, você pode estilizar o mapa como um cloropético.
+Agregação é também usado junto com uma técnica chamada de  **binning**: dados muitos pontos discretos, você pode desenhar formas arbitrárias no mapa, como quadrados ou hexágonos, a calcular todos os pontos que são incluídos em cada forma. Dessa maneira, ao invés de ter milhões de pequenos pontos que são difíceis de analisar rapidamente, você pode estilizar o mapa como um cloropético.
 
 ### Interpolação
 
 Enquanto agregação pega muitos dados e transforma eles em algo mais simples de analizar e visualizar, interpolação ‘preenche as lacunas’ entre os valores. Interpolação é comumente usado para conjuntos de dados como elevação, onde você tem valores de dados raster que registram a altura de cada polegada de uma montanha, mas que possuam poucos dados faltando - o que progamadores chamam de valores nulos.
 
-Interpolação olha para os valores ao redor das ‘lacunas’ e assume que o valor faltando é similar aos que estão próximos dele - um pixel faltando no topo de uma montanha será assumido se bem alto, enquanto um em um vale é assumido que sejam baixo
+Interpolação olha para os valores ao redor das ‘lacunas’ e assume que o valor faltando é similar aos que estão próximos dele - um pixel faltando no topo de uma montanha será assumido ser bem alto, enquanto outro em um vale é assumido que seja de baixa altitude.
 
-Existem muitas manners de interpolar dados de pontos:
+Existem muitas maneiras de interpolar dados de pontos:
 
-- **Mapas de calor** atribui um peso a cada ponto e representa a densidade de um point com cores ‘mais quentes’.
+- **Mapas de calor** atribui um peso a cada ponto e representa a densidade de um ponto com cores ‘mais quentes’.
 - **Linhas de contorno** pega pontos de dados de amostra e desenha linhas ao redor deles que representam um valor estimado contínuo. Mapas de elevação geralmente usam essa técnica.
-- Um **TIN** (Rede Irregular Triangulada) desenha triangles entre pontos que podem ser usados para visualizar terrenos.
+- Um **TIN** (Rede Irregular Triangulada) desenha triângulos entre pontos que podem ser usados para visualizar terrenos.
 - **Diagramas de Voronoi** pagam um grupo de pontos e transformam eles em polígonos de todas as áreas ao redor deles.
 
 ## Posfácio
 
 Nós esperamos que essa tenha sido uma leitura elucidante e inspiradora: existe tanto potencial nesta área e tantas perguntas não respondidas. Mapas são tópicos conectados, construídos em arte, matemática, física, ecologia e muito mais.
 
-Nó adoraríamos se você pudesse We'd love if you can [reportar qualquer problema ou enviar sugestões](https://tmcw.wufoo.com/forms/mapschool-feedback/) que venham a sua mente durante sua leitura.
+Nó adoraríamos se você pudesse [reportar qualquer problema ou enviar sugestões](https://tmcw.wufoo.com/forms/mapschool-feedback/) que venham a sua mente durante sua leitura.
 
 ### Licença
 
