@@ -21,6 +21,7 @@ mapschool is what it is thanks to the collective hard work of its authors:
 * [Satoshi IIDA](https://github.com/nyampire)
 * [Stefano Sabatini](https://github.com/sabas)
 * [Stephanie May](https://github.com/mizmay)
+* [Thiago Bueno](http://tbueno.com/)
 * [Tom MacWright](http://www.macwright.org/)
 
 the mapschool favicon is from the [Maki icon project](https://www.mapbox.com/maki/).
