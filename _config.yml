@@ -42,3 +42,10 @@ language:
     furtherreading: '参考文献'
     code: 'コード'
     home: 'ホーム'
+  pt:
+    feedback: 'feedback'
+    contributors: 'colaboradores'
+    tagline: 'uma introdução gratuita à cartografia'
+    furtherreading: 'leitura futura'
+    code: 'código'
+    home: 'página inicial'
