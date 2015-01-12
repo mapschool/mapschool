@@ -221,7 +221,7 @@ Er zijn meerdere manieren om puntdata te interpoleren:
 
 We hopen dat dit een verhelderend en inspirerend verhaal was. Er zit zoveel potentie in dit vakgebied met nog zoveel onbeantwoorde vragen. Kaarten zijn een breed onderwerp; het raakt aan de kunst, wiskunde, natuurkunde, ecologie en nog veel meer.
 
-[Opmerkignen en suggesties](https://tmcw.wufoo.com/forms/mapschool-feedback/) zijn van harte welkom.
+[Opmerkingen en suggesties](https://tmcw.wufoo.com/forms/mapschool-feedback/) zijn van harte welkom.
 
 
 ### Licentie
