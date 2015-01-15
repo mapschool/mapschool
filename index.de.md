@@ -54,3 +54,13 @@ Das am weitesten verbreitete Vektorformat ist [Shapefile](http://en.wikipedia.or
 Zusätzlich zu Orten und Geometrien halten manche Vektorformate auch die Topologie zwischen Objekten, also ihrer räumlichen Beziehung, vor. Politische Grenzen zum Beispiel berühren sich oft — man kan zum Beispiel mit einem Fuß in Arizona und mit dem anderen in New Mexico stehen. Viele Formate speichern jeweils einen Fläche für Arizona und New Mexixo mit zwei Grenzabschnitten, die sich genau überlappen, aber sonst keine Beziehung beschreiben.
 
 Das ist ein Problem, wenn man herausfinden möchte, welche Staaten Nachbarn sind oder wenn man die Geomtrien vereinfachen möchte, während die Grenze weiter überlappen sollen. Dafür wurde das Konzept von Topologie eingeführt: Statt beide Flächen unabhängig zu speichern, werden nur die Linien vorgehalten zusammen mit Informationen, welche dieser Linien die Grenzen welcher Flächen darstellen. Die Grenze zwischen Arizona und New Mexico wird als eine einzige Linie vorgehalten. Wenn man die Linie verändert, verändert sich gleichzeitig die Fläche beider Staaten.
+
+## Geocodierung
+
+Manche geographische Information liegt weder als Vektor noch als Raster vor: Die Information liegt als Text vor, z.B. in Ortsnamen, Straßen oder Adressen. Leider können diese Informationen nicht einfach auf einer Karte dargestellt werden. Es gibt einen indirekten und leider oft ungenauen Prozess, um Angaben wie 'United States' in einen Punktw `-120, 40` zu ¨berführen. Dieser Prozess wird **Geocodierung** genannt. Geocodierung basiert auf Datenbank mit Straßennamen, Länden und ähnlichem mit ihren geographischen Positionen und Algorithmen, um das nacheliegendste Ergebnis für einen ungenaue Eingabe zu finden.
+
+### Reverse Geocoding
+
+Der umgekehrte Prozess wird **reverse Geocoding** genannt. Damit werden geographische Positionen in menschverständlichen Text umgewandelt, z.B. `United States` oder `1714 14th Street`. Genau wie die Geocodierung ist es nur eine Annäherung – ein Ort auf der Erde kann innerhalb überlappender, in Konflikt stehender Grenzen liegen oder zwischen zwei Adresspunkten.
+
+Geocodierung und reverse Geocoding sind schwierige Vorgänge: Falsche Koordinaten, schlecht formatierte Adressinformationen und sich ständig verändernde Straßen- und Gebäudestrukturen tragen zum Problem bei, Adressen in Koordination und umgekehrt zu transformieren.
