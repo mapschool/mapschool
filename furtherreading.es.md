@@ -16,6 +16,15 @@ La siguiente documentación esta en idioma español:
 
 * [eduSIG, aplicación educativa](http://www.edusig.com.ar/) Aplicación gratuita educativa, basada en gvsig orientada a la enseñanza de la utilización de la información geográfica.
 
+* [Video educativo sobre Infraestructuras de Datos Espaciales](https://www.youtube.com/watch?v=ajZHbl7kGU0) Video de la Infraestructura de Datos Espaciales de la República Argentina donde explica claramente para que sirve una IDE y sus servicios.
+
+* [Qué es un Sistema de Información Geográfico](http://es.wikipedia.org/wiki/Sistema_de_informaci%C3%B3n_geogr%C3%A1fica) Wiki sobre los Sistemas de Información Geografica.
+
+*[Cartografía](http://es.wikipedia.org/wiki/Cartograf%C3%ADa) Wiki sobre la Cartografía.
+
+
+
+
 
 ---
 La siguiente documentación esta en idioma inglés:
