@@ -15,7 +15,7 @@ permalink: furtherreading.de.html
 * [Learning Lunches: How to Make a Map](https://github.com/veltman/learninglunches/tree/master/maps) - Fokus of Grundlagen, um dynamische, web-basierte Karten zu erstellen.
 * [Geospatial Analysis, 4th Edition](http://www.spatialanalysisonline.com/HTML/index.html) von de Smith, Goodchild, Longley
 * [NCGIA Core Curriculum](http://www.geog.ubc.ca/courses/klink/gis.notes/ncgia/toc.html)
-* [Map Projections](http://www.progonos.com/furuti/MapProj/Normal/TOC/cartTOC.html) by Carlos A. Furuti, weiterführende Informationen zu Kartenprojektionen.
+* [Map Projections](http://www.progonos.com/furuti/MapProj/Normal/TOC/cartTOC.html) von Carlos A. Furuti, weiterführende Informationen zu Kartenprojektionen.
 
 ## Videos
 
@@ -23,8 +23,8 @@ permalink: furtherreading.de.html
 
 ## Software-spezifisch
 
-* [QGIS: Gentle GIS Introduction](http://docs.qgis.org/2.2/en/docs/gentle_gis_introduction/index.html) - Einführung in GIS mit [QGIS](http://qgis.org/en/site/), einem beliebten Open-Source GIS.
-* [Reference Systems: What They Are](https://weblogs.java.net/blog/manningpubs/archive/2013/02/13/spatial-reference-system-what-it):  Weiterführende Details zu SRS, CRS, Datums and Projektionen kit eine Referenz zu PostGIS.
+* [QGIS: Gentle GIS Introduction](http://docs.qgis.org/2.2/en/docs/gentle_gis_introduction/index.html) - Einführung in GIS mit [QGIS](http://qgis.org/en/site/), einem beliebten open-source GIS.
+* [Reference Systems: What They Are](https://weblogs.java.net/blog/manningpubs/archive/2013/02/13/spatial-reference-system-what-it):  Weiterführende Details zu SRS, CRS, Datums and Projektionen mit einer Referenz zu PostGIS.
 
 ## Books
 

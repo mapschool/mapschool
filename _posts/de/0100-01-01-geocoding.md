@@ -1,15 +1,15 @@
 ---
-title: "mapschool: Geokodierung”
+title: "mapschool: Geokodierung"
 layout: default
 language: de
 permalink: geocoding.de.html
 ---
 
-Geokodierung wird überall gebraucht. Von Postdienstes bis hin zu demographischen Analysen; es gibt eine Vielzahl von Aufgaben, bei denen Ortsnamen in geographische Positionen umgewandelt werden müssen und umgekehrt.
+Geokodierung wird überall gebraucht. Von Postdiensten bis hin zu demographischen Analysen; es gibt eine Vielzahl von Aufgaben, bei denen Ortsnamen in geographische Positionen umgewandelt werden müssen und umgekehrt.
 
 ## Herausforderungen
 
-Geokodierung ist kompliziert. Straßennahmen werden oft falsch geschrieben, sogar die Bezeichnungen in offiziellen Quellen und Beschilderung sind manchmal unterschiedlich. Das Muster von Straßennamen — die Art wie Hausnummer, Straßenname, Stadt und Land geordnet werden — unterscheidet sich zwischen einzelnen Ländern. Addresspositionen können zudem auf genauen Informationen basieren oder durch Schätzung anhand existierender Hausnummern entlang einer Straßen gewonnen werden.
+Geokodierung ist kompliziert. Straßennamen werden oft falsch geschrieben, sogar die Bezeichnungen in offiziellen Quellen und Beschilderung sind manchmal unterschiedlich. Das Muster von Adressen — die Art wie Hausnummer, Straßenname, Stadt und Land angeordnet werden — unterscheidet sich zwischen einzelnen Ländern. Adresspositionen können zudem auf genauen Informationen basieren oder durch Schätzung anhand existierender Hausnummern entlang einer Straße gewonnen werden.
 
 ## Daten
 
@@ -17,7 +17,7 @@ Die Daten, die für einen weltweiten Geocoding-Service gebraucht werden, sind er
 
 ## Werkzeuge
 
-Verschieden Geokodierungsservices sind verfügbar mit variierender Leistung, abgedecktem Gebiet und Detail.
+Verschiedene Geokodierungsservices sind verfügbar mit variierender Leistung, abgedecktem Gebiet und Detailgrad.
 
 ### Weltweite Dienste
 
