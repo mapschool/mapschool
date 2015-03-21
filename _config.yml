@@ -49,3 +49,10 @@ language:
     furtherreading: 'pour aller plus loin'
     code: 'code'
     home: 'accueil'
+  de:
+    feedback: 'Feedback'
+    contributors: 'Autoren'
+    tagline: 'Eine freie Einführung in Geo'
+    furtherreading: 'Weiterführendes Material'
+    code: 'Code'
+    home: 'Homepage'
