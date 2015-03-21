@@ -42,6 +42,13 @@ language:
     furtherreading: '参考文献'
     code: 'コード'
     home: 'ホーム'
+  fr:
+    feedback: 'retours'
+    contributors: 'contributeurs'
+    tagline: 'une introduction libre à la cartographie'
+    furtherreading: 'pour aller plus loin'
+    code: 'code'
+    home: 'accueil'
   pt:
     feedback: 'feedback'
     contributors: 'colaboradores'
@@ -49,3 +56,10 @@ language:
     furtherreading: 'leitura futura'
     code: 'código'
     home: 'página inicial'
+  de:
+    feedback: 'Feedback'
+    contributors: 'Autoren'
+    tagline: 'Eine freie Einführung in Geo'
+    furtherreading: 'Weiterführendes Material'
+    code: 'Code'
+    home: 'Homepage'
