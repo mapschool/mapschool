@@ -83,11 +83,11 @@ Es gibt verschiedene Möglichkeiten Geodaten zu speichern. Daten können als ged
 
 Es gibt verschiedene Dateitypen und Konventionen, um Geodaten zu speichern, und demnach eine Reihe vom Werkzeugen, um zwischen diesen Konventionen zu konvertieren. Daten können in Datenbanken oder individuellen Dateien gespeichert werden, der praktische Unterschied soll hier jedoch nicht weiter vertieft werden.
 
-## Informationen
+# Informationen
 
 Karten sind visualisierte Informationen: Auf der einen Seite haben wie die Fragen nach Datum, Zahlen und Speicherung — die Grundlagen dessen, wie wir verschiedene Orte auf der Erde erfassen und unterscheiden. Zwischen Rohdaten und deren Visualisierung finden eine Transformation statt, die man Projektion nennt und bei der Orte auf der Erde auf flache Oberflächen, wie Drucksache oder Bildschirme projiziert werden. Zuletzt werden Farben, deren Töne und Symbole bestimmt, mit denen Details der Rohdaten in Grafiken überführt werden, die Menschen verstehen und interpretieren können.
 
-### Breite und Länge
+## Breite und Länge
 
 Die gebräuchlichste Form Orte auf der Erde darzustellen ist Länge (_longitude_) und Breite (_latitude_). Frühe wurden Länge und Breite im Sexagesimalsystem dargestellt, z.B. `38° 12'`; heutzutage ist jedcoh die Darstellung als einfache Dezimalzahl gebräuchlicher (38,2), da diese von Computer einfacher verarbeitet werden können.
 
@@ -102,3 +102,112 @@ Die Kombination von Länge und Breite wird als Koordinate bezeichnet und wird ü
 Die Folge der Koordinaten führt oft zu Verwirrung, da browwser-basierte Kartensoftware normalerweise 'Breite,Länge' (_'longitude,latitude'_) erwarten, während andere Protokolle von 'Länge,Breite' (_'latitude,longitude'_) verlangen.
 
 Manchmal werden Länge und Breite durch weitere Werte ergänzt, z.B. Höhe über Meeresspiegel, Zeitpunkt der Datenerfassung oder ähnliches. Höhe wird normalerweise als dritte Koordinate angegeben, also 'Breite,Länge,Höhe'.
+
+## Zur Form der Erde
+
+![](img/earth-shapes.jpg)
+
+Wenn wir Repräsentationen der Erde speichern führt das zu der Frage welche Form diese eigentlich hat — können Länge und Breite auf eine perfekte Kugel abgebildet werden und dabei ihre Genauigkeit behalten?
+
+Die Erde ist ein rotierendes Object, das seine Form durch die Rotation verändert und mittig ausbeult. Statt einer perfekten Kugel ist die Erden eher ein [abgeflachter Spheriod](http://en.wikipedia.org/wiki/Oblate_spheroid). Bei genauerem Bertrachtem stellt man fest, dass da auch nicht ganz stimmt: Die Erde hat mehrere etliche Höhenunterschiede wie Berge, Täler und sogar menschengemachten Veränderung wie Städte.
+
+Bei der tägliche Arbeit verwendet man deshalb Anäherungen an diese Form: Standards wie [WGS84](http://en.wikipedia.org/wiki/WGS84) definieren genaue Werte für die Länge beider Erdachsen, sodass man mit einem [Referenzellipsoid](http://de.wikipedia.org/wiki/Reference_ellipsoid) statt einer Sphäre arbeiten kann. Lokal begrenzte Messungen basierend auf hochgenauen Höhenangaben basieren, verwenden auch [Geoidmodelle](https://de.wikipedia.org/wiki/Geoid), die dreidimensionale Berechnungen der Höhe über dem Meer vorhalten.
+
+Dieses Teilgebiet der Geowissenschaften wird [Geodäsie](https://de.wikipedia.org/wiki/H%C3%B6here_Geod%C3%A4sie) genannt und ist der Versuch die Form der Erde zu vermessen und zu modellieren.
+
+## Kartenprojektionen
+
+![](img/projections.jpg)
+
+Kartenprojektionen sind mathematische Gleichungen, die der Erde in eine flache Form überführt, die auf einem Bildschirm dargestellt oder auf Papier gedruckt werden kann. Diese Transformation ist eine schwierige Aufgabe und ohne Verzerrungen unmöglich, die das Verhältnis von Flächen, Winkeln oder Distanzen betreffen.
+
+<a class='further-reading' href='/datum.html'>Mehr über Datums erfahren</a>
+
+## Visualisierung
+
+Visualisierung ist der Überbegriff für verschiedene Methoden wie Daten in Grafiken und Karten umgewandelt werden.
+
+Daten haben grundsätzlich kein vorgegbenes Aussehen: Eine Liste von Pixeln oder Linien von Straßen können in einer Tabelle oder einem Tortendiagramm ebenso dargestellt werden wie auf einer Karte. "Umwandeln" ist demnach nicht der korrekte Begriff: Es ist mehr eine Frage wie man die Daten darstellt.
+
+Visualisierungsmethoden beinhalten alles was grafisch ausgedrückt werden kann, also zum Beispiel auch 3D. Im folgenden betrachten wir einige dieser Methoden genauer.
+
+## Sequenzen und Kategorien
+
+![](img/scales.jpg)
+
+Visualisierung zeigt meist zwei Charakteristika von Daten: Sequenzen und Kategorien. Sequenzen oder kontinuierliche Daten können auch als linear bezeichnet werden — es handelt sich dabei meist um numerische Werte innerhalb eines bestimmten Bereichs, so zum Beispiel Höhenangaben. Kategorien oder diskrete Daten sind meist auf eine bestimmte Anzahl von Werten beschränkt: wahr oder falsch, Demokrat oder Republikaner.
+
+Der Unterschied zwischen diskreten und kontinuierlichen Daten ist eine der wichtigsten Fragen bei der Visualisierung. Sequenzielle Daten können durch skalierte Punkte oder mittels eines Farbgradienten in einem Raster dargestellt werden, diskrete Daten hingegen üblicherweise mittels verschiedener Symbole oder Farben.
+
+### Choroplethenkarten
+
+Choroplethenkarten orientieren sich an existierenden Grenzen von Gebieten und deren Flächen und stellen Daten mittels wechselnder Farben, Muster und Texturen dar. Ein bekanntes Beispiel sind dafür sind Wahlkarten oder demographische Karte, bei denen die Daten einen bestimmten Prozentwert repräsentieren.
+
+Choroplethenkarten werden für Häufigkeiten, Dichten oder Anteile verwendet. Für absolute Werte sollen sie möglichst nicht verwendet werden, da die Flächengrößen nicht normalisiert werden und daher große Flächen hervorgehoben werden. Choroplethenkarten setzen auf Farbunterschieden, daher sollten die gewählten Farben verständlich, konsistent und farbenblindengerecht sein.
+
+<a class=‘further-reading’ href=‘/colors.html’>Mehr über Farben erfahren</a>
+
+### Punktkarten
+
+Punkte sind die bessere Alternative für absolute Werte — die Geometrie einer Fläche wird auf einen Punkte reduziert.
+
+Die Art und Weise wie dieser Punkt dargestellt wird ist unterschiedlich. Man kann die Punkt nach seinem Wert oder Kategorie einfärben oder man skaliert die Größe des Punktes entsprechend des darzustellenden Wertes. Diese Symbole können alle möglichen Forman annehmen: Kreise, Quadrate oder Bilder dessen was die Punkte repräsentieren. In Fällen, in denen sich mehrere Werte aufsummieren, können skalierte Tortendiagramme ein geeignetes Mittel sein einen komplexen Datensatz darzustellen.
+
+Allerdings muss man aufpassen, dass man nicht zu viel Punkte auf der Karte darstellt, da diese schwer lesbar wird. In solchen Fälle kann man eine Choroplethenkarte einsetzen, bei der die Werte der einzelnen Punkte aggregiert werden. Eine Alternative ist das Clusteringverfahren, bei der eng beieinander liegende Punkte zusammengefasst werden, bis man weiter herein zoomt.
+
+## Veröffentlichung
+
+## Datenanalyse
+
+Raster- und Vektordatenanalyse als Aggregation und Transformation
+
+### Vektor zu Raster
+
+Es ist möglich zwischen beiden Datentypen zu transformieren. Raster und Vektor mögen sehr gegensätzlich erscheinen, haben allerdings viele Gemeinsamkeiten, die jedoch nicht offensichtlich sind.
+
+Typischerweise werden Vektordaten immer in Raster verwandelt — nämlich dann, wenn man von ‘gerenderten’ Daten spricht, denn Bildschirmen stellen Grafiken immer als Folge von Pixeln dar und nicht durch Linien oder Flächen. Diese Umwandlung ist natürlich nicht perfekt, wie bereits erwähnt, sind Vektordaten nicht pixelbasiert, sodass man beim Vergrößern nie unscharfe Elemente sieht. Wenn demnach Vektordaten in ein Raster transformiert werden, kann  das Ergebnis nie exakt zurück transformiert werden.
+
+Vektordaten werden jedoch auch vor der Visualisierung oft in Raster transformiert, weil es zum Beispiel einfacher ist, bestimmte mathematische Berechnungen auf Basis von Pixeln durchzuführen.
+
+### Raster zu Vektor
+
+Gleichermaßen können Rasterdaten in Vektordaten transformiert werden. Auf Grundlage von Satellitenbildern kann man so zum Beispiel die Linien von Straßen oder Polygone von Gebäuden nachzeichnen. Das Resultat ist eine neue Version der gleichen Information, die für neue Zwecke verwendet werden kann. Routenplanung kann so nur mit Hilfe von Vektordaten, jedoch nicht mittels Rasterdaten, durchgeführt werden.
+
+### Simulation
+
+Mit Hilfe geographischer Daten können bestimmte natürliche Prozess simuliert werden. Diese Modellierung ist ein großer Teil der täglichen Arbeit eines Kartographen. Mit Höheninformationen von Gebirgszügen können Licht und Schatten auf Bergen berechnet  und für eine plastische Darstellung auf Karten angewandt werden. Dieser Prozess wird auch _Hillshading_ genannt.
+
+Komplexere Modellierungen sind auch möglich, wie die Berechnung des Abflusses von Regenwasser in einem Flusseinzugsgebiet oder die Berechnung eines _Viewsheds_, also dessen was man von einem bestimmten Punkt aus sehen kann. 
+
+### Aggregation
+
+Die gebräuchlichste Form der Aggregation ist die Summe — man kann eine große Anzahl von Zahlen addieren, um ein Gesamtbild zu erhalten. Das Bruttoinlandsprodukt eines Staates als Summe ist so wesentlich Aussagekräftiger als eine Liste einzelner Beiträge.
+
+Aggregation in Karten wird auf ähnliche Weise eingesetzt. Einzeldaten, wie Millionen von Haushaltseinkommen, können mittels eines Algorithmus über eine bestimmte Fläche summiert oder getitelt werden und so das mittlere Einkommen einer Stadt darstellen.
+
+![](img/binning-wide.jpg)
+
+Aggregation wird auch bei der Klassifizierung von Daten eingesetzt. Ausgehend von einem Menge von Einzelpunkten, kann man Gebiete in gleich große und gleichförmige Flächen unterteilen (z.B. Quadrate oder Hexagone) und die Anzahl der Punkte pro Fläche aufsummieren. Anstelle von Millionen Punkten, die schwer verständlich sind, kann man die Information mit einer Choroplethenkarte darstellen. 
+
+### Interpolation
+
+Während bei der Aggregation große Datenmengen in etwas transformiert, das einfacher zu analysieren und visualisieren ist, werden mittels Interpolation fehlender Werte berechnet. Interpolation wird zum Beispiel bei Höhendaten verwendet, bei denen jedem Pixel eines Rasters eine Wert zugeordnet werden, manche Werte jedoch fehlen. Programmierer nennen das `null`-Werte.
+
+Unter der Annahme, dass der fehlende Werte ähnlich zu denen seiner Umgebung sind, schaut man bei der Interpolation auf die Werte in der unmittelbaren Umgebung eines fehlenden Wertes. Eine fehlendes Pixel auf der Spitze eines Berges wird sehr wahrscheinlich einen hohen Höhenwert haben, während er im Tal eher niedrig sein wird.
+
+Es gibt verschiedene Arten Punktdaten zu interpolieren:
+
+- **Heatmaps** geben jedem Punkt ein Gewicht und stellen Gebiete mit hoher Punktdichte in wärmeren Farben dar.
+- **Isolinien** stellen auf Basis von Punktdaten Linien gleichen Wertes dar. Diese Methode wird oft für Höhenkarten verwandt. 
+- Ein **TIN** (_Triangulated Irregular Network_) verbinden einzelne Punkte mit Linien und wird für Geländemodelle eingesetzt.
+- **Voronoi-Diagramme** zerteilen ein Gebiet auf Basis von Punkten so in einzelne Flächen, dass jede Fläche genau eine Punkte beinhaltet und die Fläche zwischen den Punkte maximal ausgedehnt wird.
+
+## Nachwort
+
+Wir hoffen, dass dies ein aufschlussreicher und inspirirender Einstieg war. Das Sachgebiet hat großes Potential und viel ungeklärte Fragen. Karten sind ein verbindendes Thema, dass in Kunst, Mathematik, Physik Ökologie und vieles andere erstreckt. 
+
+Wir freuen uns über [Hinweise und Vorschläge](https://tmcw.wufoo.com/forms/mapschool-feedback/), die dir beim Lesen eingefallen sind. 
+
+### Lizenz
+
+[Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/)
