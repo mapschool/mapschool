@@ -10,6 +10,7 @@ mapschool is what it is thanks to the collective hard work of its authors:
 * [Bill Morris](https://github.com/wboykinm)
 * [Dave Guarino](https://github.com/daguar)
 * [Eric Fischer](http://www.flickr.com/photos/walkingsf/)
+* [Gijs Nijholt](https://github.com/gijs)
 * [Jorge Sanz](https://github.com/jsanz)
 * [Josh Livni](https://github.com/jlivni)
 * [Juan Luis Rodríguez Ponce](https://github.com/juanluisrp)
@@ -23,6 +24,7 @@ mapschool is what it is thanks to the collective hard work of its authors:
 * [Stephanie May](https://github.com/mizmay)
 * [Thiago Bueno](http://tbueno.com/)
 * [Tom MacWright](http://www.macwright.org/)
+* [Vladimir Bellini](https://github.com/vlasvlasvlas)
 
 the mapschool favicon is from the [Maki icon project](https://www.mapbox.com/maki/).
 Its source is licensed BSD.

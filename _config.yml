@@ -49,6 +49,13 @@ language:
     furtherreading: 'pour aller plus loin'
     code: 'code'
     home: 'accueil'
+  pt:
+    feedback: 'feedback'
+    contributors: 'colaboradores'
+    tagline: 'uma introdução gratuita à cartografia'
+    furtherreading: 'leitura futura'
+    code: 'código'
+    home: 'página inicial'
   de:
     feedback: 'Feedback'
     contributors: 'Autoren'
