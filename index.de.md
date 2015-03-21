@@ -123,7 +123,7 @@ Dieses Teilgebiet der Geowissenschaften wird [Geodäsie](https://de.wikipedia.or
 
 Kartenprojektionen sind mathematische Gleichungen, die die Erde in eine flache Form überführt, die dan auf einem Bildschirm dargestellt oder auf Papier gedruckt werden kann. Diese Transformation ist eine komplexe Aufgabe und ohne Verzerrungen unmöglich, die das Verhältnis von Flächen, Winkeln oder Distanzen betreffen.
 
-<a class='further-reading' href='/datum.html'>Mehr über geodätische Daten erfahren.</a>
+<a class='further-reading' href='/datum.de.html'>Mehr über geodätische Daten erfahren.</a>
 
 ## Visualisierung
 
