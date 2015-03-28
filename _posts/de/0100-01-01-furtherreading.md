@@ -26,7 +26,7 @@ permalink: furtherreading.de.html
 * [QGIS: Gentle GIS Introduction](http://docs.qgis.org/2.2/en/docs/gentle_gis_introduction/index.html) - Einführung in GIS mit [QGIS](http://qgis.org/en/site/), einem beliebten open-source GIS.
 * [Reference Systems: What They Are](https://weblogs.java.net/blog/manningpubs/archive/2013/02/13/spatial-reference-system-what-it):  Weiterführende Details zu SRS, CRS, Datums and Projektionen mit einer Referenz zu PostGIS.
 
-## Books
+## Bücher
 
 * [Slocum's Thematic Cartography & Geovisualization](http://www.amazon.com/Thematic-Cartography-Geovisualization-3rd-Edition/dp/0132298341)
 * [GIS and Cartographic Modeling, Tomlin](http://www.amazon.com/GIS-Cartographic-Modeling-Dana-Tomlin/dp/158948309X)

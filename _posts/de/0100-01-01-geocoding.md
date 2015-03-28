@@ -13,7 +13,7 @@ Geokodierung ist kompliziert. Straßennamen werden oft falsch geschrieben, sogar
 
 ## Daten
 
-Die Daten, die für einen weltweiten Geocoding-Service gebraucht werden, sind erheblich und nicht ohne Weiteres verfügbar. Kommerzielle Quellen wie die [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/) basieren auf proprietären Daten und haben oft Auflagen bei deren [Verwendung](https://developers.google.com/maps/terms#section_10_12). In den USA ist die größte Sammlung von Adressaten des [USPS](https://www.usps.com/) wegen des Datenschutzrechts nicht öffentlich verfügbar.
+Die Daten, die für einen weltweiten Geocoding-Service gebraucht werden, sind erheblich und nicht ohne weiteres verfügbar. Kommerzielle Quellen wie die [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/) basieren auf proprietären Daten und haben oft Auflagen bei deren [Verwendung](https://developers.google.com/maps/terms#section_10_12). In den USA ist die größte Sammlung von Adressaten des [USPS](https://www.usps.com/) wegen des Datenschutzrechts nicht öffentlich verfügbar.
 
 ## Werkzeuge
 
@@ -36,6 +36,6 @@ Verschiedene Geokodierungsservices sind verfügbar mit variierender Leistung, ab
 
 * [geogratis](http://geogratis.gc.ca/site/eng/geoloc)
 
-### Datenbanke
+### Datenbanken
 
 * [geonames](http://www.geonames.org/)
