@@ -16,6 +16,7 @@ mapschool is what it is thanks to the collective hard work of its authors:
 * [Juan Luis Rodríguez Ponce](https://github.com/juanluisrp)
 * [Moisés Arcos](https://github.com/moiarcsan)
 * [Morgan Herlocker](https://github.com/morganherlocker)
+* [Oliver Roick](https://github.com/oliverroick)
 * [Ramiro Gómez](http://ramiro.org/)
 * [Rob Story](https://github.com/wrobstory)
 * [Ruben Teijeiro](http://drewpull.drupalgardens.com/)
