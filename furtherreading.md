@@ -6,7 +6,6 @@ language: en
 
 ## Lecture Notes
 
-* [Nui Maynooth GIS Lecture Notes](http://www.nuim.ie/staff/dpringle/gis/lectures.shtml)
 * [NC State University Geospatial Analysis and Modeling Lecture Notes](http://courses.ncsu.edu/gis582/common/)
 
 ## Educational Websites
