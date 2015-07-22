@@ -67,7 +67,7 @@ Le procédé inverse s'appelle logiquement le **géocodage inversé**. Il transf
 Le géocodage et le géocodage inversé sont difficiles à mettre en œuvre : les erreurs de position de coordonnées, les données d'adresses mal formatées et des réseaux de routes ou de bâtiments en changement constant participent entre autres à la difficulté de transformer des adresses en coordonnées, ou vice versa.
 
 
-<a class='further-reading' href='/geocoding.html'>Pour en savoir plus sur le géocodage</a>
+<a class='further-reading' href='/geocoding.fr.html'>Pour en savoir plus sur le géocodage</a>
 
 ## Collecter des données
 
@@ -125,7 +125,7 @@ Cette branche des sciences de la Terre, appelée [géodésie](http://fr.wikipedi
 
 Les projections sont ce que nous appelons les équations mathématiques qui permettent de transformer le monde en une surface plane qui tienne dans une impression ou sur un écran. Cette transformation est loin d'être aisée à mener – il n'existe pas de moyen de faire tenir le monde dans un écran sans le déformer d'une manière ou d'une autre. On perd soit l'orientation, soit la taille relative, et on se retrouve avec une forme qui peut être très étrange.
 
-<a class='further-reading' href='/datum.html'>Pour en savoir plus sur les datums</a>
+<a class='further-reading' href='/datum.fr.html'>Pour en savoir plus sur les datums</a>
 
 ## Symbolisation 
 
@@ -149,7 +149,7 @@ Les cartes choroplèthes préservent les frontières existantes et la formes des
 
 Les cartes choroplèthes sont naturellement adaptées pour des données comme des taux, des densités ou des pourcentages. Elles ne sont en revanche pas recommandées pour des valeurs absolues : comme elles conservent la superficie des surfaces, elles ont tendance à donner plus d'importance aux éléments les plus grands. De plus, sachant qu'elles utilisent différentes couleurs pour représenter l'information, il est important de choisir des couleurs compréhensibles, cohérentes, et de prendre en compte le daltonisme.
 
-<a class='further-reading' href='/colors.html'>Pour en savoir plus sur les couleurs</a>
+<a class='further-reading' href='/colors.fr.html'>Pour en savoir plus sur les couleurs</a>
 
 ### Cartes de points
 
