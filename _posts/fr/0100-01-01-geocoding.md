@@ -29,7 +29,7 @@ Il y a de nombreux géocodeurs disponibles, aux niveaux de performances, zones d
 ### Services français et européen
 
 * [API Javascript de ViaMichelin](http://dev.viamichelin.fr/geocoding-js.html)
-* [Geocheck permet de comparer le résultat de différents services de géocodage, dont certains basés sur OpenStreetMap ou sur la Base Adresse Nationale Ouverte (BANO)](http://www.ideeslibres.org/GeoCheck/)
+* [Geocheck](http://www.ideeslibres.org/GeoCheck/) permet de comparer le résultat de différents services de géocodage, dont certains basés sur OpenStreetMap ou sur la Base Adresse Nationale Ouverte (BANO)
 
 ### Service canadien
 
