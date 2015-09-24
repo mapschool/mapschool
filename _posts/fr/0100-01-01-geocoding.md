@@ -19,16 +19,17 @@ Les données requises pour faire fonctionner un géocodeur mondial sont très si
 
 Il y a de nombreux géocodeurs disponibles, aux niveaux de performances, zones de couverture et granularité variables. Une [liste de services de géocodage](http://en.wikipedia.org/wiki/List_of_geocoding_systems) est disponible en anglais sur Wikipédia.
 
-### Service internationaux
+### Services internationaux
 
 * [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/)
 * [MapQuest Open Geocoder](https://developer.mapquest.com/web/products/open/geocoding-service)
 * [Yahoo Geocoder](https://developer.yahoo.com/boss/geo/)
 * [Twofishes](http://demo.twofishes.net/)
 
-### Service français et européen
+### Services français et européen
 
 * [API Javascript de ViaMichelin](http://dev.viamichelin.fr/geocoding-js.html)
+* [Geocheck permet de comparer le résultat de différents services de géocodage, dont certains basés sur OpenStreetMap ou sur la Base Adresse Nationale Ouverte (BANO)](http://www.ideeslibres.org/GeoCheck/)
 
 ### Service canadien
 
