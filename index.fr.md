@@ -6,11 +6,11 @@ language: fr
 
 # map school
 
-Qu'est-ce qu'une carte ? Jusqu'aux années 1980, les cartes étaient dessinées à la main, avec minutie et attention. Aujourd'hui presque systématiquement créées à l'aide d'un ordinateur, les cartes sont monnaie courante, et présentes dans des domaines aussi différents que les indications d'itinéraires, les visualisations, ou les conflits politiques de frontières. Mais posons un regard plus approfondi sur les éléments de base d'une carte, depuis le point de vue de son créateur. 
+Qu'est-ce qu'une carte ? Jusqu'aux années 1980, les cartes étaient dessinées à la main, avec minutie et attention. Réalisées aujourd'hui presque uniquement par ordinateur, les cartes sont monnaie courante, et sont présentes dans des domaines aussi différents que les indications d'itinéraires, les visualisations, ou les conflits de frontières. Mais posons un regard plus approfondi sur les éléments de base d'une carte, depuis le point de vue de son créateur. 
 
 Les cartes réalisées par ordinateur sont essentiellement constituées de données. Une donnée peut être composée de milliards de points, de quelques polygones, ou d'un enregistrement photographique de couleurs et de températures. Il est important de noter qu'une donnée n'est pas spécifique à un seul usage.
 
-De ces données, nous faisons des chiffres, des images, des décisions. Le plus souvent, nous en faisons des images, dans un processus nommé « symbolisation » par lequel nous décidons quels éléments visuels vont représenter quelle partie d'un jeu de données. Nous analysons les données, c'est-à-dire que nous les transformons, agrégeons et résumons pour apporter différentes réponses et représenter différents aspects de la connaissance. Les deux tâches de la symbolisation et de l'analyse sont souvent combinées, la symbolisation formant les limites de ce qu'on peut représenter et l'analyse définissant les aspects de la donnée sur laquelle se concentrer.
+De ces données, nous faisons des chiffres, des images, des décisions. Le plus souvent, nous en faisons des images, au fil d'un processus nommé « symbolisation » par lequel nous décidons quels éléments visuels vont représenter quelle partie d'un jeu de données. Nous analysons les données, c'est-à-dire que nous les transformons, agrégeons et résumons pour apporter différentes réponses et représenter différents aspects de la connaissance. Les deux tâches de la symbolisation et de l'analyse sont souvent combinées, la symbolisation formant les limites de ce qu'on peut représenter et l'analyse définissant les aspects de la donnée sur laquelle se concentrer.
 
 # Données
 
@@ -111,9 +111,9 @@ Parfois, des informations supplémentaires à la latitude ou la longitude sont e
 
 ![](img/earth-shapes.jpg)
 
-Stocker et représenter le monde nous amène à la question de sa forme – la latitude et la longitude peuvent-elles être cartographiées sur une sphère parfaite et conserver leur justesse spatiale ?
+Stocker et représenter le monde nous amène à la question de sa forme : la latitude et la longitude peuvent-elles être cartographiées sur une sphère parfaite et conserver leur justesse spatiale ?
 
-La Terre est un objet en rotation, et ses composants peuvent changer de forme. Elle est donc bombée au centre et ressemble à un [sphéroïde aplati](http://fr.wikipedia.org/wiki/Sphéroïde) plutôt qu'à une sphère pure. E si l'on se rapproche, ce n'est même pas tout à fait juste : la Terre est recouverte de [différences d'élévation](http://fr.wikipedia.org/wiki/Topographie) comme les montagnes ou les vallées, et même de reliefs artificialisés comme des villes.
+La Terre est un objet en rotation, et ses composants peuvent changer de forme. Elle est donc bombée au centre et ressemble à un [sphéroïde aplati](http://fr.wikipedia.org/wiki/Sphéroïde) plutôt qu'à une sphère pure. Et si l'on se rapproche, ce n'est même pas tout à fait juste : la Terre est recouverte de [différences d'élévation](http://fr.wikipedia.org/wiki/Topographie) comme les montagnes ou les vallées, et même de reliefs artificialisés comme des villes.
 
 Au quotidien, nous utilisons différentes estimations de sa forme : des standards comme le [WGS84](http://fr.wikipedia.org/wiki/WGS_84) définissent des valeurs précises pour la longueur des deux axes de la planète, et l'on peut ainsi effectuer des calculs depuis un [ellipsoïde](http://fr.wikipedia.org/wiki/Ellipsoïde) de référence plutôt que depuis une sphère. Pour des besoins de mesures à très grande échelle ou dans le cas de certaines applications scientifiques nécessitant des valeurs de surface précises, on peut aussi utiliser des modèles de [géoïdes](http://fr.wikipedia.org/wiki/Géoïde), qui sont des calculs en trois dimensions de la hauteur théorique des océans. 
 
