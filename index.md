@@ -126,6 +126,8 @@ Projections are what we call the mathematical equations that do the trick of tur
 
 <a class='further-reading' href='/datum.html'>read more about datums</a>
 
+<a class='further-reading' href='/projections.html'>read more about projections</a>
+
 ## Symbolization
 
 Symbolization is a fancy word for the particular ways that data is transformed into graphics in the world of maps.
