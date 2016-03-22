@@ -126,6 +126,8 @@ Le proiezioni sono quelle equazioni matematiche che riescono a trasformare il mo
 
 <a class='further-reading' href='/datum.it.html'>Leggi l'approfondimento sui datum geografici</a>
 
+<a class='further-reading' href='/projections.it.html'>Leggi l'approfondimento sulle proiezioni</a>
+
 ## Simbolizzazione
 
 "Simbolizzazione" è una parola elaborata che indica i modi con i quali i dati sono trasformati in grafica nel modo delle mappe.
