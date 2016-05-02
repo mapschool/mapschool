@@ -116,6 +116,8 @@ Esta rama de las ciencias, llamada [geodesia](https://es.wikipedia.org/wiki/Geod
 
 ## Proyecciones
 
+![](http://k43.kn3.net/taringa/2/1/3/9/1/3/13/gabikapo12/7B2.jpg)
+
 Llamamos proyecciones a las ecuaciones matemáticas que hacen el truco que convertir el mundo en usa forma plana que puede utilizarse en una impresión o una pantalla de computadora. Es un trabajo sucio esta transformación, no hay forma de aplastar el mundo en una pantalla sin distorsionarlo de alguna manera. O distorsionas las direcciones, o los tamaños relativos o acabos con algo con una apariencia realmente extraña.
 
 ## Simbolización
