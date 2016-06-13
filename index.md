@@ -62,7 +62,7 @@ This gets tricky when you want to do something like ask 'which states touch?' or
 
 Some geographic data is neither vector nor raster: instead of being composed of the numbers that computers understand, it is stored as text data, including references to place names, streets, addresses, and other means of identification.
 
-Unfortunately, it's not possible to simply put this data on a map. There's an indirect and often inaccurate process involved in transforming words like 'United States' into points like `-120, 40`. This process is what we call **geocoding**. Geocoding relies on databases of street names, countries, and more, along with geographical locations, and algorithms attempt to find the closest match for imprecise input.
+Unfortunately, it's not possible to simply put this data on a map. There's an indirect and often inaccurate process involved in transforming words like 'United States' into points like `-120, 40`. This process is what we call **geocoding**. Geocoding relies on databases of street names, countries, and more, along with geographical locations, and algorithms that attempt to find the closest match for imprecise input.
 
 ### Reverse Geocoding
 
