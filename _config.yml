@@ -1,7 +1,7 @@
 destination: ./_site
 lsi:         false
 port: 4000
-pygments:    true
+highlighter: pygments
 markdown:    rdiscount
 url:         http://mapschool.io/
 rdiscount:
@@ -63,3 +63,10 @@ language:
     furtherreading: 'Weiterführendes Material'
     code: 'Code'
     home: 'Homepage'
+  uk:
+    feedback: 'залишити відгук'
+    contributors: 'учасники'
+    tagline: 'безкоштовне введення в географію'
+    furtherreading: 'дізнатись більше'
+    code: 'сирці'
+    home: 'головна'
