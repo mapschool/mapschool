@@ -6,6 +6,7 @@ kramdown:
   syntax_highlighter: rouge
   input: GFM
   hard_wrap: false
+
 language:
   en:
     feedback: 'feedback'
@@ -63,3 +64,10 @@ language:
     furtherreading: 'Weiterführendes Material'
     code: 'Code'
     home: 'Homepage'
+  uk:
+    feedback: 'залишити відгук'
+    contributors: 'учасники'
+    tagline: 'безкоштовне введення в географію'
+    furtherreading: 'дізнатись більше'
+    code: 'сирці'
+    home: 'головна'
