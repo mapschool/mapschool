@@ -206,10 +206,18 @@ Interpolation looks at the values around the 'blanks' and assumes that the missi
 
 There are many ways to interpolate point data:
 
-- **Heatmaps** assign each point a weight and represent density of point values in "hotter" colors.
+![](img/voronoi.png)
+
+**Voronoi diagrams** take a set of points and turn them into polygons of all of the area around them.
+This example [is of airports](https://www.jasondavies.com/maps/voronoi/airports/).
+
+![](img/heatmap.png)
+
+**Heatmaps** assign each point a weight and represent density of point values in "hotter" colors.
+This example is [from the Leaflet.heat plugin for web maps](https://github.com/Leaflet/Leaflet.heat).
+
 - **Contour lines** take point sample data and draw lines around them that represent a continuous estimated value. Elevation maps often use this technique.
 - A **TIN** (Triangulated Irregular Network) draws triangles between points that can be used to visualize terrains.
-- **Voronoi diagrams** take a set of points and turn them into polygons of all of the area around them.
 
 ## Afterword
 
