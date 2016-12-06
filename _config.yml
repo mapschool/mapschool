@@ -71,3 +71,10 @@ language:
     furtherreading: 'дізнатись більше'
     code: 'сирці'
     home: 'головна'
+  kr:
+    feedback: '피드백'
+    contributors: '기여한 사람들'
+    tagline: '지도를 처음 만드는 이들을 위한 안내서'
+    furtherreading: '더 읽을거리'
+    code: '코드'
+    home: '홈'

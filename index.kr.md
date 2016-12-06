@@ -70,7 +70,7 @@ language: kr
 
 지오코딩과 역지오코딩은 어렵다. 좌표상의 위치 에러도 있고, 주소 데이터가 제대로 포맷되지 않은 경우도 있으며 계속해서 변하는 도로의 형태와 빌딩들은 주소 데이터를 좌표로 바꾸는 과정을 더 어렵게 만든다.
 
-<a class='further-reading' href='/geocoding.html'>지오코딩에 대해서 더 읽어보기</a>
+<a class='further-reading' href='/geocoding.kr.html'>지오코딩에 대해서 더 읽어보기</a>
 
 ## 데이터 수집
 
@@ -128,9 +128,9 @@ language: kr
 
 투영법은 동그란 지구 위의 좌표를 컴퓨터 모니터나 종이와 같은 평면에 나타낼 수 있도록 전환해주는 수학적 방정식을 일컫는다. 모양을 일그러트리지 않고 동그란 지구를 평면에 나타낼 수 있는 방법은 사실상 없다. 투영 과정에서 우리는 방향이나 상대적인 크기를 잃는 경우도 잇고, 혹은 이상하게 생긴 모양을 얻게 되는 경우도 잇다.
 
-<a class='further-reading' href='/datum.html'>축지원점에 대해서 더 읽어봅시다.</a>
+<a class='further-reading' href='/datum.kr.html'>축지원점에 대해서 더 읽어봅시다.</a>
 
-<a class='further-reading' href='/projections.html'>투영법에 대해서 더 읽어봅시다.</a>
+<a class='further-reading' href='/projections.kr.html'>투영법에 대해서 더 읽어봅시다.</a>
 
 ## 상징화
 
@@ -155,7 +155,7 @@ language: kr
 등치지역도는 비율, 밀집도, 혹은 퍼센트를 나타내는데 적합하다. 하지만 등치지역도는 지역의 지리적인 경계를 지키기 때문에 큰 지형의 값을 과장하는 경향이 있다. 또한 등치 지역도는 색상이나 무늬의 차이를 이용해서 정보를 표현하기 때문에 색맹인 사람들이 인식 가능한 색인지, 이해가 쉽게 가고 일관성있는 색상을 선택하는 것이 중요하다.
 
 
-<a class='further-reading' href='/colors.html'>색상에 대해서 더 읽어봅시다.</a>
+<a class='further-reading' href='/colors.kr.html'>색상에 대해서 더 읽어봅시다.</a>
 
 ### 점 지도
 

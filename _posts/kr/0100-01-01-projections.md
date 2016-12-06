@@ -2,7 +2,7 @@
 title: "mapschool: projection"
 layout: default
 language: en
-permalink: projections.html
+permalink: projections.kr.html
 ---
 
 지리적인 투영법(projection)이란 지도를 전시하기 위해 모양을 정하는 방법을 뜻한다.

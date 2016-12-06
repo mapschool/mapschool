@@ -2,7 +2,7 @@
 title: "지도교실: 지오코딩"
 layout: default
 language: en
-permalink: geocoding.html
+permalink: geocoding.kr.html
 ---
 
 지오코딩은 일상생활에서 매우 흔하게 쓰인다. 택배업무에, 인구 통계 등 다양한 곳에서 장소의 이름을 지구 위의 좌표로 바꾸거나 혹은 그 반대의 일을 필요로 한다.
