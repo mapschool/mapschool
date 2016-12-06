@@ -126,7 +126,7 @@ This branch of Earth sciences, called [geodesy](https://en.wikipedia.org/wiki/Ge
 
 ![](img/projections.jpg)
 
-Projections are what we call the mathematical equations that do the trick of turning the world into some flat shape that fits on a printout or a computer screen. It's a messy task to do, this transformation - there's no way to smoosh the world onto a screen without distorting it in some way. You either lose direction, or relative size, or come out with something very weird looking.
+Projections are those mathematical equations that do the trick of turning the world into some flat shape that fits on a printout or a computer screen. It's a messy task to do, this transformation - there's no way to smoosh the world onto a screen without distorting it in some way. You either lose direction, or relative size, or come out with something very weird looking.
 
 <a class='further-reading' href='/datum.html'>read more about datums</a>
 
@@ -136,7 +136,7 @@ Projections are what we call the mathematical equations that do the trick of tur
 
 Symbolization is a fancy word for the particular ways that data is transformed into graphics in the world of maps.
 
-Fundamentally, data doesn't look like anything: a list of pixel values or road lines is just as well represented in a spreadsheet or a chart as it is on a map. Thus to 'convert' is not the right word for what we do with data: The decision is more about how to render it.
+Fundamentally, data doesn't look like anything: a list of pixel values or road routes is just as well represented in a spreadsheet or a chart as it is on a map. Thus to 'convert' is not the right word for what we do with data: the decision is more about how to render it.
 
 Symbolic techniques include anything representable in graphics or even 3D, so let's only look at a few:
 
@@ -144,7 +144,7 @@ Symbolic techniques include anything representable in graphics or even 3D, so le
 
 ![](img/scales.jpg)
 
-Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential, or continuous data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100, or elevation. Categorical, or discrete data is, instead, one of a set number of values - like 'true', 'false', 'democrat' or 'republican'.
+Symbolization tends to highlight two different characteristics of data: sequential and categorical. Sequential or continuous data could also be called linear - it tends to be number values within a set range, like graduation rates between 0 and 100, or elevation. Categorical or discrete data is, instead, one of a set number of values - like 'true', 'false', 'democrat' or 'republican'.
 
 This division between data is one of the main concerns for symbolization - a sequential datasource would fit with a scaled point map or a gradient color ramp on a raster, whereas categorical data generally is displayed using multiple symbols for markers, or discrete bucketing of colors.
 
