@@ -1,7 +1,7 @@
 ---
-title: "mapschool: projection"
+title: "지도교실: 투영법"
 layout: default
-language: en
+language: kr
 permalink: projections.kr.html
 ---
 
@@ -16,3 +16,4 @@ permalink: projections.kr.html
 ## 읽을거리
 
 [Carlos A. Furuti's website contains many neat examples of different kinds of projections](http://www.progonos.com/furuti/MapProj/Normal/TOC/cartTOC.html).
+[함께 서울지도 지도 투영법](http://gis.seoul.go.kr/GisWebDataStore/Gis_Edu/html/S0604/SGIS-HTML.jsp?sgis=0604)

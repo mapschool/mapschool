@@ -1,7 +1,7 @@
 ---
 title: "지도교실: 지오코딩"
 layout: default
-language: en
+language: kr
 permalink: geocoding.kr.html
 ---
 
