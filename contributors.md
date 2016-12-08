@@ -11,6 +11,7 @@ mapschool is what it is thanks to the collective hard work of its authors:
 * [Dave Guarino](https://github.com/daguar)
 * [Eric Fischer](http://www.flickr.com/photos/walkingsf/)
 * [Gijs Nijholt](https://github.com/gijs)
+* [Hanbyul Jo](https://github.com/hanbyul-here)
 * [Jorge Sanz](https://github.com/jsanz)
 * [Josh Livni](https://github.com/jlivni)
 * [Juan Luis Rodríguez Ponce](https://github.com/juanluisrp)
