@@ -19,18 +19,20 @@ The data required to run a worldwide geocoder is significant and not readily ava
 
 There are many geocoders available, with varying levels of performance, coverage areas, and granularity.
 
-### Worldwide Services
+### Worldwide Services 
 
 * [Google Maps Geocoding API](https://developers.google.com/maps/documentation/geocoding/)
 * [MapQuest Open Geocoder](https://developer.mapquest.com/web/products/open/geocoding-service)
-* [Yahoo Geocoder](https://developer.yahoo.com/boss/geo/)
+* [OpenCage Geocoder](http://geocoder.opencagedata.com/)
 * [Twofishes](http://demo.twofishes.net/)
+* [Yahoo Geocoder](https://developer.yahoo.com/boss/geo/)
 
 ### US-Only Services
 
 * [geocoder.us](http://geocoder.us/)
-* [US Census Geocoding Service](http://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.pdf)
 * [Mapbox](https://www.mapbox.com/developers/api/geocoding/)
+* [US Census Geocoding Service](http://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.pdf)
+
 
 ### Canadian Services
 
@@ -39,3 +41,11 @@ There are many geocoders available, with varying levels of performance, coverage
 ### Databases
 
 * [geonames](http://www.geonames.org/)
+
+### Code libraries
+
+* node - [node geocoder](http://nchaulet.github.io/node-geocoder/)
+* Perl - [Geo::Coder::Many](https://metacpan.org/pod/Geo::Coder::Many)
+* PHP - [Geocoder PHP](http://geocoder-php.org)
+* Python - [geopy](https://github.com/geopy/geopy)
+* Ruby - [Ruby Geocoder](http://www.rubygeocoder.com)
