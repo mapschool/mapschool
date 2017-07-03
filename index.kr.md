@@ -70,7 +70,7 @@ language: kr
 
 지오코딩과 역지오코딩은 어렵다. 좌표상의 위치 에러도 있고, 주소 데이터가 제대로 포맷되지 않은 경우도 있으며 계속해서 변하는 도로의 형태와 빌딩들은 주소 데이터를 좌표로 바꾸는 과정을 더 어렵게 만든다.
 
-<a class='further-reading' href='/geocoding.kr.html'>지오코딩에 대해서 더 읽어보기</a>
+<a class='further-reading' href='/geocoding.kr.html'>지오코딩에 대해서 더 읽어봅시다.</a>
 
 ## 데이터 수집
 
@@ -128,7 +128,7 @@ language: kr
 
 투영법은 동그란 지구 위의 좌표를 컴퓨터 모니터나 종이와 같은 평면에 나타낼 수 있도록 전환해주는 수학적 방정식을 일컫는다. 모양을 일그러트리지 않고 동그란 지구를 평면에 나타낼 수 있는 방법은 사실상 없다. 투영 과정에서 우리는 방향이나 상대적인 크기를 잃는 경우도 잇고, 혹은 이상하게 생긴 모양을 얻게 되는 경우도 잇다.
 
-<a class='further-reading' href='/datum.kr.html'>축지원점에 대해서 더 읽어봅시다.</a>
+<a class='further-reading' href='/datum.kr.html'>축지계에 대해서 더 읽어봅시다.</a>
 
 <a class='further-reading' href='/projections.kr.html'>투영법에 대해서 더 읽어봅시다.</a>
 
