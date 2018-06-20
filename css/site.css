@@ -50,6 +50,27 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
     text-decoration:underline;
 }
 
+.header-link {
+  position: relative;
+  left: 0.5em;
+  opacity: 0;
+  font-size: 0.8em;
+  text-align: top;
+  color: #999;
+}
+
+.header-link:before {
+  content: "¶";
+}
+
+h1:hover .header-link,
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link {
+  opacity: 1;
+}
+
 .permalink {
     display:none;
 }
