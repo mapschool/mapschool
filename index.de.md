@@ -113,7 +113,7 @@ Wenn wir Repräsentationen der Erde speichern führt das zu der Frage welche For
 
 Die Erde ist ein rotierendes Objekt, das seine Form durch die Rotation verändert und mittig ausbeult. Statt einer perfekten Kugel ist die Erde eher ein [abgeflachter Ellipsoid](http://de.wikipedia.org/wiki/Rotationsellipsoid). Bei genauerem Bertrachten stellt man fest, dass das auch nicht ganz stimmt: Die Erde hat etliche Höhenunterschiede wie Berge, Täler und sogar menschengemachte Veränderungen wie Städte.
 
-Bei der täglichen Arbeit verwendet man deshalb Annäherungen an diese Form: Standards wie [WGS84](http://de.wikipedia.org/wiki/World_Geodetic_System_1984) definieren genaue Werte für die Länge beider Erdachsen, sodass man mit einem [Referenzellipsoid](http://de.wikipedia.org/wiki/Reference_ellipsoid) statt einer Sphäre arbeiten kann. Lokal begrenzte Messungen, die auf hochgenauen Höhenangaben basieren, verwenden auch [Geoidmodelle](https://de.wikipedia.org/wiki/Geoid), die dreidimensionale Berechnungen der Höhe über dem Meer bereithalten.
+Bei der täglichen Arbeit verwendet man deshalb Annäherungen an diese Form: Standards wie [WGS84](http://de.wikipedia.org/wiki/World_Geodetic_System_1984) definieren genaue Werte für die Länge beider Erdachsen, sodass man mit einem [Referenzellipsoid](http://de.wikipedia.org/wiki/Reference_ellipsoid) statt einer Kugel arbeiten kann. Lokal begrenzte Messungen, die auf hochgenauen Höhenangaben basieren, verwenden auch [Geoidmodelle](https://de.wikipedia.org/wiki/Geoid), die dreidimensionale Berechnungen der Höhe über dem Meer bereithalten.
 
 Dieses Teilgebiet der Geowissenschaften wird [Geodäsie](https://de.wikipedia.org/wiki/H%C3%B6here_Geod%C3%A4sie) genannt und beschäftigt sich mit der Vermessung und Modellierung der Erde.
 
